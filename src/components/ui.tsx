@@ -1,0 +1,14 @@
+import { DepthStage } from "./depth-stage";
+import { Icon, SymbolIcon } from "@/components/icon";
+import { store } from "@/config/store";
+import Link from "next/link";
+import { type Product } from "@/types/catalog";
+import { formatPrice } from "@/config/store";
+import { ProductImage } from "./product-image";
+import { whatsappOrderUrl } from "@/lib/whatsapp";
+export function ProductPrice({ product }: { product: Product }) { return <div className="product-price"><strong>{formatPrice(product.price)}</strong>{product.oldPrice && product.oldPrice > product.price ? <><del>{formatPrice(product.oldPrice)}</del><span className="discount">−{Math.round((1 - product.price / product.oldPrice) * 100)}%</span></> : null}</div>; }
+export function ProductVisual({ product, large = false }: { product: Product; large?: boolean }) { return <DepthStage><div className={`product-visual ${product.color} ${large ? "large" : ""}`} ><ProductImage src={product.imageUrl} name={product.name}><span className="visual-grid"/><span className="visual-label">{store.name} / DIGITAL</span><span className="product-symbol"><SymbolIcon symbol={product.symbol}/></span><span className="visual-format">{product.format}</span><span className="visual-corner"><Icon name="arrow"/></span></ProductImage></div></DepthStage>; }
+export function ProductCard({ product }: { product: Product }) { return <article className={`product-card glass-product-card tone-${product.color}`}><Link href={`/products/${product.slug}`} className="visual-link" aria-label={`Explore ${product.name}`}><ProductVisual product={product}/></Link><div className="card-body"><div className="card-meta"><span>{product.category}</span>{product.badge && <span className="badge">{product.badge}</span>}</div><h3><Link href={`/products/${product.slug}`}>{product.name}</Link></h3><p>{product.description}</p><span className="product-order-status"><i/> Order via WhatsApp</span><div className="card-bottom"><ProductPrice product={product}/><Link href={`/products/${product.slug}`} aria-label={`View ${product.name}`}>Explore <span><Icon name="arrow"/></span></Link></div><a className="button primary whatsapp-cta glass-button" href={whatsappOrderUrl([product])} target="_blank" rel="noopener noreferrer">Order on WhatsApp <Icon name="arrow"/></a></div></article>; }
+export function PageIntro({ eyebrow, title, children }: { eyebrow: string; title: string; children: React.ReactNode }) { return <div className="page-intro"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{children}</p></div>; }
+export function FaqList({ items }: { items: { question: string; answer: string }[] }) { return <div className="faq-list">{items.map(item => <details key={item.question}><summary>{item.question}<span aria-hidden="true"><Icon name="plus"/></span></summary><p>{item.answer}</p></details>)}</div>; }
+

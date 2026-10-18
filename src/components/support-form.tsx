@@ -1,0 +1,9 @@
+"use client";
+import { Icon } from "@/components/icon";
+
+import { useState } from "react";
+import { store } from "@/config/store";
+export function SupportForm() {
+  const [prepared, setPrepared] = useState(false);
+  return <form className="form" onSubmit={e => { e.preventDefault(); const data = new FormData(e.currentTarget); const body = `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`; window.location.href = `https://wa.me/${store.whatsappNumber}?text=${encodeURIComponent(String(data.get("topic")) + "\n\n" + body)}`; setPrepared(true); }}><label>Your name<input name="name" autoComplete="name" required maxLength={100}/></label><label>Email address<input type="email" name="email" autoComplete="email" required maxLength={254}/></label><label>What’s on your mind?<select name="topic"><option>Product question</option><option>License question</option><option>Store feedback</option><option>Something else</option></select></label><label>Your message<textarea name="message" required rows={5} maxLength={3000} placeholder="Tell us a little about what you need…"/></label><p className="small">This prepares your message in WhatsApp. You review and send it there.</p><button className="button primary" type="submit">Continue on WhatsApp <Icon name="arrow"/></button>{prepared && <p role="status" className="preview-notice">WhatsApp was requested. No message has been sent by this website.</p>}</form>;
+}

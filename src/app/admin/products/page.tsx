@@ -1,0 +1,12 @@
+import { ProductImage } from "@/components/product-image";
+import { Icon } from "@/components/icon";
+import Link from "next/link";
+import { ProductToggle, DeleteForm } from "@/components/admin/forms";
+import { adminProducts, pageNumber, PAGE_SIZE } from "@/server/admin";
+import { formatPrice } from "@/config/store";
+import { Pagination } from "@/components/admin/pagination";
+export default async function ProductsAdmin({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+  const page = pageNumber((await searchParams).page);
+  const { rows, count } = await adminProducts(page);
+  return <><div className="section-heading"><h1 className="admin-title">Products</h1><Link href="/admin/products/new" className="button primary">Add product ↗</Link></div><div className="admin-product-grid">{rows.map(product => <article className="panel" key={product.id}><Link href={`/admin/products/${product.id}`} className="admin-product-picture" aria-label={`Edit picture and details for ${product.name}`}><ProductImage src={product.hasImage ? `/api/products/${product.id}/image?v=${product.updatedAt.getTime()}` : undefined} name={product.name}><span className="admin-image-placeholder"><Icon name="layers"/><span>Add a product picture</span></span></ProductImage><span className="admin-image-edit">Edit picture & details <Icon name="arrow"/></span></Link><div className="card-meta"><span>{product.category.name}</span><span className="badge">{product.active ? "Active" : "Inactive"}</span></div><h2>{product.name}</h2><p className="small">{product.description}</p><div className="product-price"><strong>{formatPrice(product.priceMinor / 100)}</strong>{product.oldPriceMinor !== null && <del>{formatPrice(product.oldPriceMinor / 100)}</del>}</div><div className="admin-product-actions"><Link className="text-link" href={`/admin/products/${product.id}`}>Edit all details <span className="sr-only">{product.name}</span>→</Link><ProductToggle id={product.id} active={product.active}/></div><DeleteForm kind="product" id={product.id}/></article>)}</div>{!rows.length && <div className="empty-state"><h2>Your collection starts here.</h2><p>Add a product to display it in your storefront.</p><Link href="/admin/products/new" className="button primary">Add product ↗</Link></div>}<Pagination page={page} count={count} pageSize={PAGE_SIZE} href="/admin/products"/></>;
+}

@@ -1,0 +1,21 @@
+name: nexora-store
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: nexora
+      POSTGRES_DB: nexora
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.local}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - store-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nexora -d nexora"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+volumes:
+  store-data:
+
