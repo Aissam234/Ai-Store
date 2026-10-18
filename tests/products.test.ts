@@ -12,7 +12,7 @@ test("discounts are optional and must exceed the actual price", () => {
   for (const oldPrice of ["100.25", "99", "-1", "abc"]) assert.equal(productSchema.safeParse({ ...input, oldPrice }).success, false);
 });
 test("WhatsApp messages preserve product names, accents, symbols and exact prices", () => {
-  const url = new URL(whatsappOrderUrl([{ name: "Création & API + Kit", price: 100.25 }]));
+  const url = new URL(whatsappOrderUrl([{ name: "Création & API + Kit", price: 100.25 }], "fr"));
   assert.equal(url.origin, "https://wa.me");
   assert.equal(url.pathname, "/212607144420");
   assert.equal(url.searchParams.get("text"), "Bonjour, je souhaite commander :\n\nProduit : Création & API + Kit\nPrix : 100.25 MAD");

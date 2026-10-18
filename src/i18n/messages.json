@@ -1,0 +1,1382 @@
+{
+  "Language": {
+    "fr": "Langue",
+    "ar": "اللغة",
+    "ma": "اللغة"
+  },
+  "Home": {
+    "fr": "Accueil",
+    "ar": "الرئيسية",
+    "ma": "الرئيسية"
+  },
+  "Products": {
+    "fr": "Produits",
+    "ar": "المنتجات",
+    "ma": "المنتوجات"
+  },
+  "Product": {
+    "fr": "Produit",
+    "ar": "المنتج",
+    "ma": "المنتوج"
+  },
+  "Price": {
+    "fr": "Prix",
+    "ar": "السعر",
+    "ma": "الثمن"
+  },
+  "Offers": {
+    "fr": "Offres",
+    "ar": "العروض",
+    "ma": "العروض"
+  },
+  "Why us": {
+    "fr": "Pourquoi nous",
+    "ar": "لماذا نحن",
+    "ma": "علاش حنا"
+  },
+  "Contact": {
+    "fr": "Contact",
+    "ar": "اتصل بنا",
+    "ma": "تواصل معانا"
+  },
+  "Account": {
+    "fr": "Compte",
+    "ar": "الحساب",
+    "ma": "الحساب"
+  },
+  "My account": {
+    "fr": "Mon compte",
+    "ar": "حسابي",
+    "ma": "حسابي"
+  },
+  "Your account": {
+    "fr": "Votre compte",
+    "ar": "حسابك",
+    "ma": "الحساب ديالك"
+  },
+  "Your cart": {
+    "fr": "Votre panier",
+    "ar": "سلتك",
+    "ma": "السلة ديالك"
+  },
+  "Categories": {
+    "fr": "Catégories",
+    "ar": "الفئات",
+    "ma": "الأصناف"
+  },
+  "Explore": {
+    "fr": "Découvrir",
+    "ar": "استكشف",
+    "ma": "كتاشف"
+  },
+  "All products": {
+    "fr": "Tous les produits",
+    "ar": "جميع المنتجات",
+    "ma": "جميع المنتوجات"
+  },
+  "Explore products": {
+    "fr": "Découvrir les produits",
+    "ar": "استكشف المنتجات",
+    "ma": "كتاشف المنتوجات"
+  },
+  "Explore the collection": {
+    "fr": "Découvrir la collection",
+    "ar": "استكشف المجموعة",
+    "ma": "كتاشف المجموعة"
+  },
+  "Explore collection": {
+    "fr": "Découvrir la collection",
+    "ar": "استكشف المجموعة",
+    "ma": "كتاشف المجموعة"
+  },
+  "Explore categories": {
+    "fr": "Découvrir les catégories",
+    "ar": "استكشف الفئات",
+    "ma": "كتاشف الأصناف"
+  },
+  "Collection": {
+    "fr": "Collection",
+    "ar": "المجموعة",
+    "ma": "المجموعة"
+  },
+  "The collection": {
+    "fr": "La collection",
+    "ar": "المجموعة",
+    "ma": "المجموعة"
+  },
+  "Search products": {
+    "fr": "Rechercher des produits",
+    "ar": "ابحث عن منتجات",
+    "ma": "قلب على المنتوجات"
+  },
+  "Search products, tools, and services…": {
+    "fr": "Rechercher des produits, outils et services…",
+    "ar": "ابحث عن منتجات وأدوات وخدمات…",
+    "ma": "قلب على منتوجات وأدوات وخدمات…"
+  },
+  "Sort by": {
+    "fr": "Trier par",
+    "ar": "ترتيب حسب",
+    "ma": "رتب حسب"
+  },
+  "Featured": {
+    "fr": "À la une",
+    "ar": "مميزة",
+    "ma": "مختارة"
+  },
+  "Price: low to high": {
+    "fr": "Prix croissant",
+    "ar": "السعر: من الأقل إلى الأعلى",
+    "ma": "الثمن: من الرخيص للغالي"
+  },
+  "Price: high to low": {
+    "fr": "Prix décroissant",
+    "ar": "السعر: من الأعلى إلى الأقل",
+    "ma": "الثمن: من الغالي للرخيص"
+  },
+  "Newest": {
+    "fr": "Nouveautés",
+    "ar": "الأحدث",
+    "ma": "الجديد"
+  },
+  "Filter by category": {
+    "fr": "Filtrer par catégorie",
+    "ar": "التصفية حسب الفئة",
+    "ma": "صفي حسب الصنف"
+  },
+  "{count} products": {
+    "fr": "{count} produits",
+    "ar": "{count} منتجات",
+    "ma": "{count} منتوجات"
+  },
+  "{count} product": {
+    "fr": "{count} produit",
+    "ar": "{count} منتج",
+    "ma": "{count} منتوج"
+  },
+  "Cart, {count} products": {
+    "fr": "Panier, {count} produits",
+    "ar": "السلة، {count} منتجات",
+    "ma": "السلة، {count} منتوجات"
+  },
+  "Explore {name}": {
+    "fr": "Découvrir {name}",
+    "ar": "استكشف {name}",
+    "ma": "كتاشف {name}"
+  },
+  "View {name}": {
+    "fr": "Voir {name}",
+    "ar": "عرض {name}",
+    "ma": "شوف {name}"
+  },
+  "Remove {name}": {
+    "fr": "Retirer {name}",
+    "ar": "إزالة {name}",
+    "ma": "حيد {name}"
+  },
+  "Order on WhatsApp": {
+    "fr": "Commander sur WhatsApp",
+    "ar": "اطلب عبر واتساب",
+    "ma": "طلب عبر واتساب"
+  },
+  "Order via WhatsApp": {
+    "fr": "Commander via WhatsApp",
+    "ar": "اطلب عبر واتساب",
+    "ma": "طلب عبر واتساب"
+  },
+  "Order personally on WhatsApp": {
+    "fr": "Commander avec nous sur WhatsApp",
+    "ar": "اطلب مباشرة عبر واتساب",
+    "ma": "طلب معانا مباشرة فواتساب"
+  },
+  "Ask on WhatsApp": {
+    "fr": "Demander sur WhatsApp",
+    "ar": "اسأل عبر واتساب",
+    "ma": "سولنا فواتساب"
+  },
+  "Talk on WhatsApp": {
+    "fr": "Discuter sur WhatsApp",
+    "ar": "تحدث عبر واتساب",
+    "ma": "هضر معانا فواتساب"
+  },
+  "Contact us on WhatsApp": {
+    "fr": "Nous contacter sur WhatsApp",
+    "ar": "تواصل معنا عبر واتساب",
+    "ma": "تواصل معانا فواتساب"
+  },
+  "Contact AI STORE on WhatsApp": {
+    "fr": "Contacter AI STORE sur WhatsApp",
+    "ar": "تواصل مع AI STORE عبر واتساب",
+    "ma": "تواصل مع AI STORE فواتساب"
+  },
+  "Continue on WhatsApp": {
+    "fr": "Continuer sur WhatsApp",
+    "ar": "المتابعة عبر واتساب",
+    "ma": "كمل فواتساب"
+  },
+  "Hello, I would like to order:": {
+    "fr": "Bonjour, je souhaite commander :",
+    "ar": "مرحباً، أود طلب:",
+    "ma": "سلام، بغيت نطلب:"
+  },
+  "Premium tools.": {
+    "fr": "Des outils premium.",
+    "ar": "أدوات استثنائية.",
+    "ma": "أدوات مميزة."
+  },
+  "Bigger possibilities.": {
+    "fr": "Plus de possibilités.",
+    "ar": "إمكانيات أوسع.",
+    "ma": "إمكانيات كثر."
+  },
+  "DIGITAL TOOLS. PERSONAL SERVICE.": {
+    "fr": "OUTILS NUMÉRIQUES. SERVICE PERSONNALISÉ.",
+    "ar": "أدوات رقمية. خدمة شخصية.",
+    "ma": "أدوات رقمية. خدمة على قدك."
+  },
+  "Tools for the work you want to do. Explore our digital collection, compare prices in MAD, and order with personal help on WhatsApp.": {
+    "fr": "Des outils pour vos projets. Découvrez notre collection numérique, comparez les prix en MAD et commandez avec notre aide sur WhatsApp.",
+    "ar": "أدوات للعمل الذي تطمح إليه. استكشف مجموعتنا الرقمية، وقارن الأسعار بعملة MAD، واطلب بمساعدتنا عبر واتساب.",
+    "ma": "أدوات للخدمة اللي بغيتي دير. كتاشف المجموعة الرقمية، قارن الأثمنة بـ MAD، وطلب بمساعدتنا فواتساب."
+  },
+  "Personal support": {
+    "fr": "Accompagnement personnalisé",
+    "ar": "دعم شخصي",
+    "ma": "مساعدة شخصية"
+  },
+  "Prices in MAD": {
+    "fr": "Prix en MAD",
+    "ar": "الأسعار بعملة MAD",
+    "ma": "الأثمنة بـ MAD"
+  },
+  "Simple ordering": {
+    "fr": "Commande simplifiée",
+    "ar": "طلب سهل",
+    "ma": "طلب ساهل"
+  },
+  "A MORE PERSONAL WAY TO BUY": {
+    "fr": "UNE FAÇON PLUS HUMAINE D’ACHETER",
+    "ar": "تجربة شراء أكثر قرباً",
+    "ma": "طريقة أقرب ليك فالشراء"
+  },
+  "Ask us anything": {
+    "fr": "Posez-nous vos questions",
+    "ar": "اسألنا ما تشاء",
+    "ma": "سولنا على اللي بغيتي"
+  },
+  "Order with confidence": {
+    "fr": "Commandez en confiance",
+    "ar": "اطلب بثقة",
+    "ma": "طلب براحة"
+  },
+  "EXPLORE / THE COLLECTION": {
+    "fr": "DÉCOUVRIR / LA COLLECTION",
+    "ar": "استكشف / المجموعة",
+    "ma": "كتاشف / المجموعة"
+  },
+  "Featured products.": {
+    "fr": "Produits à la une.",
+    "ar": "منتجات مميزة.",
+    "ma": "منتوجات مختارة."
+  },
+  "Find the tools that fit the way you work and create.": {
+    "fr": "Trouvez les outils adaptés à votre façon de travailler et de créer.",
+    "ar": "اعثر على الأدوات المناسبة لطريقتك في العمل والإبداع.",
+    "ma": "لقى الأدوات اللي كتناسب طريقتك فالخدمة والإبداع."
+  },
+  "A new collection is on its way.": {
+    "fr": "Une nouvelle collection arrive.",
+    "ar": "مجموعة جديدة قريباً.",
+    "ma": "مجموعة جديدة جاية فالطريق."
+  },
+  "Talk to us about the digital product you’re looking for.": {
+    "fr": "Parlez-nous du produit numérique que vous cherchez.",
+    "ar": "أخبرنا عن المنتج الرقمي الذي تبحث عنه.",
+    "ma": "قول لينا شنو هو المنتوج الرقمي اللي كتقلب عليه."
+  },
+  "MADE FOR YOUR WORLD": {
+    "fr": "PENSÉ POUR VOTRE UNIVERS",
+    "ar": "مصممة لعالمك",
+    "ma": "مصممة لعالمك"
+  },
+  "Find your focus.": {
+    "fr": "Trouvez votre spécialité.",
+    "ar": "اعثر على ما يلهمك.",
+    "ma": "لقى اللي كيناسبك."
+  },
+  "/ COLLECTION": {
+    "fr": "/ COLLECTION",
+    "ar": "/ المجموعة",
+    "ma": "/ المجموعة"
+  },
+  "/ DIGITAL": {
+    "fr": "/ NUMÉRIQUE",
+    "ar": "/ رقمي",
+    "ma": "/ رقمي"
+  },
+  "WHY": {
+    "fr": "POURQUOI",
+    "ar": "لماذا",
+    "ma": "علاش"
+  },
+  "Digital products.": {
+    "fr": "Des produits numériques.",
+    "ar": "منتجات رقمية.",
+    "ma": "منتوجات رقمية."
+  },
+  "Human connection.": {
+    "fr": "Un contact humain.",
+    "ar": "تواصل إنساني.",
+    "ma": "تواصل مع ناس."
+  },
+  "Choosing the right tool shouldn’t be complicated. Get clear information and personal help, from your first question to your purchase.": {
+    "fr": "Choisir le bon outil devrait être simple. Profitez d’informations claires et d’un accompagnement, de votre première question à votre achat.",
+    "ar": "اختيار الأداة المناسبة لا ينبغي أن يكون معقداً. احصل على معلومات واضحة ومساعدة شخصية، من أول سؤال حتى الشراء.",
+    "ma": "اختيار الأداة المناسبة خاصو يكون ساهل. خذ معلومات واضحة ومساعدة شخصية، من أول سؤال حتى تشري."
+  },
+  "Let’s find your fit": {
+    "fr": "Trouvons ce qu’il vous faut",
+    "ar": "لنجد ما يناسبك",
+    "ma": "نلقاو اللي كيناسبك"
+  },
+  "Clear pricing": {
+    "fr": "Des prix clairs",
+    "ar": "أسعار واضحة",
+    "ma": "أثمنة واضحة"
+  },
+  "See prices in MAD and original prices when a discount is available.": {
+    "fr": "Consultez les prix en MAD et les prix d’origine lorsqu’une remise est proposée.",
+    "ar": "اطّلع على الأسعار بعملة MAD والأسعار الأصلية عند توفر تخفيض.",
+    "ma": "شوف الأثمنة بـ MAD والثمن الأصلي إلا كان تخفيض."
+  },
+  "Personal WhatsApp support": {
+    "fr": "Accompagnement sur WhatsApp",
+    "ar": "دعم شخصي عبر واتساب",
+    "ma": "مساعدة شخصية فواتساب"
+  },
+  "Ask about compatibility, contents and terms before you decide.": {
+    "fr": "Renseignez-vous sur la compatibilité, le contenu et les conditions avant de choisir.",
+    "ar": "اسأل عن التوافق والمحتوى والشروط قبل اتخاذ قرارك.",
+    "ma": "سول على التوافق والمحتوى والشروط قبل ما تقرر."
+  },
+  "A simple next step": {
+    "fr": "Une prochaine étape simple",
+    "ar": "خطوة تالية بسيطة",
+    "ma": "الخطوة الجاية ساهلة"
+  },
+  "Send your selection. Confirm availability and delivery with us personally.": {
+    "fr": "Envoyez votre sélection. Confirmez avec nous la disponibilité et la livraison.",
+    "ar": "أرسل اختياراتك وأكّد معنا التوفر والتسليم مباشرة.",
+    "ma": "صيفط الاختيارات ديالك وأكد معانا التوفر والتسليم."
+  },
+  "MORE VALUE / SAME AMBITION": {
+    "fr": "PLUS DE VALEUR / MÊME AMBITION",
+    "ar": "قيمة أكبر / نفس الطموح",
+    "ma": "قيمة كثر / نفس الطموح"
+  },
+  "A good time to upgrade.": {
+    "fr": "Le bon moment pour évoluer.",
+    "ar": "الوقت المناسب للتطوير.",
+    "ma": "الوقت باش تطور خدمتك."
+  },
+  "Current offers from the collection. No countdowns. Just clear prices.": {
+    "fr": "Les offres actuelles de la collection. Sans compte à rebours, simplement des prix clairs.",
+    "ar": "عروض المجموعة الحالية. بلا عدّ تنازلي، فقط أسعار واضحة.",
+    "ma": "عروض المجموعة دابا. بلا عد تنازلي، غير أثمنة واضحة."
+  },
+  "View offers": {
+    "fr": "Voir les offres",
+    "ar": "عرض العروض",
+    "ma": "شوف العروض"
+  },
+  "THREE STEPS. ZERO COMPLICATION.": {
+    "fr": "TROIS ÉTAPES. SANS COMPLICATION.",
+    "ar": "ثلاث خطوات. بلا تعقيد.",
+    "ma": "ثلاث خطوات. بلا تعقيد."
+  },
+  "From discovery to your next move.": {
+    "fr": "De la découverte à votre prochain projet.",
+    "ar": "من الاكتشاف إلى خطوتك التالية.",
+    "ma": "من الاكتشاف للخطوة الجاية."
+  },
+  "Find your fit": {
+    "fr": "Trouvez ce qu’il vous faut",
+    "ar": "اختر ما يناسبك",
+    "ma": "لقى اللي كيناسبك"
+  },
+  "Explore the collection, compare details and choose a product.": {
+    "fr": "Explorez la collection, comparez les détails et choisissez un produit.",
+    "ar": "استكشف المجموعة وقارن التفاصيل واختر منتجاً.",
+    "ma": "كتاشف المجموعة وقارن التفاصيل واختار منتوج."
+  },
+  "Start a conversation": {
+    "fr": "Commencez la discussion",
+    "ar": "ابدأ محادثة",
+    "ma": "بدا الهضرة معانا"
+  },
+  "Tap Order on WhatsApp. Your product and price are included.": {
+    "fr": "Cliquez sur Commander sur WhatsApp. Le produit et son prix sont inclus.",
+    "ar": "اضغط على الطلب عبر واتساب. سيُضاف المنتج وسعره إلى الرسالة.",
+    "ma": "ضغط على طلب عبر واتساب. المنتوج والثمن كيكونو فالرسالة."
+  },
+  "Confirm with us": {
+    "fr": "Confirmez avec nous",
+    "ar": "أكّد معنا",
+    "ma": "أكد معانا"
+  },
+  "We agree on availability, purchase terms and delivery before you pay.": {
+    "fr": "Nous confirmons la disponibilité, les conditions d’achat et la livraison avant tout paiement.",
+    "ar": "نتفق على التوفر وشروط الشراء والتسليم قبل الدفع.",
+    "ma": "كنتافقو على التوفر وشروط الشراء والتسليم قبل ما تخلص."
+  },
+  "BEFORE YOUR NEXT MOVE": {
+    "fr": "AVANT VOTRE PROCHAINE ÉTAPE",
+    "ar": "قبل خطوتك التالية",
+    "ma": "قبل الخطوة الجاية"
+  },
+  "A little clarity": {
+    "fr": "Un peu de clarté",
+    "ar": "قليل من الوضوح",
+    "ma": "شوية ديال الوضوح"
+  },
+  "goes a long way.": {
+    "fr": "fait toute la différence.",
+    "ar": "يصنع فرقاً كبيراً.",
+    "ma": "كيدير الفرق."
+  },
+  "Good questions. Straight answers.": {
+    "fr": "De bonnes questions. Des réponses claires.",
+    "ar": "أسئلة مهمة. إجابات واضحة.",
+    "ma": "أسئلة مهمة. أجوبة واضحة."
+  },
+  "All questions": {
+    "fr": "Toutes les questions",
+    "ar": "جميع الأسئلة",
+    "ma": "جميع الأسئلة"
+  },
+  "YOUR NEXT POSSIBILITY IS ONE MESSAGE AWAY": {
+    "fr": "VOTRE PROCHAINE OPPORTUNITÉ COMMENCE PAR UN MESSAGE",
+    "ar": "فرصتك التالية على بُعد رسالة",
+    "ma": "الإمكانية الجاية كتبدا برسالة"
+  },
+  "Find your tool.": {
+    "fr": "Trouvez votre outil.",
+    "ar": "اعثر على أداتك.",
+    "ma": "لقى الأداة ديالك."
+  },
+  "Make your next move.": {
+    "fr": "Passez à l’étape suivante.",
+    "ar": "ابدأ خطوتك التالية.",
+    "ma": "دير الخطوة الجاية."
+  },
+  "AI & automation": {
+    "fr": "IA et automatisation",
+    "ar": "الذكاء الاصطناعي والأتمتة",
+    "ma": "الذكاء الاصطناعي والأتمتة"
+  },
+  "Built for your next move": {
+    "fr": "Pour votre prochaine étape",
+    "ar": "لخطوتك التالية",
+    "ma": "للخطوة الجاية"
+  },
+  "INTELLIGENCE. WITH AN EDGE.": {
+    "fr": "L’INTELLIGENCE. AVEC UNE LONGUEUR D’AVANCE.",
+    "ar": "ذكاء يمنحك التميز.",
+    "ma": "ذكاء كيميزك."
+  },
+  "AI STORE digital collection": {
+    "fr": "Collection numérique AI STORE",
+    "ar": "مجموعة AI STORE الرقمية",
+    "ma": "مجموعة AI STORE الرقمية"
+  },
+  "THE DIGITAL COLLECTION": {
+    "fr": "LA COLLECTION NUMÉRIQUE",
+    "ar": "المجموعة الرقمية",
+    "ma": "المجموعة الرقمية"
+  },
+  "Tools for your next chapter.": {
+    "fr": "Des outils pour votre prochain chapitre.",
+    "ar": "أدوات لفصلك القادم.",
+    "ma": "أدوات للمرحلة الجاية."
+  },
+  "Thoughtfully crafted resources for building, creating, and getting things done.": {
+    "fr": "Des ressources conçues pour construire, créer et avancer.",
+    "ar": "موارد مدروسة للبناء والإبداع وإنجاز الأعمال.",
+    "ma": "موارد مختارة باش تبني وتبدع وتكمل خدمتك."
+  },
+  "FIND YOUR FOCUS": {
+    "fr": "TROUVEZ VOTRE SPÉCIALITÉ",
+    "ar": "اعثر على ما يلهمك",
+    "ma": "لقى اللي كيناسبك"
+  },
+  "A toolkit for every ambition.": {
+    "fr": "Des outils pour chaque ambition.",
+    "ar": "أدوات لكل طموح.",
+    "ma": "أدوات لكل طموح."
+  },
+  "Find the resources that fit the way you work, and where you want to go next.": {
+    "fr": "Trouvez les ressources adaptées à votre façon de travailler et à vos ambitions.",
+    "ar": "اعثر على الموارد المناسبة لعملك ولما تطمح إليه.",
+    "ma": "لقى الموارد اللي كتناسب خدمتك وفين بغيتي توصل."
+  },
+  "DIGITAL PRODUCTS": {
+    "fr": "PRODUITS NUMÉRIQUES",
+    "ar": "منتجات رقمية",
+    "ma": "منتوجات رقمية"
+  },
+  "Digital resources · One-time prices · MAD": {
+    "fr": "Ressources numériques · Prix à l’unité · MAD",
+    "ar": "موارد رقمية · أسعار فردية · MAD",
+    "ma": "موارد رقمية · أثمنة فردية · MAD"
+  },
+  "No matches just yet.": {
+    "fr": "Aucun résultat pour le moment.",
+    "ar": "لا توجد نتائج بعد.",
+    "ma": "ما لقينا حتى نتيجة."
+  },
+  "Try a different search or explore the full collection.": {
+    "fr": "Essayez une autre recherche ou explorez toute la collection.",
+    "ar": "جرّب بحثاً آخر أو استكشف المجموعة كاملة.",
+    "ma": "جرب تقلب بطريقة أخرى ولا شوف المجموعة كاملة."
+  },
+  "Reset filters": {
+    "fr": "Réinitialiser les filtres",
+    "ar": "إعادة ضبط الفلاتر",
+    "ma": "رجع الفلاتر للبداية"
+  },
+  "Order on WhatsApp. Availability and delivery are confirmed personally before purchase.": {
+    "fr": "Commandez sur WhatsApp. La disponibilité et la livraison sont confirmées avec vous avant l’achat.",
+    "ar": "اطلب عبر واتساب. نؤكد معك التوفر والتسليم قبل الشراء.",
+    "ma": "طلب فواتساب. كنأكدو معاك التوفر والتسليم قبل ما تشري."
+  },
+  "YOUR TOOLKIT": {
+    "fr": "VOS OUTILS",
+    "ar": "أدواتك",
+    "ma": "الأدوات ديالك"
+  },
+  "A few good choices.": {
+    "fr": "De bons choix en perspective.",
+    "ar": "اختيارات موفقة.",
+    "ma": "اختيارات موفقة."
+  },
+  "Your next project is already looking promising.": {
+    "fr": "Votre prochain projet s’annonce prometteur.",
+    "ar": "مشروعك القادم يبدو واعداً.",
+    "ma": "المشروع الجاي ديالك باين واعد."
+  },
+  "ORDER / WHATSAPP": {
+    "fr": "COMMANDE / WHATSAPP",
+    "ar": "طلب / واتساب",
+    "ma": "طلب / واتساب"
+  },
+  "One step closer to what’s next.": {
+    "fr": "Un pas de plus vers la suite.",
+    "ar": "خطوة أقرب إلى القادم.",
+    "ma": "خطوة أقرب للي جاي."
+  },
+  "Review your selection, then contact us on WhatsApp to complete your purchase. No online payment.": {
+    "fr": "Vérifiez votre sélection, puis contactez-nous sur WhatsApp pour finaliser votre achat. Aucun paiement en ligne.",
+    "ar": "راجع اختياراتك ثم تواصل معنا عبر واتساب لإتمام الشراء. لا يوجد دفع إلكتروني.",
+    "ma": "راجع الاختيارات ديالك وتواصل معانا فواتساب باش تكمل الشراء. ما كاينش الخلاص فالموقع."
+  },
+  "Loading your saved cart…": {
+    "fr": "Chargement de votre panier…",
+    "ar": "جارٍ تحميل سلتك…",
+    "ma": "كنحمّلو السلة ديالك…"
+  },
+  "A little room for possibility.": {
+    "fr": "De la place pour de nouvelles idées.",
+    "ar": "مساحة لإمكانيات جديدة.",
+    "ma": "بلاصة لإمكانيات جديدة."
+  },
+  "Your cart is empty. Discover a useful tool for your next project.": {
+    "fr": "Votre panier est vide. Découvrez un outil utile pour votre prochain projet.",
+    "ar": "سلتك فارغة. اكتشف أداة مفيدة لمشروعك القادم.",
+    "ma": "السلة ديالك خاوية. كتاشف أداة نافعة للمشروع الجاي."
+  },
+  "Some products are no longer available.": {
+    "fr": "Certains produits ne sont plus disponibles.",
+    "ar": "بعض المنتجات لم تعد متاحة.",
+    "ma": "شي منتوجات ما بقاوش متوفرين."
+  },
+  "Remove them before continuing. Unavailable items are excluded from the estimate.": {
+    "fr": "Retirez-les avant de continuer. Les articles indisponibles sont exclus de l’estimation.",
+    "ar": "أزلها قبل المتابعة. المنتجات غير المتاحة لا تدخل في التقدير.",
+    "ma": "حيدهم قبل ما تكمل. المنتوجات اللي ما متوفرينش ما داخلينش فالحساب."
+  },
+  "Unavailable product": {
+    "fr": "Produit indisponible",
+    "ar": "منتج غير متاح",
+    "ma": "منتوج ما متوفرش"
+  },
+  "Remove unavailable item": {
+    "fr": "Retirer l’article indisponible",
+    "ar": "إزالة المنتج غير المتاح",
+    "ma": "حيد المنتوج اللي ما متوفرش"
+  },
+  "PERSONAL SERVICE": {
+    "fr": "SERVICE PERSONNALISÉ",
+    "ar": "خدمة شخصية",
+    "ma": "خدمة على قدك"
+  },
+  "Complete your order on WhatsApp.": {
+    "fr": "Finalisez votre commande sur WhatsApp.",
+    "ar": "أكمل طلبك عبر واتساب.",
+    "ma": "كمل الطلب ديالك فواتساب."
+  },
+  "Send us your selection. We will confirm availability, payment arrangements and delivery personally before you purchase.": {
+    "fr": "Envoyez votre sélection. Nous confirmerons la disponibilité, les modalités de paiement et la livraison avant l’achat.",
+    "ar": "أرسل اختياراتك. سنؤكد معك التوفر وترتيبات الدفع والتسليم قبل الشراء.",
+    "ma": "صيفط الاختيارات ديالك. غادي نأكدو معاك التوفر وطريقة الخلاص والتسليم قبل ما تشري."
+  },
+  "No online payment": {
+    "fr": "Aucun paiement en ligne",
+    "ar": "لا يوجد دفع إلكتروني",
+    "ma": "ما كاينش الخلاص فالموقع"
+  },
+  "The button opens WhatsApp with your products and prices ready to send. It does not place or pay for an order automatically.": {
+    "fr": "Le bouton ouvre WhatsApp avec vos produits et prix prêts à envoyer. Il ne valide ni ne paie une commande automatiquement.",
+    "ar": "يفتح الزر واتساب مع منتجاتك وأسعارها جاهزة للإرسال. لا يؤكد الطلب ولا يدفع تلقائياً.",
+    "ma": "الزر كيفتح واتساب بالمنتوجات والأثمنة واجدين للإرسال. ما كيأكدش الطلب وما كيخلصش بوحدو."
+  },
+  "Your selection": {
+    "fr": "Votre sélection",
+    "ar": "اختياراتك",
+    "ma": "الاختيارات ديالك"
+  },
+  "Clear cart": {
+    "fr": "Vider le panier",
+    "ar": "إفراغ السلة",
+    "ma": "خوي السلة"
+  },
+  "Digital resource · Single license": {
+    "fr": "Ressource numérique · Licence unique",
+    "ar": "مورد رقمي · ترخيص واحد",
+    "ma": "مورد رقمي · رخصة وحدة"
+  },
+  "Remove": {
+    "fr": "Retirer",
+    "ar": "إزالة",
+    "ma": "حيد"
+  },
+  "Continue exploring": {
+    "fr": "Continuer à découvrir",
+    "ar": "متابعة الاستكشاف",
+    "ma": "كمل الاكتشاف"
+  },
+  "THE NEXT STEP": {
+    "fr": "LA PROCHAINE ÉTAPE",
+    "ar": "الخطوة التالية",
+    "ma": "الخطوة الجاية"
+  },
+  "Order summary": {
+    "fr": "Récapitulatif",
+    "ar": "ملخص الطلب",
+    "ma": "ملخص الطلب"
+  },
+  "Estimated subtotal ·": {
+    "fr": "Sous-total estimé ·",
+    "ar": "المجموع الفرعي التقديري ·",
+    "ma": "المجموع التقريبي ·"
+  },
+  "Delivery": {
+    "fr": "Livraison",
+    "ar": "التسليم",
+    "ma": "التسليم"
+  },
+  "Arranged on WhatsApp": {
+    "fr": "Organisée sur WhatsApp",
+    "ar": "يُرتب عبر واتساب",
+    "ma": "كنتافقو عليه فواتساب"
+  },
+  "Estimated total": {
+    "fr": "Total estimé",
+    "ar": "الإجمالي التقديري",
+    "ma": "المجموع التقريبي"
+  },
+  "Prices come from our catalog. Availability and final purchase details are confirmed on WhatsApp.": {
+    "fr": "Les prix proviennent de notre catalogue. La disponibilité et les conditions finales sont confirmées sur WhatsApp.",
+    "ar": "الأسعار من كتالوجنا. يُؤكد التوفر وتفاصيل الشراء النهائية عبر واتساب.",
+    "ma": "الأثمنة من الكتالوج ديالنا. التوفر وتفاصيل الشراء النهائية كنأكدوهم فواتساب."
+  },
+  "Review your order": {
+    "fr": "Vérifier votre commande",
+    "ar": "مراجعة طلبك",
+    "ma": "راجع الطلب ديالك"
+  },
+  "Edit your cart": {
+    "fr": "Modifier votre panier",
+    "ar": "تعديل سلتك",
+    "ma": "بدل السلة ديالك"
+  },
+  "No payment is collected on this website.": {
+    "fr": "Aucun paiement n’est collecté sur ce site.",
+    "ar": "لا يتم تحصيل أي دفعة عبر هذا الموقع.",
+    "ma": "ما كنجمعو حتى خلاص فهاد الموقع."
+  },
+  "Add to cart": {
+    "fr": "Ajouter au panier",
+    "ar": "أضف إلى السلة",
+    "ma": "زيد للسلة"
+  },
+  "Added to cart": {
+    "fr": "Ajouté au panier",
+    "ar": "أُضيف إلى السلة",
+    "ma": "تزاد للسلة"
+  },
+  "View your cart": {
+    "fr": "Voir votre panier",
+    "ar": "عرض سلتك",
+    "ma": "شوف السلة ديالك"
+  },
+  "We confirm availability and purchase details personally on WhatsApp.": {
+    "fr": "Nous confirmons avec vous la disponibilité et les détails d’achat sur WhatsApp.",
+    "ar": "نؤكد معك التوفر وتفاصيل الشراء عبر واتساب.",
+    "ma": "كنأكدو معاك التوفر وتفاصيل الشراء فواتساب."
+  },
+  "Your browser could not save this cart. It will remain available during this visit.": {
+    "fr": "Votre navigateur n’a pas pu enregistrer ce panier. Il restera disponible pendant cette visite.",
+    "ar": "تعذر على المتصفح حفظ السلة. ستبقى متاحة خلال هذه الزيارة.",
+    "ma": "المتصفح ما قدرش يحفظ السلة. غاتبقى متوفرة فهاد الزيارة."
+  },
+  "Breadcrumb": {
+    "fr": "Fil d’Ariane",
+    "ar": "مسار التصفح",
+    "ma": "مسار التصفح"
+  },
+  "Product not found": {
+    "fr": "Produit introuvable",
+    "ar": "المنتج غير موجود",
+    "ma": "المنتوج ما تلقاش"
+  },
+  "File formats": {
+    "fr": "Formats des fichiers",
+    "ar": "صيغ الملفات",
+    "ma": "صيغ الملفات"
+  },
+  "License": {
+    "fr": "Licence",
+    "ar": "الترخيص",
+    "ma": "الرخصة"
+  },
+  "Confirmed with your order": {
+    "fr": "Confirmée avec votre commande",
+    "ar": "يُؤكد مع طلبك",
+    "ma": "كنأكدوه مع الطلب ديالك"
+  },
+  "Availability": {
+    "fr": "Disponibilité",
+    "ar": "التوفر",
+    "ma": "التوفر"
+  },
+  "No online payment. We confirm availability, payment arrangements and delivery with you on WhatsApp.": {
+    "fr": "Aucun paiement en ligne. Nous confirmons avec vous la disponibilité, le paiement et la livraison sur WhatsApp.",
+    "ar": "لا يوجد دفع إلكتروني. نؤكد معك التوفر وترتيبات الدفع والتسليم عبر واتساب.",
+    "ma": "ما كاينش الخلاص فالموقع. كنأكدو معاك التوفر وطريقة الخلاص والتسليم فواتساب."
+  },
+  "A CLOSER LOOK": {
+    "fr": "EN DÉTAIL",
+    "ar": "نظرة أقرب",
+    "ma": "نظرة أقرب"
+  },
+  "Made to move your work forward.": {
+    "fr": "Pour faire avancer vos projets.",
+    "ar": "لدفع عملك إلى الأمام.",
+    "ma": "باش تقدم فخدمتك."
+  },
+  "Inside the toolkit": {
+    "fr": "Dans la boîte à outils",
+    "ar": "محتويات الأدوات",
+    "ma": "شنو كاين فالأدوات"
+  },
+  "A few useful details.": {
+    "fr": "Quelques détails utiles.",
+    "ar": "تفاصيل مفيدة.",
+    "ma": "تفاصيل نافعة."
+  },
+  "Need a hand choosing?": {
+    "fr": "Besoin d’aide pour choisir ?",
+    "ar": "تحتاج مساعدة في الاختيار؟",
+    "ma": "بغيتي المساعدة فالاختيار؟"
+  },
+  "Visit support": {
+    "fr": "Contacter l’assistance",
+    "ar": "زيارة الدعم",
+    "ma": "شوف المساعدة"
+  },
+  "BETTER TOGETHER": {
+    "fr": "ENCORE MIEUX ENSEMBLE",
+    "ar": "أفضل معاً",
+    "ma": "حسن مجموعين"
+  },
+  "Keep exploring.": {
+    "fr": "Continuez à découvrir.",
+    "ar": "واصل الاستكشاف.",
+    "ma": "كمل الاكتشاف."
+  },
+  "Frequently asked questions": {
+    "fr": "Questions fréquentes",
+    "ar": "الأسئلة الشائعة",
+    "ma": "الأسئلة اللي كتعاود"
+  },
+  "Everything you need to know about the collection and this preview.": {
+    "fr": "Tout savoir sur la collection et cet aperçu.",
+    "ar": "كل ما تحتاج معرفته عن المجموعة وهذه النسخة.",
+    "ma": "كل ما خاصك تعرف على المجموعة وهاد النسخة."
+  },
+  "Still have something in mind?": {
+    "fr": "Une autre question ?",
+    "ar": "هل لديك سؤال آخر؟",
+    "ma": "باقي شي سؤال؟"
+  },
+  "Find contact information and help on our support page.": {
+    "fr": "Retrouvez nos coordonnées et de l’aide sur la page d’assistance.",
+    "ar": "تجد معلومات التواصل والمساعدة في صفحة الدعم.",
+    "ma": "لقى معلومات التواصل والمساعدة فصفحة الدعم."
+  },
+  "Support": {
+    "fr": "Assistance",
+    "ar": "الدعم",
+    "ma": "المساعدة"
+  },
+  "Here to help": {
+    "fr": "À votre écoute",
+    "ar": "هنا لمساعدتك",
+    "ma": "هنا باش نعاونوك"
+  },
+  "Let’s make things clearer.": {
+    "fr": "Faisons le point.",
+    "ar": "لنوضح الأمور.",
+    "ma": "نوضحو الأمور."
+  },
+  "Questions about a product or the store? Start here.": {
+    "fr": "Une question sur un produit ou la boutique ? Commencez ici.",
+    "ar": "لديك أسئلة عن منتج أو المتجر؟ ابدأ هنا.",
+    "ma": "عندك سؤال على منتوج ولا المتجر؟ بدا من هنا."
+  },
+  "A direct line.": {
+    "fr": "Un contact direct.",
+    "ar": "تواصل مباشر.",
+    "ma": "تواصل مباشر."
+  },
+  "For product questions, licensing details, or feedback about the experience.": {
+    "fr": "Pour vos questions sur les produits, les licences ou votre expérience.",
+    "ar": "لأسئلة المنتجات وتفاصيل الترخيص وملاحظاتك على التجربة.",
+    "ma": "للأسئلة على المنتوجات والرخص والملاحظات ديالك."
+  },
+  "A quick answer might be here.": {
+    "fr": "La réponse est peut-être ici.",
+    "ar": "قد تجد إجابة سريعة هنا.",
+    "ma": "يمكن تلقى الجواب هنا."
+  },
+  "Explore the most common questions about products and ordering.": {
+    "fr": "Consultez les questions fréquentes sur les produits et les commandes.",
+    "ar": "تصفح الأسئلة الشائعة حول المنتجات والطلب.",
+    "ma": "شوف الأسئلة اللي كتعاود على المنتوجات والطلب."
+  },
+  "Read the FAQ": {
+    "fr": "Lire la FAQ",
+    "ar": "اقرأ الأسئلة الشائعة",
+    "ma": "قرا الأسئلة المتداولة"
+  },
+  "Prepare a message": {
+    "fr": "Préparer un message",
+    "ar": "تحضير رسالة",
+    "ma": "وجد رسالة"
+  },
+  "Your name": {
+    "fr": "Votre nom",
+    "ar": "اسمك",
+    "ma": "السمية ديالك"
+  },
+  "Email address": {
+    "fr": "Adresse e-mail",
+    "ar": "البريد الإلكتروني",
+    "ma": "الإيميل"
+  },
+  "What’s on your mind?": {
+    "fr": "Quel est le sujet ?",
+    "ar": "ما موضوع سؤالك؟",
+    "ma": "شنو بغيتي تسول؟"
+  },
+  "Product question": {
+    "fr": "Question sur un produit",
+    "ar": "سؤال عن منتج",
+    "ma": "سؤال على منتوج"
+  },
+  "License question": {
+    "fr": "Question sur une licence",
+    "ar": "سؤال عن الترخيص",
+    "ma": "سؤال على الرخصة"
+  },
+  "Store feedback": {
+    "fr": "Avis sur la boutique",
+    "ar": "ملاحظات عن المتجر",
+    "ma": "ملاحظات على المتجر"
+  },
+  "Something else": {
+    "fr": "Autre sujet",
+    "ar": "موضوع آخر",
+    "ma": "شي حاجة أخرى"
+  },
+  "Your message": {
+    "fr": "Votre message",
+    "ar": "رسالتك",
+    "ma": "الرسالة ديالك"
+  },
+  "Tell us a little about what you need…": {
+    "fr": "Décrivez-nous votre besoin…",
+    "ar": "أخبرنا عما تحتاجه…",
+    "ma": "قول لينا شنو محتاج…"
+  },
+  "This prepares your message in WhatsApp. You review and send it there.": {
+    "fr": "Votre message sera préparé dans WhatsApp. Vous le vérifiez et l’envoyez là-bas.",
+    "ar": "سيتم تحضير رسالتك في واتساب لتراجعها وترسلها هناك.",
+    "ma": "الرسالة غاتوجد فواتساب. كتراجعها وكتصيفطها تما."
+  },
+  "WhatsApp was requested. No message has been sent by this website.": {
+    "fr": "L’ouverture de WhatsApp a été demandée. Aucun message n’a été envoyé par ce site.",
+    "ar": "تم طلب فتح واتساب. لم يرسل الموقع أي رسالة.",
+    "ma": "طلبنا فتح واتساب. الموقع ما صيفط حتى رسالة."
+  },
+  "Premium digital tools & AI services.": {
+    "fr": "Outils numériques et services IA premium.",
+    "ar": "أدوات رقمية وخدمات ذكاء اصطناعي مميزة.",
+    "ma": "أدوات رقمية وخدمات ذكاء اصطناعي مميزة."
+  },
+  "Premium digital tools and AI services. Explore the collection and order personally on WhatsApp.": {
+    "fr": "Des outils numériques et services IA premium. Explorez la collection et commandez avec nous sur WhatsApp.",
+    "ar": "أدوات رقمية وخدمات ذكاء اصطناعي مميزة. استكشف المجموعة واطلب مباشرة عبر واتساب.",
+    "ma": "أدوات رقمية وخدمات ذكاء اصطناعي مميزة. كتاشف المجموعة وطلب معانا فواتساب."
+  },
+  "YOUR NEXT DIGITAL ADVANTAGE.": {
+    "fr": "VOTRE PROCHAIN ATOUT NUMÉRIQUE.",
+    "ar": "ميزتك الرقمية القادمة.",
+    "ma": "الميزة الرقمية الجاية ديالك."
+  },
+  "Contact & support": {
+    "fr": "Contact et assistance",
+    "ar": "التواصل والدعم",
+    "ma": "التواصل والمساعدة"
+  },
+  ". Independent by design.": {
+    "fr": ". Indépendants par choix.",
+    "ar": ". مستقلون باختيارنا.",
+    "ma": ". مستقلين باختيارنا."
+  },
+  "Manual orders on WhatsApp · Prices in": {
+    "fr": "Commandes sur WhatsApp · Prix en",
+    "ar": "طلبات مباشرة عبر واتساب · الأسعار بعملة",
+    "ma": "طلبات مباشرة فواتساب · الأثمنة بـ"
+  },
+  "· No payments collected": {
+    "fr": "· Aucun paiement collecté",
+    "ar": "· لا يتم تحصيل دفعات",
+    "ma": "· ما كنجمعو حتى خلاص"
+  },
+  "Skip to content": {
+    "fr": "Aller au contenu",
+    "ar": "انتقل إلى المحتوى",
+    "ma": "دوز للمحتوى"
+  },
+  "Main navigation": {
+    "fr": "Navigation principale",
+    "ar": "التنقل الرئيسي",
+    "ma": "التنقل الرئيسي"
+  },
+  "AI STORE home": {
+    "fr": "Accueil AI STORE",
+    "ar": "الرئيسية AI STORE",
+    "ma": "الرئيسية AI STORE"
+  },
+  "Open navigation": {
+    "fr": "Ouvrir le menu",
+    "ar": "فتح القائمة",
+    "ma": "حل القائمة"
+  },
+  "Close navigation": {
+    "fr": "Fermer le menu",
+    "ar": "إغلاق القائمة",
+    "ma": "سد القائمة"
+  },
+  "Switch to dark mode": {
+    "fr": "Passer au thème sombre",
+    "ar": "تفعيل الوضع الداكن",
+    "ma": "بدل للوضع الغامق"
+  },
+  "Switch to light mode": {
+    "fr": "Passer au thème clair",
+    "ar": "تفعيل الوضع الفاتح",
+    "ma": "بدل للوضع الفاتح"
+  },
+  "AI STORE administration": {
+    "fr": "Administration AI STORE",
+    "ar": "إدارة AI STORE",
+    "ma": "إدارة AI STORE"
+  },
+  "WORKSPACE": {
+    "fr": "ESPACE DE TRAVAIL",
+    "ar": "مساحة العمل",
+    "ma": "فضاء الخدمة"
+  },
+  "View store": {
+    "fr": "Voir la boutique",
+    "ar": "عرض المتجر",
+    "ma": "شوف المتجر"
+  },
+  "Open administration": {
+    "fr": "Ouvrir l’administration",
+    "ar": "فتح الإدارة",
+    "ma": "حل الإدارة"
+  },
+  "Loading the collection…": {
+    "fr": "Chargement de la collection…",
+    "ar": "جارٍ تحميل المجموعة…",
+    "ma": "كنحمّلو المجموعة…"
+  },
+  "Loading product details…": {
+    "fr": "Chargement du produit…",
+    "ar": "جارٍ تحميل تفاصيل المنتج…",
+    "ma": "كنحمّلو تفاصيل المنتوج…"
+  },
+  "Loading your next possibility…": {
+    "fr": "Chargement de vos prochaines possibilités…",
+    "ar": "جارٍ تحميل إمكانياتك القادمة…",
+    "ma": "كنحمّلو الإمكانيات الجاية…"
+  },
+  "Loading your account…": {
+    "fr": "Chargement de votre compte…",
+    "ar": "جارٍ تحميل حسابك…",
+    "ma": "كنحمّلو الحساب ديالك…"
+  },
+  "Loading sign-in…": {
+    "fr": "Chargement de la connexion…",
+    "ar": "جارٍ تحميل تسجيل الدخول…",
+    "ma": "كنحمّلو تسجيل الدخول…"
+  },
+  "Loading registration…": {
+    "fr": "Chargement de l’inscription…",
+    "ar": "جارٍ تحميل التسجيل…",
+    "ma": "كنحمّلو التسجيل…"
+  },
+  "A SMALL INTERRUPTION": {
+    "fr": "UNE PETITE INTERRUPTION",
+    "ar": "انقطاع بسيط",
+    "ma": "توقف بسيط"
+  },
+  "Something didn’t load.": {
+    "fr": "Un élément n’a pas pu être chargé.",
+    "ar": "تعذر تحميل بعض المحتوى.",
+    "ma": "شي حاجة ما تحملاتش."
+  },
+  "Please try again to continue exploring the collection.": {
+    "fr": "Réessayez pour continuer à explorer la collection.",
+    "ar": "حاول مجدداً لمتابعة استكشاف المجموعة.",
+    "ma": "عاود جرب باش تكمل اكتشاف المجموعة."
+  },
+  "Try again": {
+    "fr": "Réessayer",
+    "ar": "حاول مجدداً",
+    "ma": "عاود جرب"
+  },
+  "404 / A SMALL DETOUR": {
+    "fr": "404 / UN PETIT DÉTOUR",
+    "ar": "404 / مسار غير موجود",
+    "ma": "404 / هاد الطريق ما كايناش"
+  },
+  "This page is out of the collection.": {
+    "fr": "Cette page est introuvable.",
+    "ar": "هذه الصفحة غير موجودة.",
+    "ma": "هاد الصفحة ما كايناش."
+  },
+  "The link may have changed, or this product isn’t available.": {
+    "fr": "Le lien a peut-être changé ou ce produit n’est pas disponible.",
+    "ar": "ربما تغير الرابط أو أن المنتج غير متاح.",
+    "ma": "يمكن الرابط تبدل ولا المنتوج ما متوفرش."
+  },
+  "Back to the collection": {
+    "fr": "Retour à la collection",
+    "ar": "العودة إلى المجموعة",
+    "ma": "رجع للمجموعة"
+  },
+  "WELCOME BACK": {
+    "fr": "BON RETOUR",
+    "ar": "مرحباً بعودتك",
+    "ma": "مرحبا برجوعك"
+  },
+  "Your next chapter awaits.": {
+    "fr": "Votre prochain chapitre vous attend.",
+    "ar": "فصلك القادم ينتظرك.",
+    "ma": "المرحلة الجاية كتسناك."
+  },
+  "Sign in": {
+    "fr": "Se connecter",
+    "ar": "تسجيل الدخول",
+    "ma": "دخل للحساب"
+  },
+  "Sign in to manage your account and unpaid checkout drafts.": {
+    "fr": "Connectez-vous pour gérer votre compte et vos brouillons de commande non payés.",
+    "ar": "سجّل الدخول لإدارة حسابك ومسودات طلباتك غير المدفوعة.",
+    "ma": "دخل باش تسير الحساب ديالك ومسودات الطلبات اللي ما تخلصوش."
+  },
+  "Create account": {
+    "fr": "Créer un compte",
+    "ar": "إنشاء حساب",
+    "ma": "صايب حساب"
+  },
+  "Create an account": {
+    "fr": "Créer un compte",
+    "ar": "أنشئ حساباً",
+    "ma": "صايب حساب"
+  },
+  "MAKE ROOM FOR WHAT’S NEXT": {
+    "fr": "FAITES PLACE À LA SUITE",
+    "ar": "استعد لما هو قادم",
+    "ma": "وجد للي جاي"
+  },
+  "A space for your toolkit.": {
+    "fr": "Un espace pour vos outils.",
+    "ar": "مساحة لأدواتك.",
+    "ma": "بلاصة للأدوات ديالك."
+  },
+  "Create your customer account. Payments and downloads are not available yet.": {
+    "fr": "Créez votre compte client. Les paiements et téléchargements ne sont pas encore disponibles.",
+    "ar": "أنشئ حساب العميل الخاص بك. الدفع والتنزيل غير متاحين بعد.",
+    "ma": "صايب الحساب ديالك. الخلاص والتحميل ما متوفرينش دابا."
+  },
+  "Password": {
+    "fr": "Mot de passe",
+    "ar": "كلمة المرور",
+    "ma": "كلمة السر"
+  },
+  "Use a unique passphrase of 15–128 characters.": {
+    "fr": "Utilisez une phrase secrète unique de 15 à 128 caractères.",
+    "ar": "استخدم كلمة مرور فريدة من 15 إلى 128 حرفاً.",
+    "ma": "استعمل كلمة سر خاصة من 15 حتى 128 حرف."
+  },
+  "Please wait…": {
+    "fr": "Veuillez patienter…",
+    "ar": "يرجى الانتظار…",
+    "ma": "تسنى شوية…"
+  },
+  "Already have an account?": {
+    "fr": "Vous avez déjà un compte ?",
+    "ar": "لديك حساب بالفعل؟",
+    "ma": "عندك حساب من قبل؟"
+  },
+  "New here?": {
+    "fr": "Nouveau ici ?",
+    "ar": "جديد هنا؟",
+    "ma": "جديد هنا؟"
+  },
+  "Enter a valid email and password.": {
+    "fr": "Saisissez un e-mail et un mot de passe valides.",
+    "ar": "أدخل بريداً إلكترونياً وكلمة مرور صالحين.",
+    "ma": "دخل إيميل وكلمة سر صحيحين."
+  },
+  "Too many attempts. Please try again in 15 minutes.": {
+    "fr": "Trop de tentatives. Réessayez dans 15 minutes.",
+    "ar": "محاولات كثيرة. حاول مجدداً بعد 15 دقيقة.",
+    "ma": "محاولات بزاف. عاود جرب من بعد 15 دقيقة."
+  },
+  "Email or password is incorrect.": {
+    "fr": "L’e-mail ou le mot de passe est incorrect.",
+    "ar": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "ma": "الإيميل ولا كلمة السر ما صحيحاش."
+  },
+  "Sign-in is unavailable right now. Please try again later.": {
+    "fr": "Connexion indisponible pour le moment. Réessayez plus tard.",
+    "ar": "تسجيل الدخول غير متاح حالياً. حاول لاحقاً.",
+    "ma": "الدخول ما متوفرش دابا. عاود جرب من بعد."
+  },
+  "Unable to create this account. Try signing in if you already registered, or try again later.": {
+    "fr": "Impossible de créer ce compte. Connectez-vous si vous êtes déjà inscrit, ou réessayez plus tard.",
+    "ar": "تعذر إنشاء الحساب. سجّل الدخول إن كان لديك حساب، أو حاول لاحقاً.",
+    "ma": "ما قدرناش نصايبو الحساب. دخل إلا كنت مسجل ولا عاود جرب من بعد."
+  },
+  "Use at least 15 characters.": {
+    "fr": "Utilisez au moins 15 caractères.",
+    "ar": "استخدم 15 حرفاً على الأقل.",
+    "ma": "استعمل على الأقل 15 حرف."
+  },
+  "Use at most 128 characters.": {
+    "fr": "Utilisez au maximum 128 caractères.",
+    "ar": "استخدم 128 حرفاً كحد أقصى.",
+    "ma": "استعمل حتى 128 حرف كثر ما يمكن."
+  },
+  "Please check your details and try again.": {
+    "fr": "Vérifiez vos informations et réessayez.",
+    "ar": "راجع معلوماتك وحاول مجدداً.",
+    "ma": "راجع المعلومات ديالك وعاود جرب."
+  },
+  "Welcome, {name}.": {
+    "fr": "Bienvenue, {name}.",
+    "ar": "مرحباً، {name}.",
+    "ma": "مرحبا، {name}."
+  },
+  "Your profile and your latest 50 unpaid checkout drafts.": {
+    "fr": "Votre profil et vos 50 derniers brouillons de commande non payés.",
+    "ar": "ملفك الشخصي وآخر 50 مسودة طلب غير مدفوعة.",
+    "ma": "الملف ديالك وآخر 50 مسودة طلب ما تخلصاتش."
+  },
+  "Sign out": {
+    "fr": "Se déconnecter",
+    "ar": "تسجيل الخروج",
+    "ma": "خرج من الحساب"
+  },
+  "Your checkout drafts": {
+    "fr": "Vos brouillons de commande",
+    "ar": "مسودات طلباتك",
+    "ma": "مسودات الطلبات ديالك"
+  },
+  "Draft": {
+    "fr": "Brouillon",
+    "ar": "مسودة",
+    "ma": "مسودة"
+  },
+  "Unpaid ·": {
+    "fr": "Non payé ·",
+    "ar": "غير مدفوع ·",
+    "ma": "ما تخلصش ·"
+  },
+  "· No payment collected. This draft does not grant access to downloads.": {
+    "fr": "· Aucun paiement collecté. Ce brouillon ne donne pas accès aux téléchargements.",
+    "ar": "· لم يتم تحصيل دفعة. هذه المسودة لا تتيح التنزيل.",
+    "ma": "· ما تجمع حتى خلاص. هاد المسودة ما كتعطيش الحق فالتحميل."
+  },
+  "Nothing here just yet.": {
+    "fr": "Rien pour le moment.",
+    "ar": "لا يوجد شيء بعد.",
+    "ma": "ما كاين والو دابا."
+  },
+  "Your saved checkout drafts will appear here.": {
+    "fr": "Vos brouillons de commande apparaîtront ici.",
+    "ar": "ستظهر مسودات طلباتك المحفوظة هنا.",
+    "ma": "مسودات الطلبات المحفوظة غيبانو هنا."
+  },
+  "AI & Automation": {
+    "fr": "IA et automatisation",
+    "ar": "الذكاء الاصطناعي والأتمتة",
+    "ma": "الذكاء الاصطناعي والأتمتة"
+  },
+  "Development": {
+    "fr": "Développement",
+    "ar": "التطوير",
+    "ma": "التطوير"
+  },
+  "Design": {
+    "fr": "Design",
+    "ar": "التصميم",
+    "ma": "التصميم"
+  },
+  "Productivity": {
+    "fr": "Productivité",
+    "ar": "الإنتاجية",
+    "ma": "الإنتاجية"
+  },
+  "Best Seller": {
+    "fr": "Meilleure vente",
+    "ar": "الأكثر مبيعاً",
+    "ma": "الأكثر مبيعا"
+  },
+  "New": {
+    "fr": "Nouveau",
+    "ar": "جديد",
+    "ma": "جديد"
+  },
+  "Promo": {
+    "fr": "Promotion",
+    "ar": "تخفيض",
+    "ma": "تخفيض"
+  },
+  "Popular": {
+    "fr": "Populaire",
+    "ar": "رائج",
+    "ma": "رائج"
+  },
+  "DRAFT": {
+    "fr": "BROUILLON",
+    "ar": "مسودة",
+    "ma": "مسودة"
+  },
+  "CUSTOMER": {
+    "fr": "CLIENT",
+    "ar": "عميل",
+    "ma": "زبون"
+  },
+  "ADMIN": {
+    "fr": "ADMINISTRATEUR",
+    "ar": "مسؤول",
+    "ma": "مسؤول"
+  },
+  "WhatsApp": {
+    "fr": "WhatsApp",
+    "ar": "واتساب",
+    "ma": "واتساب"
+  },
+  "How do I place an order?": {
+    "fr": "Comment passer commande ?",
+    "ar": "كيف أقدم طلباً؟",
+    "ma": "كيفاش ندير طلب؟"
+  },
+  "Choose a product and select Commander sur WhatsApp. Your message includes its name and price in MAD. We confirm availability, payment arrangements and delivery personally. No payment is taken on this website.": {
+    "fr": "Choisissez un produit et cliquez sur Commander sur WhatsApp. Le message contient son nom et son prix en MAD. Nous confirmons la disponibilité, le paiement et la livraison avec vous. Aucun paiement sur ce site.",
+    "ar": "اختر منتجاً واضغط على الطلب عبر واتساب. تتضمن الرسالة اسمه وسعره بعملة MAD. نؤكد معك التوفر وترتيبات الدفع والتسليم. لا يتم الدفع عبر الموقع.",
+    "ma": "اختار منتوج وضغط على طلب عبر واتساب. الرسالة فيها السمية والثمن بـ MAD. كنأكدو معاك التوفر وطريقة الخلاص والتسليم. ما كاينش الخلاص فالموقع."
+  },
+  "What will I receive with a product?": {
+    "fr": "Que comprend un produit ?",
+    "ar": "ماذا سأحصل عليه مع المنتج؟",
+    "ma": "شنو غادي ناخد مع المنتوج؟"
+  },
+  "Review the description and listed formats, then confirm the exact contents with us on WhatsApp before purchasing. Initial catalog products are demonstration listings until replaced by the store owner.": {
+    "fr": "Consultez la description et les formats, puis confirmez le contenu exact avec nous sur WhatsApp avant l’achat. Les produits initiaux sont des démonstrations jusqu’à leur remplacement par le propriétaire.",
+    "ar": "راجع الوصف والصيغ، ثم أكّد المحتوى معنا عبر واتساب قبل الشراء. منتجات الكتالوج الأولية أمثلة توضيحية حتى يستبدلها صاحب المتجر.",
+    "ma": "قرا الوصف والصيغ وأكد معانا المحتوى فواتساب قبل ما تشري. المنتوجات الأولى فالكتالوج غير أمثلة حتى يبدلهم مول المتجر."
+  },
+  "Are there recurring fees?": {
+    "fr": "Y a-t-il des frais récurrents ?",
+    "ar": "هل توجد رسوم متكررة؟",
+    "ma": "واش كاين شي خلاص كيتعاود؟"
+  },
+  "Prices are displayed in Moroccan dirhams (MAD). Confirm any third-party subscription requirements and purchase terms with us before ordering.": {
+    "fr": "Les prix sont en dirhams marocains (MAD). Confirmez avec nous les éventuels abonnements tiers et les conditions d’achat avant de commander.",
+    "ar": "الأسعار معروضة بالدرهم المغربي (MAD). أكّد معنا أي اشتراكات خارجية وشروط الشراء قبل الطلب.",
+    "ma": "الأثمنة بالدرهم المغربي (MAD). أكد معانا واش كاين شي اشتراك خارجي وشروط الشراء قبل ما تطلب."
+  },
+  "Can I use these resources commercially?": {
+    "fr": "Puis-je utiliser ces ressources commercialement ?",
+    "ar": "هل يمكن استخدام هذه الموارد تجارياً؟",
+    "ma": "واش نقدر نستعمل هاد الموارد فالتجارة؟"
+  },
+  "Licensing depends on the product. Contact us on WhatsApp to confirm the permitted uses before purchasing.": {
+    "fr": "La licence dépend du produit. Contactez-nous sur WhatsApp pour confirmer les usages autorisés avant l’achat.",
+    "ar": "الترخيص يختلف حسب المنتج. تواصل معنا عبر واتساب لتأكيد الاستخدامات المسموح بها قبل الشراء.",
+    "ma": "الرخصة كتختلف حسب المنتوج. تواصل معانا فواتساب باش تأكد الاستعمالات المسموحة قبل ما تشري."
+  },
+  "How do support and refunds work?": {
+    "fr": "Comment fonctionnent l’assistance et les remboursements ?",
+    "ar": "كيف يعمل الدعم واسترداد المبلغ؟",
+    "ma": "كيفاش كيدوز الدعم وترجيع الفلوس؟"
+  },
+  "Contact us on WhatsApp for product questions and support. We confirm delivery and refund terms before you complete a manual purchase.": {
+    "fr": "Contactez-nous sur WhatsApp pour toute question ou assistance. Nous confirmons les conditions de livraison et de remboursement avant votre achat manuel.",
+    "ar": "تواصل معنا عبر واتساب للأسئلة والدعم. نؤكد شروط التسليم والاسترداد قبل إتمام الشراء اليدوي.",
+    "ma": "تواصل معانا فواتساب للأسئلة والمساعدة. كنأكدو شروط التسليم وترجيع الفلوس قبل ما تكمل الشراء معانا."
+  },
+  "Is this store affiliated with other software brands?": {
+    "fr": "Cette boutique est-elle affiliée à d’autres marques ?",
+    "ar": "هل المتجر تابع لعلامات برمجيات أخرى؟",
+    "ma": "واش المتجر تابع لشي ماركة أخرى؟"
+  },
+  "No. We are independent. References to file formats, frameworks or compatible tools do not imply endorsement or affiliation.": {
+    "fr": "Non. Nous sommes indépendants. Les références à des formats, frameworks ou outils compatibles n’impliquent aucun partenariat ni affiliation.",
+    "ar": "لا. نحن مستقلون. الإشارة إلى صيغ ملفات أو أطر عمل أو أدوات متوافقة لا تعني التأييد أو التبعية.",
+    "ma": "لا. حنا مستقلين. ذكر صيغ الملفات ولا الأدوات المتوافقة ما كيعنيش شي شراكة ولا تبعية."
+  },
+  "DIGITAL. INTELLIGENT.": {
+    "fr": "NUMÉRIQUE. INTELLIGENT.",
+    "ar": "رقمي. ذكي.",
+    "ma": "رقمي. ذكي."
+  }
+}

@@ -1,4 +1,5 @@
-export type Product = {
+import type { ProductTranslations } from "@/i18n/config";
+export type Product = ProductTranslations & {
   oldPrice?: number;
   imageUrl?: string;
   id: string; slug: string; name: string; category: string; description: string;

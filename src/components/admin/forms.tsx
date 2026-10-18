@@ -4,7 +4,9 @@ import { useActionState, useEffect, useState } from "react";
 import { saveProduct, saveCategory, deleteRecord, toggleProduct } from "@/actions/admin";
 import type { ActionState } from "@/lib/validation";
 
-export type ProductFormValue = {
+import type { ProductTranslations } from "@/i18n/config";
+import { locales, localeLabels, htmlLanguage, direction } from "@/i18n/config";
+export type ProductFormValue = ProductTranslations & {
   oldPrice?: string; imageUrl?: string;
   id: string; name: string; slug: string; categoryId: string; description: string;
   fullDescription: string; price: string; badge: string; featured: boolean; active: boolean;
@@ -25,6 +27,7 @@ export function ProductForm({ product, categories }: { product?: ProductFormValu
     <div className="form-row"><label>Product name<input name="name" defaultValue={product?.name} required minLength={2} maxLength={120}/></label><label>URL slug<input name="slug" defaultValue={product?.slug} placeholder="Generated from name" pattern="[a-z0-9]+(-[a-z0-9]+)*" maxLength={100}/></label></div>
     <div className="form-row"><label>Category<select name="categoryId" defaultValue={product?.categoryId || categories[0]?.id} required>{categories.map(category => <option key={category.id} value={category.id}>{category.name}</option>)}</select></label><label>Price in MAD<input name="price" inputMode="decimal" defaultValue={product?.price} required placeholder="490.00" pattern="(0|[1-9][0-9]{0,5})(\.[0-9]{1,2})?"/></label></div>
     <label>Short description<textarea name="description" defaultValue={product?.description} required minLength={10} maxLength={500} rows={3}/></label>
+    <section className="product-translations"><div className="editor-section-heading"><h2>Product translations</h2><p>Optional. Missing translations use English, then the original product fields above.</p></div>{locales.map(locale => { const suffix = {en:"En",fr:"Fr",ar:"Ar",ma:"Ma"}[locale] as "En" | "Fr" | "Ar" | "Ma"; return <fieldset key={locale} className="translation-group"><legend>{localeLabels[locale]}</legend><label>Product name<input lang={htmlLanguage(locale)} dir={direction(locale)} name={`name${suffix}`} defaultValue={product?.[`name${suffix}`] || ""} maxLength={120}/></label><label>Short description<textarea lang={htmlLanguage(locale)} dir={direction(locale)} name={`description${suffix}`} defaultValue={product?.[`description${suffix}`] || ""} maxLength={500} rows={3}/></label></fieldset>; })}</section>
     <div className="form-row"><label>Old price in MAD (optional)<input name="oldPrice" inputMode="decimal" defaultValue={product?.oldPrice} placeholder="Before discount" pattern="(0|[1-9][0-9]{0,5})(\.[0-9]{1,2})?"/></label><label>Badge (optional)<input name="badge" defaultValue={product?.badge} list="product-badges" maxLength={40}/><datalist id="product-badges"><option value="Best Seller"/><option value="Promo"/><option value="New"/></datalist></label></div>
     <div className="checkbox-row"><label><input type="checkbox" name="active" defaultChecked={product?.active ?? true}/> Active — visible in the storefront</label></div>
     <details className="product-options" open><summary>03 / Full description, features & presentation</summary><p className="editor-help">These details appear on the product page. You can edit every field below.</p>

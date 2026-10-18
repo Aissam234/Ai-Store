@@ -16,7 +16,7 @@ const paths = {
 };
 export type IconName = keyof typeof paths;
 export function Icon({ name, className = "", style }: { name: IconName; className?: string; style?: CSSProperties }) {
- return <svg className={`ui-icon ${className}`} style={style} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d={paths[name]}/></svg>;
+ return <svg data-icon={name} className={`ui-icon ${className}`} style={style} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d={paths[name]}/></svg>;
 }
 export function SymbolIcon({ symbol }: { symbol: string }) {
  const map: Record<string, IconName> = { "✳":"chip", "⌘":"gamepad", "◈":"layers", "↗":"arrow", "✦":"spark", "◇":"diamond", "▦":"grid", "{}":"code", "{ }":"code", "✓":"shield" };

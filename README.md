@@ -60,3 +60,11 @@ npm run build
 `npm test` covers password hashing, validation/role injection, exact price conversion, duplicate/unavailable items, order totals, snapshot isolation, and seed compatibility. These tests do not claim to exercise a live database.
 
 After configuring PostgreSQL, verify migrations and seeding, customer registration/sign-in/sign-out, customer denial of every admin route/action, admin CRUD, saved carts, and a checkout draft whose total matches the database after changing a product price. Confirm the draft is visible only in its owner's account and to administrators.
+
+## Languages
+
+The storefront supports English (`en`), French (`fr`), Arabic (`ar`), and Moroccan Darija (`ma`). The navbar stores the selection in the `ai-store-locale` cookie; English is the fallback. Arabic and Darija use RTL. Darija uses the BCP 47 HTML language tag `ary` while retaining `ma` as the application locale key.
+
+Before running this version against an existing database, run `npm run db:migrate`. Migration `20261018000100_product_translations` adds eight nullable product fields without replacing existing content. In Admin → Products → Add/Edit, use the grouped translation sections to set localized names and short descriptions. Missing text falls back to English, then the existing product value. Other product content remains owner-managed.
+
+Shared UI translations live in `src/i18n/messages.json`; locale resolution and product fallback logic live in `src/i18n/config.ts`. Routes stay unchanged. The cached HTML shell applies language/direction before paint, while server-rendered content and metadata use the locale cookie. WhatsApp messages use the selected language and retain MAD prices and the configured recipient.

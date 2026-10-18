@@ -13,6 +13,14 @@ export const categorySchema = z.object({
 export const priceSchema = z.string().regex(/^(0|[1-9]\d{0,5})(\.\d{1,2})?$/, "Enter a price from 0 to 999999.99 MAD, with at most two decimals.")
   .transform(value => { const [whole, fraction = ""] = value.split("."); return Number(whole) * 100 + Number(fraction.padEnd(2, "0")); });
 export const productSchema = z.object({
+  nameEn: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
+  nameFr: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
+  nameAr: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
+  nameMa: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
+  descriptionEn: z.string().trim().max(500).optional().transform(value => value === undefined ? undefined : value || null),
+  descriptionFr: z.string().trim().max(500).optional().transform(value => value === undefined ? undefined : value || null),
+  descriptionAr: z.string().trim().max(500).optional().transform(value => value === undefined ? undefined : value || null),
+  descriptionMa: z.string().trim().max(500).optional().transform(value => value === undefined ? undefined : value || null),
   name: z.string().trim().min(2).max(120), slug: slugSchema,
   categoryId: idSchema, description: z.string().trim().min(10).max(500),
   fullDescription: z.string().trim().min(10).max(10000), price: priceSchema,

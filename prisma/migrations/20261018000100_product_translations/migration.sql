@@ -1,0 +1,9 @@
+ALTER TABLE "Product"
+  ADD COLUMN "nameEn" VARCHAR(120),
+  ADD COLUMN "nameFr" VARCHAR(120),
+  ADD COLUMN "nameAr" VARCHAR(120),
+  ADD COLUMN "nameMa" VARCHAR(120),
+  ADD COLUMN "descriptionEn" VARCHAR(500),
+  ADD COLUMN "descriptionFr" VARCHAR(500),
+  ADD COLUMN "descriptionAr" VARCHAR(500),
+  ADD COLUMN "descriptionMa" VARCHAR(500);

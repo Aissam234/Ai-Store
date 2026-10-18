@@ -60,6 +60,14 @@ model Category {
 }
 
 model Product {
+  nameEn String? @db.VarChar(120)
+  nameFr String? @db.VarChar(120)
+  nameAr String? @db.VarChar(120)
+  nameMa String? @db.VarChar(120)
+  descriptionEn String? @db.VarChar(500)
+  descriptionFr String? @db.VarChar(500)
+  descriptionAr String? @db.VarChar(500)
+  descriptionMa String? @db.VarChar(500)
   id              String      @id @default(cuid())
   slug            String      @unique @db.VarChar(120)
   name            String      @db.VarChar(120)

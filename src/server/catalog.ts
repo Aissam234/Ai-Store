@@ -8,6 +8,7 @@ import { getDb } from "./db";
 type Row = Prisma.ProductGetPayload<{ include: { category: true }; omit: { imageData: true } }>;
 function toProduct(row: Row): Product {
   return {
+    nameEn: row.nameEn, nameFr: row.nameFr, nameAr: row.nameAr, nameMa: row.nameMa, descriptionEn: row.descriptionEn, descriptionFr: row.descriptionFr, descriptionAr: row.descriptionAr, descriptionMa: row.descriptionMa,
     id: row.id, slug: row.slug, name: row.name, category: row.category.name,
     description: row.description, fullDescription: row.fullDescription,
     price: row.priceMinor / 100, oldPrice: row.oldPriceMinor === null ? undefined : row.oldPriceMinor / 100, imageUrl: row.hasImage ? `/api/products/${row.id}/image?v=${row.updatedAt.getTime()}` : undefined, badge: row.badge, featured: row.featured,

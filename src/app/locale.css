@@ -1,0 +1,23 @@
+.language-switcher{display:flex;align-items:center;gap:2px;padding:4px;border:1px solid var(--line, #ffffff20);border-radius:14px;background:var(--surface, #ffffff08)}
+.language-switcher button{min-width:34px;min-height:40px;padding:6px 8px;color:inherit;background:transparent;border:0;border-radius:10px;font:inherit;font-size:12px;cursor:pointer;white-space:nowrap}
+.language-switcher button[aria-pressed="true"]{background:#c91638;color:white;box-shadow:0 2px 12px #c9163820}
+.language-switcher button:focus-visible{outline:2px solid #ed3151;outline-offset:2px}
+.mobile-language{display:none}.product-translations{display:grid;gap:20px}.translation-group{min-width:0;display:grid;gap:14px;padding:20px;border:1px solid var(--line,#ffffff20);border-radius:18px}.translation-group legend{padding:0 10px;font-weight:700}.translation-group input,.translation-group textarea{letter-spacing:normal}
+[dir="rtl"] .customer-ui{font-family:Arial,Tahoma,sans-serif;letter-spacing:normal}
+[dir="rtl"] .customer-ui :is(h1,h2,h3,.eyebrow,.pill,.badge){letter-spacing:normal}
+[dir="rtl"] .customer-ui :is(input,textarea){text-align:start}
+[dir="rtl"] .customer-ui :is(input[type="email"],input[type="url"],input[name="slug"],input[inputmode="decimal"]){direction:ltr;text-align:left}
+.product-price,.summary-total strong,.summary-line>span:last-child,.cart-item>strong,.detail-price strong{unicode-bidi:isolate;direction:ltr}
+[dir="rtl"] .customer-ui .floating-contact{right:auto;left:20px}
+[dir="rtl"] .customer-ui .feature-list{padding-inline-start:0}
+[dir="rtl"] .customer-ui .search-field input{padding-inline-start:44px;padding-inline-end:16px}
+[dir="rtl"] .customer-ui .search-field>span{left:auto;right:16px}
+[dir="rtl"] .customer-ui .count{unicode-bidi:isolate}
+[dir="rtl"] .customer-ui svg:is([data-icon="arrow"],[data-icon="left"],[data-icon="right"]){scale:-1 1}
+[dir="rtl"] .customer-ui .brand,[dir="rtl"] .customer-ui .brand-showcase{direction:ltr}
+@media(min-width:1101px){.customer-ui .nav{gap:14px}.customer-ui .nav-links{gap:16px}.customer-ui .nav-actions{gap:10px}.customer-ui .nav-whatsapp{padding-inline:14px}}
+@media(max-width:1100px){.desktop-language{display:none}.mobile-language{display:flex;justify-content:center;width:100%;margin-block:12px}.mobile-language button{flex:1;min-height:44px}.admin-header .desktop-language{display:flex;flex-wrap:wrap}.admin-header .nav{flex-wrap:wrap}.admin-header .nav-actions{flex-wrap:wrap}}
+@media(max-width:600px){[dir="rtl"] .customer-ui .hero h1{font-size:clamp(30px,8.4vw,42px);line-height:1.25}.customer-ui .language-switcher{max-width:100%}.translation-group{padding:14px}[dir="rtl"] .customer-ui .floating-contact{left:14px}}
+
+[dir="rtl"] .customer-ui :is(p,label,input,textarea,select){line-height:1.75}
+[dir="rtl"] .customer-ui .brand-caption{direction:rtl;letter-spacing:normal}
