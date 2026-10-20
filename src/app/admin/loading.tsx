@@ -1,1 +1,2 @@
-export default function AdminLoading() { return <p className="loading" role="status">Loading administration…</p>; }
+import { PanelSkeleton } from "@/components/skeleton";
+export default function Loading() { return <PanelSkeleton label="Loading your next possibility…"/>; }

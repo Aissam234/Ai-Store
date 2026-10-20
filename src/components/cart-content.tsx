@@ -1,4 +1,5 @@
 "use client";
+import { CartSkeleton } from "./skeleton";
 import { T, useLocale } from "@/components/locale-provider";
 
 import { localizeProduct } from "@/i18n/config";
@@ -22,7 +23,7 @@ export function CartContent({ catalog: sourceCatalog, checkout = false }: { cata
   const estimatedMinor = products.reduce((sum, product) => sum + Math.round(product.price * 100), 0);
   const total = estimatedMinor / 100;
 
-  if (!cart.ready) return <p className="loading" role="status"><T text="Loading your saved cart…"/></p>;
+  if (!cart.ready) return <CartSkeleton/>;
   if (!cart.ids.length) return <div className="empty-state"><span>▢</span><h2><T text="A little room for possibility."/></h2><p><T text="Your cart is empty. Discover a useful tool for your next project."/></p><Link href="/products" className="button primary"><T text="Explore the collection"/> <Icon name="arrow"/></Link></div>;
   return <>
     <p role="status" className="small">{t(cart.notice)}</p>

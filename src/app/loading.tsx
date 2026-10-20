@@ -1,2 +1,2 @@
-import { T } from "@/components/locale-provider";
-export default function Loading() { return <div className="container page-space" role="status"><div className="skeleton skeleton-heading"/><div className="product-grid">{[1,2,3,4].map(i => <div className="skeleton skeleton-card" key={i}/>)}</div><p className="small"><T text="Loading your next possibility…"/></p></div>; }
+import { PanelSkeleton } from "@/components/skeleton";
+export default function Loading() { return <div className="container page-space"><PanelSkeleton label="Loading your next possibility…"/></div>; }

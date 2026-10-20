@@ -1,0 +1,95 @@
+/* One material palette for both themes; motion never animates blur. */
+.customer-ui {
+  --material-tint: rgb(19 16 20 / 43%);
+  --material-menu: rgb(21 17 21 / 83%);
+  --material-edge: rgb(255 239 242 / 15%);
+  --material-highlight: rgb(255 255 255 / 11%);
+  --material-reflection: rgb(255 245 248 / 7%);
+  --material-shadow: 0 16px 36px -16px #0009, 0 3px 8px #0002;
+  --material-blur: 12px;
+  --material-light: rgb(245 38 72 / 9%);
+  --glass: var(--material-tint);
+  --glass-strong: var(--material-menu);
+}
+html[data-store-theme="light"] .customer-ui {
+  --material-tint: rgb(255 253 251 / 48%);
+  --material-menu: rgb(255 253 251 / 86%);
+  --material-edge: rgb(75 39 47 / 15%);
+  --material-highlight: rgb(255 255 255 / 86%);
+  --material-reflection: rgb(255 255 255 / 35%);
+  --material-shadow: 0 18px 34px -20px #54233438, 0 3px 8px #50253508;
+  --material-light: rgb(181 24 54 / 7%);
+}
+.customer-ui :is(.glass-surface,.product-card,.site-header,.search-field,.sort-field select,.filters button,.panel,.category-card,.process,.benefit-list>div,.hero-notes>span,.showcase-chip,.final-cta,.empty-state,.admin-nav,.table-scroll,.language-switcher,.floating-contact,.button.secondary,dialog,[role="dialog"]) {
+  background: linear-gradient(125deg,var(--material-reflection),transparent 38%,var(--material-light)),var(--material-tint);
+  border: 1px solid var(--material-edge);
+  box-shadow: inset 0 1px 0 var(--material-highlight),inset 0 -1px 0 #00000008,var(--material-shadow);
+  backdrop-filter: blur(var(--material-blur)) saturate(115%);
+  -webkit-backdrop-filter: blur(var(--material-blur)) saturate(115%);
+}
+.customer-ui .site-header { --material-blur: 18px; transition: background-color 350ms,border-color 350ms; }
+.customer-ui .site-header.is-scrolled,.customer-ui .nav-links.is-open {
+  background: linear-gradient(120deg,var(--material-reflection),transparent 55%),var(--material-menu);
+  border-color: var(--material-edge);
+  box-shadow: inset 0 1px var(--material-highlight),var(--material-shadow);
+  backdrop-filter: blur(18px) saturate(115%);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
+}
+.customer-ui .search-field input { background: transparent; }
+.customer-ui :is(input:not([type="checkbox"]),textarea,select) { background-color: var(--material-tint); }
+.customer-ui select option { background: var(--surface); color: var(--text-primary); }
+.customer-ui .filters button[aria-pressed="true"] { background: var(--red-deep); color: white; border-color: var(--red); }
+.customer-ui .ambient-environment { height: 100%; background: radial-gradient(ellipse 65% 650px at 94% 300px,var(--ambient),transparent 75%),radial-gradient(ellipse 70% 800px at 0 1100px,var(--ambient),transparent 80%),radial-gradient(ellipse 70% 700px at 95% 2300px,var(--ambient),transparent 80%); }
+.customer-ui .card-depth { --float-period: 7s; --float-phase: -1s; --float-distance: -6px; height: 100%; isolation: auto; }
+.customer-ui .card-depth:nth-child(4n+2) { --float-period: 8.3s; --float-phase: -3.4s; --float-distance: -7px; }
+.customer-ui .card-depth:nth-child(4n+3) { --float-period: 6.7s; --float-phase: -5.1s; --float-distance: -4px; }
+.customer-ui .card-depth:nth-child(4n+4) { --float-period: 8.9s; --float-phase: -6.6s; --float-distance: -6.5px; }
+.customer-ui .card-depth>.depth-float,.customer-ui .card-depth>.depth-float>.depth-object { height: 100%; transform-style: flat; }
+.customer-ui .card-depth .depth-edge { display: none; }
+.customer-ui .card-depth .product-card { height: 100%; position: relative; overflow: hidden; transform: none; transition: border-color 350ms,box-shadow 450ms; }
+.customer-ui .card-depth .product-card::before {
+  content: ''; position: absolute; inset: -25%; pointer-events: none; z-index: 1;
+  background: radial-gradient(ellipse at 30% 15%,var(--material-reflection),transparent 48%);
+  opacity: .65; transform: translate(var(--light-x,0%),var(--light-y,0%));
+  transition: transform 850ms cubic-bezier(.16,1,.3,1),opacity 450ms;
+}
+.customer-ui .card-depth .product-visual { transform: none; box-shadow: inset 0 1px var(--material-highlight); }
+.customer-ui .card-depth .card-body { position: relative; z-index: 2; }
+.customer-ui .card-depth .depth-object { transform: perspective(1200px) translateY(var(--card-lift,0px)) rotateX(var(--depth-x,0deg)) rotateY(var(--depth-y,0deg)); }
+.customer-ui .card-depth:focus-within { --card-lift: -4px; }
+.customer-ui .card-depth:focus-within .product-card { border-color: var(--red-soft); }
+@keyframes glass-suspend { 0%,100% { transform: translateY(0); } 50% { transform: translateY(var(--float-distance)); } }
+@media(prefers-reduced-motion:no-preference) {
+  .customer-ui .card-depth>.depth-float { animation-name: glass-suspend; animation-duration: var(--float-period); animation-delay: var(--float-phase); }
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .customer-ui .card-depth[data-tracking="true"] { --card-lift: -4px; }
+  .customer-ui .card-depth[data-tracking="true"] .product-card { border-color: color-mix(in srgb,var(--red) 42%,var(--material-edge)); box-shadow: inset 0 1px var(--material-highlight),0 23px 42px -23px #0008,0 5px 18px var(--material-light); }
+  .customer-ui .card-depth[data-tracking="true"] .product-card::before { opacity: 1; transition-duration: 260ms,350ms; }
+}
+@media(max-width:760px),(pointer:coarse) {
+  .customer-ui { --material-blur: 6px; }
+  .customer-ui .site-header { --material-blur: 10px; top: max(8px,env(safe-area-inset-top)); }
+  .customer-ui .card-depth { perspective: none; }
+  .customer-ui .card-depth:nth-child(n) { --float-distance: -4px; }
+  .customer-ui .card-depth .depth-object { transform: none; }
+  .customer-ui .card-depth .product-card:active { border-color: var(--red-soft); }
+  .customer-ui .nav-links.is-open { max-height: calc(100dvh - 100px - env(safe-area-inset-bottom)); overflow-y: auto; }
+  .customer-ui :is(.panel,.product-card) :is(input,textarea,select,.button.secondary,.language-switcher) { backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+@supports not (backdrop-filter:blur(1px)) {
+  .customer-ui :is(.glass-surface,.product-card,.site-header,.panel,.nav-links.is-open) { background: var(--surface); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .customer-ui .card-depth>.depth-float,.customer-ui .card-depth .depth-object,.customer-ui .card-depth .product-card::before { animation: none !important; transform: none !important; transition: none !important; }
+}
+
+/* Grid sizing belongs to the stage; legacy last-card rules must not size its child. */
+.customer-ui .product-grid .card-depth { min-width: 0; }
+.customer-ui .product-grid.three .card-depth .product-card { display: flex; flex-direction: column; grid-column: auto; }
+.customer-ui .product-grid.three .card-depth .visual-link { padding: 10px 10px 0; }
+.customer-ui .product-grid.three .card-depth .product-visual { height: 160px; min-height: 0; }
+@media(max-width:760px) {
+  .customer-ui .product-grid.three .card-depth .product-visual { height: 115px; }
+}
+

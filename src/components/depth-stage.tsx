@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, type PointerEvent, type ReactNode } from "react";
 
-export function DepthStage({ children }: { children: ReactNode }) {
+export function DepthStage({ children, card = false }: { children: ReactNode; card?: boolean }) {
   const stage = useRef<HTMLDivElement>(null);
   const frame = useRef<number>(0);
   const enabled = useRef(false);
@@ -46,7 +46,7 @@ export function DepthStage({ children }: { children: ReactNode }) {
   }, []);
 
   function move(event: PointerEvent<HTMLDivElement>) {
-    if (!enabled.current || event.pointerType === "touch") return;
+    if (!enabled.current || event.pointerType === "touch" || stage.current?.dataset.visible !== "true") return;
     const element = event.currentTarget;
     const bounds = element.getBoundingClientRect();
     const horizontal = Math.max(-1, Math.min(1, (event.clientX - bounds.left) / bounds.width * 2 - 1));
@@ -54,14 +54,15 @@ export function DepthStage({ children }: { children: ReactNode }) {
     cancelAnimationFrame(frame.current);
     frame.current = requestAnimationFrame(() => {
       element.dataset.tracking = "true";
-      element.style.setProperty("--depth-x", `${-vertical * 2.6}deg`);
-      element.style.setProperty("--depth-y", `${horizontal * 3.2}deg`);
+      element.style.setProperty("--depth-x", `${-vertical * (card ? 2.2 : 2.6)}deg`);
+      element.style.setProperty("--depth-y", `${horizontal * (card ? 2.8 : 3.2)}deg`);
       element.style.setProperty("--light-x", `${horizontal * 12}%`);
       element.style.setProperty("--light-y", `${vertical * 9}%`);
     });
   }
 
-  return <div ref={stage} className="depth-stage" onPointerMove={move} onPointerLeave={reset} onPointerCancel={reset}>
+  return <div ref={stage} className={card ? "depth-stage card-depth" : "depth-stage"} onPointerMove={move} onPointerLeave={reset} onPointerCancel={reset}>
     <div className="depth-float"><div className="depth-object"><span className="depth-edge" aria-hidden="true"/>{children}</div></div>
   </div>;
 }
+
