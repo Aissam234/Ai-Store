@@ -14,6 +14,7 @@ function toProduct(row: Row): Product {
     price: row.priceMinor / 100, oldPrice: row.oldPriceMinor === null ? undefined : row.oldPriceMinor / 100, imageUrl: row.hasImage ? `/api/products/${row.id}/image?v=${row.updatedAt.getTime()}` : undefined, badge: row.badge, featured: row.featured,
     released: row.releasedAt.toISOString().slice(0, 10), symbol: row.symbol,
     color: row.color, features: row.features, format: row.format,
+    availability: row.availability, durationMonths: row.durationMonths, apiCreditUsd: row.apiCreditUsd, activation: row.activation,
   };
 }
 export const getProducts = cache(async (): Promise<Product[]> => {

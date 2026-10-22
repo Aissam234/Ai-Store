@@ -16,6 +16,12 @@ enum OrderStatus {
   DRAFT
 }
 
+enum AvailabilityStatus {
+  AVAILABLE
+  LIMITED
+  ASK_AVAILABILITY
+}
+
 model User {
   id           String    @id @default(cuid())
   name         String    @db.VarChar(100)
@@ -76,10 +82,14 @@ model Product {
   oldPriceMinor   Int?
   imageData       Bytes?
   hasImage        Boolean     @default(false)
+  durationMonths  Int?
+  apiCreditUsd    Int?
+  activation      String? @db.VarChar(120)
   priceMinor      Int
   badge           String      @db.VarChar(40)
   featured        Boolean     @default(false)
   active          Boolean     @default(true)
+  availability    AvailabilityStatus @default(AVAILABLE)
   releasedAt      DateTime
   symbol          String      @db.VarChar(12)
   color           String      @db.VarChar(20)

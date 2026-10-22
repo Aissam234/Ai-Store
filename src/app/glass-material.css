@@ -93,3 +93,24 @@ html[data-store-theme="light"] .customer-ui {
   .customer-ui .product-grid.three .card-depth .product-visual { height: 115px; }
 }
 
+
+/* Fixed image environment: cover preserves proportions; portrait screens crop naturally. */
+.customer-ui .ambient-environment {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100lvh;
+  pointer-events: none;
+  opacity: 1;
+  background: #050506 url('/backgrounds/store-night.png') center center / cover no-repeat;
+}
+html[data-store-theme="light"] .customer-ui .ambient-environment {
+  background-color: #f4f1f0;
+  background-image: url('/backgrounds/store-light.png');
+}
+.customer-ui .ambient-environment::before,
+.customer-ui .ambient-environment::after {
+  content: none;
+  animation: none;
+}

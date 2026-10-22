@@ -1319,20 +1319,10 @@
     "ar": "كيف أقدم طلباً؟",
     "ma": "كيفاش ندير طلب؟"
   },
-  "Choose a product and select Commander sur WhatsApp. Your message includes its name and price in MAD. We confirm availability, payment arrangements and delivery personally. No payment is taken on this website.": {
-    "fr": "Choisissez un produit et cliquez sur Commander sur WhatsApp. Le message contient son nom et son prix en MAD. Nous confirmons la disponibilité, le paiement et la livraison avec vous. Aucun paiement sur ce site.",
-    "ar": "اختر منتجاً واضغط على الطلب عبر واتساب. تتضمن الرسالة اسمه وسعره بعملة MAD. نؤكد معك التوفر وترتيبات الدفع والتسليم. لا يتم الدفع عبر الموقع.",
-    "ma": "اختار منتوج وضغط على طلب عبر واتساب. الرسالة فيها السمية والثمن بـ MAD. كنأكدو معاك التوفر وطريقة الخلاص والتسليم. ما كاينش الخلاص فالموقع."
-  },
   "What will I receive with a product?": {
     "fr": "Que comprend un produit ?",
     "ar": "ماذا سأحصل عليه مع المنتج؟",
     "ma": "شنو غادي ناخد مع المنتوج؟"
-  },
-  "Review the description and listed formats, then confirm the exact contents with us on WhatsApp before purchasing. Initial catalog products are demonstration listings until replaced by the store owner.": {
-    "fr": "Consultez la description et les formats, puis confirmez le contenu exact avec nous sur WhatsApp avant l’achat. Les produits initiaux sont des démonstrations jusqu’à leur remplacement par le propriétaire.",
-    "ar": "راجع الوصف والصيغ، ثم أكّد المحتوى معنا عبر واتساب قبل الشراء. منتجات الكتالوج الأولية أمثلة توضيحية حتى يستبدلها صاحب المتجر.",
-    "ma": "قرا الوصف والصيغ وأكد معانا المحتوى فواتساب قبل ما تشري. المنتوجات الأولى فالكتالوج غير أمثلة حتى يبدلهم مول المتجر."
   },
   "Are there recurring fees?": {
     "fr": "Y a-t-il des frais récurrents ?",
@@ -1378,5 +1368,140 @@
     "fr": "NUMÉRIQUE. INTELLIGENT.",
     "ar": "رقمي. ذكي.",
     "ma": "رقمي. ذكي."
+  },
+  "Duration": {
+    "fr": "Durée",
+    "ar": "المدة",
+    "ma": "المدة"
+  },
+  "Package": {
+    "fr": "Pack",
+    "ar": "الباقة",
+    "ma": "الباقة"
+  },
+  "Activation": {
+    "fr": "Activation",
+    "ar": "التفعيل",
+    "ma": "التفعيل"
+  },
+  "1 month": {
+    "fr": "1 mois",
+    "ar": "شهر واحد",
+    "ma": "شهر واحد"
+  },
+  "1 year": {
+    "fr": "1 an",
+    "ar": "سنة واحدة",
+    "ma": "عام واحد"
+  },
+  "{count} years": {
+    "fr": "{count} ans",
+    "ar": "{count} سنوات",
+    "ma": "{count} سنين"
+  },
+  "{count} months": {
+    "fr": "{count} mois",
+    "ar": "{count} أشهر",
+    "ma": "{count} شهور"
+  },
+  "Via invitation": {
+    "fr": "Par invitation",
+    "ar": "عن طريق دعوة",
+    "ma": "عن طريق دعوة"
+  },
+  "Available now": {
+    "fr": "Disponible",
+    "ar": "متوفر الآن",
+    "ma": "متوفر دابا"
+  },
+  "Limited availability": {
+    "fr": "Disponibilité limitée",
+    "ar": "توفر محدود",
+    "ma": "التوفر محدود"
+  },
+  "Confirm availability": {
+    "fr": "Confirmer la disponibilité",
+    "ar": "تأكيد التوفر",
+    "ma": "أكد التوفر"
+  },
+  "Developer": {
+    "fr": "Développeur",
+    "ar": "للمطورين",
+    "ma": "للمطورين"
+  },
+  "Best Value": {
+    "fr": "Meilleur rapport qualité-prix",
+    "ar": "أفضل قيمة",
+    "ma": "أفضل قيمة"
+  },
+  "Creator": {
+    "fr": "Créateur",
+    "ar": "للمبدعين",
+    "ma": "لصناع المحتوى"
+  },
+  "1 Year": {
+    "fr": "1 an",
+    "ar": "سنة واحدة",
+    "ma": "عام واحد"
+  },
+  "3 Years": {
+    "fr": "3 ans",
+    "ar": "3 سنوات",
+    "ma": "3 سنين"
+  },
+  "Entertainment": {
+    "fr": "Divertissement",
+    "ar": "الترفيه",
+    "ma": "الترفيه"
+  },
+  "Music": {
+    "fr": "Musique",
+    "ar": "الموسيقى",
+    "ma": "الموسيقى"
+  },
+  "Education": {
+    "fr": "Éducation",
+    "ar": "التعليم",
+    "ma": "التعليم"
+  },
+  "Offer details": {
+    "fr": "Détails de l’offre",
+    "ar": "تفاصيل العرض",
+    "ma": "تفاصيل العرض"
+  },
+  "Digital service": {
+    "fr": "Service numérique",
+    "ar": "خدمة رقمية",
+    "ma": "خدمة رقمية"
+  },
+  "AI tools and API packages.": {
+    "fr": "Outils IA et packs API.",
+    "ar": "أدوات الذكاء الاصطناعي وباقات الواجهات البرمجية.",
+    "ma": "أدوات الذكاء الاصطناعي وباقات الواجهات البرمجية."
+  },
+  "Video editing and visual creation.": {
+    "fr": "Montage vidéo et création visuelle.",
+    "ar": "مونتاج الفيديو والإبداع البصري.",
+    "ma": "المونتاج والإبداع البصري."
+  },
+  "Language learning.": {
+    "fr": "Apprentissage des langues.",
+    "ar": "تعلم اللغات.",
+    "ma": "تعلم اللغات."
+  },
+  "Movies, series and music.": {
+    "fr": "Films, séries et musique.",
+    "ar": "أفلام ومسلسلات وموسيقى.",
+    "ma": "أفلام وسلسلات وموسيقى."
+  },
+  "Review the product description, duration or API package, then confirm availability and delivery with us on WhatsApp before purchasing.": {
+    "fr": "Consultez la description, la durée ou le pack API, puis confirmez la disponibilité et la livraison avec nous sur WhatsApp avant votre achat.",
+    "ar": "راجع وصف المنتج ومدته أو باقة الواجهة البرمجية، ثم أكد التوفر والتسليم معنا عبر واتساب قبل الشراء.",
+    "ma": "شوف وصف المنتوج والمدة أو باقة الواجهة البرمجية، وأكد معانا التوفر والتسليم فواتساب قبل ما تشري."
+  },
+  "Choose a product and select Order on WhatsApp. Your message includes its name, price in MAD, and duration or API package when applicable. We confirm availability and delivery personally. No payment is taken on this website.": {
+    "fr": "Choisissez un produit et sélectionnez Commander sur WhatsApp. Le message contient son nom, son prix en MAD et sa durée ou son pack API, le cas échéant. Nous confirmons personnellement la disponibilité et la livraison. Aucun paiement sur ce site.",
+    "ar": "اختر منتجاً واضغط على الطلب عبر واتساب. تتضمن الرسالة اسمه وسعره بعملة MAD ومدته أو باقته عند الاقتضاء. نؤكد التوفر والتسليم معك شخصياً. لا يتم الدفع على هذا الموقع.",
+    "ma": "اختار المنتوج وكليكي على الطلب فواتساب. الرسالة فيها السمية والثمن بـ MAD والمدة أو الباقة إلا كانت. كنأكدو معاك التوفر والتسليم. ما كاين حتى أداء فهاد الموقع."
   }
 }

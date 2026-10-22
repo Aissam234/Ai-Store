@@ -1,4 +1,4 @@
-# Nexora digital store
+# AI STORE
 
 Existing Next.js App Router storefront with a PostgreSQL/Prisma backend, customer accounts, and server-authorized administration. The V1 dark design and browser-local cart are preserved. Orders are completed manually on WhatsApp. Online payments and automated digital delivery are intentionally not implemented.
 
@@ -9,7 +9,7 @@ Use Node.js 24 LTS and npm (the existing lockfile is retained).
 1. Install dependencies with `npm ci`. This generates the Prisma client.
 2. Copy `.env.example` to `.env.local` and set `DATABASE_URL` to an existing PostgreSQL database. Do not commit credentials.
 3. Optionally use the included Docker database: set `POSTGRES_PASSWORD` and the matching `DATABASE_URL` (port 55432), then run `docker compose --env-file .env.local up -d --wait`. Run `npm run db:migrate` to apply the checked-in migrations.
-4. Run `npm run db:seed` to import the original eight demo products and four categories.
+4. Run `npm run db:seed` to import the eight approved offers and four categories.
 5. Run `npm run dev`, then open http://localhost:3000.
 
 For a production preview: `npm run build`, then `npm start`. Use HTTPS for authentication in production. `SESSION_COOKIE_SECURE` defaults to true in production and false in development. For local HTTP/LAN testing only, set it to `false`. To view on a phone on the same network, run `npm run dev -- --hostname 0.0.0.0` and open the computer's LAN address on port 3000.
@@ -20,7 +20,7 @@ The build deliberately does not connect to PostgreSQL: catalog and private data 
 
 Before seeding, optionally set `INITIAL_ADMIN_EMAIL`, `INITIAL_ADMIN_PASSWORD`, and `INITIAL_ADMIN_NAME`. The password must contain 15–128 characters. Set both email and password, or neither; no default administrator/password exists. Public registration always creates a `CUSTOMER`.
 
-The seed creates a new `ADMIN` only for an unused email. It refuses to promote an existing customer or overwrite an existing password. Re-running with the same valid admin credentials is safe. Remove initial-admin credentials from the environment after provisioning. Product/category upserts only insert missing IDs and do not overwrite admin edits. Product IDs `p1`–`p8` are preserved for existing localStorage carts.
+The seed creates a new `ADMIN` only for an unused email. It refuses to promote an existing customer or overwrite an existing password. Re-running with the same valid admin credentials is safe. Remove initial-admin credentials from the environment after provisioning. Product/category upserts insert missing slugs and preserve admin edits. Retired products remain stored; carts handle inactive items as unavailable.
 
 ## Routes and behavior
 
@@ -45,7 +45,7 @@ The seed creates a new `ADMIN` only for an unused email. It refuses to promote a
 - Images are decoded and normalized to WebP (maximum 1600px) and stored in PostgreSQL with the product. Catalog queries omit binary data; a dedicated image route serves active products publicly and inactive ones only to administrators. Back up the database to preserve images.
 - `src/lib/whatsapp.ts`: centralized dynamic order-message formatting.
 
-Email verification, password recovery, real payments, and digital delivery remain outside this foundation. The support address is still a demo placeholder. Accounts store email/password credentials and drafts store submitted customer information; no email is sent.
+Email verification, password recovery, real payments, and digital delivery remain outside this foundation. Accounts store email/password credentials and drafts store submitted customer information; no email is sent.
 
 ## Validation
 
@@ -68,3 +68,9 @@ The storefront supports English (`en`), French (`fr`), Arabic (`ar`), and Morocc
 Before running this version against an existing database, run `npm run db:migrate`. Migration `20261018000100_product_translations` adds eight nullable product fields without replacing existing content. In Admin → Products → Add/Edit, use the grouped translation sections to set localized names and short descriptions. Missing text falls back to English, then the existing product value. Other product content remains owner-managed.
 
 Shared UI translations live in `src/i18n/messages.json`; locale resolution and product fallback logic live in `src/i18n/config.ts`. Routes stay unchanged. The cached HTML shell applies language/direction before paint, while server-rendered content and metadata use the locale cookie. WhatsApp messages use the selected language and retain MAD prices and the configured recipient.
+
+## Approved offer catalog
+
+Migration `20261022000200_offer_details` adds optional duration (months), API package value (USD), and activation fields. These are editable in Admin Products and included in localized product cards and WhatsApp messages.
+
+`prisma/seed-data.ts` contains the eight approved offers and their four descriptions. Normal `npm run db:seed` preserves existing edits. To explicitly replace the local active catalog with these offers, run `node --import tsx prisma/update-catalog.ts` after migrations. This local-only command updates matching slugs, preserves uploaded images, and disables other products without deleting records or orders. Do not run it routinely after editing products.

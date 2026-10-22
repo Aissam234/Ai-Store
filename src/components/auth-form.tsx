@@ -12,10 +12,11 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   const { t } = useLocale();
   const registering = mode === "register";
   const [state, action, pending] = useActionState<ActionState, FormData>(registering ? register : login, {});
-  return <form action={action} className="form">
-    {registering && <label><T text="Your name"/><input name="name" autoComplete="name" required minLength={2} maxLength={100}/></label>}
-    <label><T text="Email address"/><input name="email" type="email" autoComplete="email" required maxLength={254}/></label>
-    <label><T text="Password"/><input name="password" type="password" autoComplete={registering ? "new-password" : "current-password"} required minLength={registering ? 15 : 1} maxLength={128}/></label>
+  // iOS Chrome autofill adds __gCrUniqueID attributes before hydration. Keep autofill enabled.
+  return <form action={action} className="form" suppressHydrationWarning>
+    {registering && <label><T text="Your name"/><input suppressHydrationWarning name="name" autoComplete="name" required minLength={2} maxLength={100}/></label>}
+    <label><T text="Email address"/><input suppressHydrationWarning name="email" type="email" autoComplete="email" required maxLength={254}/></label>
+    <label><T text="Password"/><input suppressHydrationWarning name="password" type="password" autoComplete={registering ? "new-password" : "current-password"} required minLength={registering ? 15 : 1} maxLength={128}/></label>
     {registering && <p className="small"><T text="Use a unique passphrase of 15–128 characters."/></p>}
     {state.error && <p className="form-error" role="alert">{t(hasMessage(state.error) ? state.error : "Please check your details and try again.")}</p>}
     <button className="button primary" disabled={pending}>{t(pending ? "Please wait…" : registering ? "Create account" : "Sign in")}{!pending && <Icon name="right"/>}</button>

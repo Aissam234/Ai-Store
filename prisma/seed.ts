@@ -3,7 +3,7 @@ import { PrismaClient } from "../src/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { hashPassword, verifyPassword } from "../src/lib/password";
 import { registerSchema } from "../src/lib/validation";
-import { seedCategories, seedProducts } from "./seed-data";
+import { importCatalog } from "./import-catalog";
 
 async function main() {
   const connectionString = process.env.DATABASE_URL;
@@ -21,18 +21,7 @@ async function main() {
       }
       if (!existing) await db.user.create({ data: { email: admin.email, name: admin.name, passwordHash: await hashPassword(admin.password), role: "ADMIN" } });
     }
-    await db.$transaction(async tx => {
-      const categoryIds = new Map<string, string>();
-      for (const [index, category] of seedCategories.entries()) {
-        const slug = ["ai-automation", "development", "design", "productivity"][index];
-        const row = await tx.category.upsert({ where: { id: `category-${index + 1}` }, update: {}, create: { id: `category-${index + 1}`, slug, ...category } });
-        categoryIds.set(category.name, row.id);
-      }
-      for (const product of seedProducts) {
-        const { price, released, category, ...content } = product;
-        await tx.product.upsert({ where: { id: product.id }, update: {}, create: { ...content, priceMinor: Math.round(price * 100), releasedAt: new Date(`${released}T00:00:00.000Z`), categoryId: categoryIds.get(category)! } });
-      }
-    });
+    await db.$transaction(tx => importCatalog(tx), { timeout: 30000 });
     console.log("Seed complete. Existing product/category edits preserved. Initial admin configured only when explicitly supplied.");
   } finally { await db.$disconnect(); }
 }

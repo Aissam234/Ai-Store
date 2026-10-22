@@ -12,7 +12,10 @@ export const categorySchema = z.object({
 });
 export const priceSchema = z.string().regex(/^(0|[1-9]\d{0,5})(\.\d{1,2})?$/, "Enter a price from 0 to 999999.99 MAD, with at most two decimals.")
   .transform(value => { const [whole, fraction = ""] = value.split("."); return Number(whole) * 100 + Number(fraction.padEnd(2, "0")); });
+const optionalPositiveInteger = (max: number) => z.preprocess(value => value === "" || value === undefined || value === null ? null : typeof value === "string" && /^\d+$/.test(value) ? Number(value) : value, z.number().int().positive().max(max).nullable());
 export const productSchema = z.object({
+  durationMonths: optionalPositiveInteger(1200), apiCreditUsd: optionalPositiveInteger(1000000),
+  activation: z.string().trim().max(120).nullish().transform(value => value || null),
   nameEn: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
   nameFr: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
   nameAr: z.string().trim().max(120).optional().transform(value => value === undefined ? undefined : value || null),
@@ -26,10 +29,11 @@ export const productSchema = z.object({
   fullDescription: z.string().trim().min(10).max(10000), price: priceSchema,
   oldPrice: z.union([z.literal(""), priceSchema]).optional().transform(value => typeof value === "number" ? value : null),
   badge: z.string().trim().max(40), featured: z.boolean(), active: z.boolean(),
+  availability: z.enum(["AVAILABLE", "LIMITED", "ASK_AVAILABILITY"]),
   released: z.iso.date(), symbol: z.string().trim().min(1).max(12),
   color: z.enum(["mint", "violet", "peach", "blue"]), format: z.string().trim().min(1).max(80),
   features: z.string().max(5000).transform(value => value.split(/\r?\n/).map(line => line.trim()).filter(Boolean))
-    .pipe(z.array(z.string().min(1).max(300)).min(1).max(20)),
+    .pipe(z.array(z.string().min(1).max(300)).max(20)),
 }).refine(value => value.oldPrice === null || value.oldPrice > value.price, { message: "Old price must be higher than the current price.", path: ["oldPrice"] });
 export const checkoutSchema = z.object({
   ids: z.array(idSchema).min(1, "Your cart is empty.").max(50).refine(ids => new Set(ids).size === ids.length, "Only one license per product is allowed."),

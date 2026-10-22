@@ -11,7 +11,7 @@ import Link from "next/link";
 import { useCart } from "./cart-provider";
 import type { Product } from "@/types/catalog";
 import { formatPrice } from "@/config/store";
-import { ProductVisual } from "./ui";
+import { ProductOfferDetails, ProductVisual } from "./ui";
 import { whatsappOrderUrl } from "@/lib/whatsapp";
 
 export function CartContent({ catalog: sourceCatalog, checkout = false }: { catalog: Product[]; checkout?: boolean }) {
@@ -32,7 +32,7 @@ export function CartContent({ catalog: sourceCatalog, checkout = false }: { cata
       <span className="eyebrow"><T text="PERSONAL SERVICE"/></span><h2><T text="Complete your order on WhatsApp."/></h2><p><T text="Send us your selection. We will confirm availability, payment arrangements and delivery personally before you purchase."/></p><div className="preview-notice"><strong><T text="No online payment"/></strong><p><T text="The button opens WhatsApp with your products and prices ready to send. It does not place or pay for an order automatically."/></p></div>{!missing.length && products.length > 0 && <a className="button primary" href={whatsappOrderUrl(products, locale)} target="_blank" rel="noopener noreferrer"><T text="Commander sur WhatsApp"/> <Icon name="arrow"/></a>}
     </section> : <>
       <div className="section-heading"><h2><T text="Your selection"/> <span className="muted">({products.length})</span></h2><button className="text-button" onClick={cart.clear}><T text="Clear cart"/></button></div>
-      <div className="cart-items">{products.map(product => <article className="cart-item" key={product.id}><Link href={`/products/${product.slug}`} aria-label={t("View {name}", {name: product.name})}><ProductVisual product={product}/></Link><div className="cart-item-info"><span className="eyebrow">{t(product.category)}</span><h3><Link href={`/products/${product.slug}`}>{product.name}</Link></h3><p className="small"><T text="Digital resource · Single license"/></p><button className="text-button" aria-label={t("Remove {name}", {name: product.name})} onClick={() => cart.remove(product.id)}><T text="Remove"/></button></div><strong>{formatPrice(product.price)}</strong></article>)}</div>
+      <div className="cart-items">{products.map(product => <article className="cart-item" key={product.id}><Link href={`/products/${product.slug}`} aria-label={t("View {name}", {name: product.name})}><ProductVisual product={product}/></Link><div className="cart-item-info"><span className="eyebrow">{t(product.category)}</span><h3><Link href={`/products/${product.slug}`}><bdi dir="auto">{product.name}</bdi></Link></h3><ProductOfferDetails product={product}/><button className="text-button" aria-label={t("Remove {name}", {name: product.name})} onClick={() => cart.remove(product.id)}><T text="Remove"/></button></div><strong>{formatPrice(product.price)}</strong></article>)}</div>
       <Link href="/products" className="text-link continue-link"><Icon name="left"/> <T text="Continue exploring"/></Link>
     </>}</div>
     <aside className="panel order-summary"><span className="eyebrow"><T text="THE NEXT STEP"/></span><h2><T text="Order summary"/></h2>

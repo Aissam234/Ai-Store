@@ -21,3 +21,9 @@
 
 [dir="rtl"] .customer-ui :is(p,label,input,textarea,select){line-height:1.75}
 [dir="rtl"] .customer-ui .brand-caption{direction:rtl;letter-spacing:normal}
+.customer-ui .offer-details { margin: 0 0 14px; font-size: 12px; line-height: 1.6; }
+.customer-ui .offer-details > div { display: flex; justify-content: space-between; gap: 12px; }
+.customer-ui .offer-details dt { color: var(--text-secondary); }
+.customer-ui .offer-details dd { margin: 0; text-align: end; color: var(--text-primary); overflow-wrap: anywhere; }
+.customer-ui .card-body > p { text-align: start; }
+@media(max-width:760px) { .customer-ui .offer-details { font-size: 10px; } .customer-ui .offer-details > div { flex-wrap: wrap; gap: 2px 8px; } }

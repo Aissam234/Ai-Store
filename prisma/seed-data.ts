@@ -1,18 +1,71 @@
 import type { Product } from "../src/types/catalog";
 export const seedCategories = [
-  { name: "AI & automation", description: "Make room for your most meaningful work.", symbol: "✳" },
-  { name: "Development", description: "A better starting point for your next build.", symbol: "⌘" },
-  { name: "Design", description: "Bring a sharper visual language to your ideas.", symbol: "◈" },
-  { name: "Productivity", description: "Less busywork. More forward motion.", symbol: "↗" },
+  { slug: "ai-automation", name: "AI & automation", description: "AI tools and API packages.", symbol: "✳" },
+  { slug: "design", name: "Design", description: "Video editing and visual creation.", symbol: "◈" },
+  { slug: "education", name: "Education", description: "Language learning.", symbol: "▦" },
+  { slug: "entertainment", name: "Entertainment", description: "Movies, series and music.", symbol: "⌘" },
 ];
-export const seedProducts: Product[] = [
-  { id: "p1", slug: "flow-automation-kit", name: "Flow Automation Kit", category: "AI & automation", description: "Connect your daily work with 24 thoughtfully designed automation recipes.", fullDescription: "A practical collection of documented workflows for lead intake, content planning, and everyday operations. Each recipe includes a setup guide, example inputs, and an adaptation checklist. External services and their subscriptions are not included.", price: 490, badge: "Bestseller", featured: true, released: "2026-09-12", symbol: "✳", color: "mint", features: ["24 documented workflow recipes", "Editable JSON workflow templates", "Step-by-step setup handbook", "Sample data for safe experimentation"], format: "JSON + PDF" },
-  { id: "p2", slug: "launch-developer-kit", name: "Launch Developer Kit", category: "Development", description: "Reusable interface patterns for turning your next idea into a polished product.", fullDescription: "Start with a considered set of accessible interface components and application layouts. The kit is designed for TypeScript projects, with readable source files and implementation notes that make it easy to adapt to your own stack.", price: 790, badge: "Featured", featured: true, released: "2026-10-01", symbol: "⌘", color: "violet", features: ["32 TypeScript interface components", "Responsive application layouts", "Accessible interaction patterns", "Source files and integration notes"], format: "TSX + CSS" },
-  { id: "p3", slug: "orbit-design-system", name: "Orbit Design System", category: "Design", description: "A focused UI library that brings clarity and consistency to every screen.", fullDescription: "Build a coherent product experience with a flexible library of interface foundations. Includes reusable components, light and dark palettes, and guidance for creating your own visual language.", price: 590, badge: "Popular", featured: true, released: "2026-08-18", symbol: "◈", color: "peach", features: ["80 reusable design components", "Light and dark color tokens", "Typography and spacing foundations", "Editable SVG assets and usage guide"], format: "SVG + PDF" },
-  { id: "p4", slug: "focus-workspace", name: "Focus Workspace", category: "Productivity", description: "A calm, connected system for projects, priorities, and everything in between.", fullDescription: "Bring projects, weekly planning, and personal goals into one intentional workspace. Simple templates help you decide what matters and keep track of progress without adding another complicated system.", price: 190, badge: "Essentials", featured: true, released: "2026-09-20", symbol: "▦", color: "blue", features: ["Project and task planning templates", "Weekly review framework", "Goal and habit trackers", "Spreadsheet and Markdown formats"], format: "XLSX + MD" },
-  { id: "p5", slug: "prompt-studio", name: "Prompt Studio", category: "AI & automation", description: "Structured prompts for clearer research, better writing, and useful ideas.", fullDescription: "A curated library of reusable prompt frameworks for common business tasks. Each framework includes example variables, review criteria, and guidance for checking AI-generated output. An AI service subscription is not included.", price: 290, badge: "New", featured: false, released: "2026-10-10", symbol: "✦", color: "violet", features: ["60 adaptable prompt frameworks", "Research and writing workflows", "Output evaluation checklists", "Plain-text files for any editor"], format: "MD + PDF" },
-  { id: "p6", slug: "api-workbench", name: "API Workbench", category: "Development", description: "Practical request collections and patterns for your next integration.", fullDescription: "A developer reference pack for designing and testing HTTP integrations. Explore documented request examples, error-handling patterns, and API design checklists. This is a downloadable resource, not a hosted API service.", price: 390, badge: "Developer pick", featured: false, released: "2026-09-04", symbol: "{ }", color: "blue", features: ["HTTP request collections", "Authentication pattern examples", "Error-handling reference", "OpenAPI example specifications"], format: "JSON + YAML" },
-  { id: "p7", slug: "signal-business-toolkit", name: "Signal Business Toolkit", category: "Productivity", description: "Turn scattered ideas into a clear strategy and an actionable launch plan.", fullDescription: "A practical planning toolkit for independent founders and small teams. Work through positioning, customer discovery, and launch planning with editable worksheets and focused examples.", price: 340, badge: "Popular", featured: false, released: "2026-07-22", symbol: "↗", color: "mint", features: ["Business strategy worksheets", "Customer interview templates", "Launch planning checklist", "Editable budget workbook"], format: "XLSX + PDF" },
-  { id: "p8", slug: "prism-icon-library", name: "Prism Icon Library", category: "Design", description: "A precise, versatile icon collection for interfaces with a little more character.", fullDescription: "A coordinated collection of interface icons built around a consistent grid. Editable vectors and clear usage guidance make the library a useful companion for web applications, presentations, and prototypes.", price: 240, badge: "New", featured: false, released: "2026-10-08", symbol: "◇", color: "peach", features: ["200 editable vector icons", "Consistent 24-pixel grid", "Outline and filled variations", "SVG files and visual index"], format: "SVG" },
+const offers = [
+  {
+    slug: "chatgpt-plus", name: "ChatGPT Plus", price: 119, durationMonths: 1, badge: "Popular", category: "AI & automation",
+    descriptionEn: "Get ChatGPT Plus for one month. A practical AI solution for work, studying, writing, research and everyday tasks.",
+    descriptionFr: "Profitez de ChatGPT Plus pendant un mois. Une solution pratique pour le travail, les études, la rédaction, la recherche et les tâches du quotidien.",
+    descriptionAr: "استفد من اشتراك شات جي بي تي بلاس لمدة شهر. خيار عملي للعمل، والدراسة، والكتابة، والبحث، والمهام اليومية.",
+    descriptionMa: "استافد من شات جي بي تي بلاس لمدة شهر. مناسب للخدمة، والقراية، والكتابة، والبحث، والاستعمال اليومي.",
+  },
+  {
+    slug: "claude-api-100", name: "Claude API $100", price: 140, apiCreditUsd: 100, badge: "Developer", category: "AI & automation",
+    descriptionEn: "A $100 Claude API package suitable for developers, AI projects, automation, integrations and application development.",
+    descriptionFr: "Un pack Claude API de 100 dollars adapté aux développeurs, aux projets d’intelligence artificielle, à l’automatisation, aux intégrations et au développement d’applications.",
+    descriptionAr: "باقة كلود للواجهة البرمجية بقيمة مئة دولار، مناسبة للمطورين، ومشاريع الذكاء الاصطناعي، والأتمتة، وعمليات الدمج، وتطوير التطبيقات.",
+    descriptionMa: "باقة كلود للواجهة البرمجية بقيمة مئة دولار، مناسبة للمطورين، ومشاريع الذكاء الاصطناعي، والأتمتة، وربط الخدمات، وتطوير التطبيقات.",
+  },
+  {
+    slug: "claude-api-500", name: "Claude API $500", price: 490, apiCreditUsd: 500, badge: "Best Value", category: "AI & automation",
+    descriptionEn: "A $500 Claude API package for developers and projects that require higher API usage for AI applications, automation and integrations.",
+    descriptionFr: "Un pack Claude API de 500 dollars destiné aux développeurs et aux projets nécessitant une utilisation plus importante pour les applications d’intelligence artificielle, l’automatisation et les intégrations.",
+    descriptionAr: "باقة كلود للواجهة البرمجية بقيمة خمسمئة دولار، مخصصة للمطورين والمشاريع التي تحتاج إلى استخدام أكبر في تطبيقات الذكاء الاصطناعي، والأتمتة، وعمليات الدمج.",
+    descriptionMa: "باقة كلود للواجهة البرمجية بقيمة خمسمئة دولار، مناسبة للمطورين والمشاريع اللي محتاجين استعمال أكبر فتطبيقات الذكاء الاصطناعي، والأتمتة، وربط الخدمات.",
+  },
+  {
+    slug: "capcut-pro", name: "CapCut Pro", price: 49, durationMonths: 1, badge: "Creator", category: "Design",
+    descriptionEn: "Enjoy CapCut Pro for one month and take your video editing further with a more complete editing experience for creative content and social media.",
+    descriptionFr: "Profitez de CapCut Pro pendant un mois et améliorez vos montages vidéo avec une expérience plus complète pour la création de contenu et les réseaux sociaux.",
+    descriptionAr: "استفد من كاب كات برو لمدة شهر وطوّر تجربة مونتاج الفيديو الخاصة بك، سواء للمحتوى الإبداعي أو لمنصات التواصل الاجتماعي.",
+    descriptionMa: "استافد من كاب كات برو لمدة شهر وخلي المونتاج ديالك أحسن وأكثر احترافية، سواء للمحتوى، أو الفيديوهات القصيرة، أو مواقع التواصل الاجتماعي.",
+  },
+  {
+    slug: "duolingo-super", name: "Duolingo Super", price: 49, durationMonths: 12, badge: "1 Year", category: "Education",
+    descriptionEn: "Enjoy Duolingo Super for a full year and make your language-learning experience more comfortable, enjoyable and consistent.",
+    descriptionFr: "Profitez de Duolingo Super pendant une année complète et rendez votre apprentissage des langues plus confortable, agréable et régulier.",
+    descriptionAr: "استفد من دولينغو سوبر لمدة سنة كاملة، واجعل تجربة تعلم اللغات أكثر راحة ومتعة واستمرارية.",
+    descriptionMa: "استافد من دولينغو سوبر لمدة عام كامل، وخلي تعلم اللغات أسهل، وأريح، وممتع أكثر.",
+  },
+  {
+    slug: "netflix-premium", name: "Netflix Premium", price: 29, durationMonths: 1, badge: "Entertainment", category: "Entertainment",
+    descriptionEn: "Enjoy Netflix Premium for one month and access your favorite movies, series and entertainment content.",
+    descriptionFr: "Profitez de Netflix Premium pendant un mois pour regarder vos films, séries et contenus de divertissement préférés.",
+    descriptionAr: "استفد من نتفليكس بريميوم لمدة شهر، واستمتع بمشاهدة أفلامك ومسلسلاتك ومحتواك الترفيهي المفضل.",
+    descriptionMa: "استافد من نتفليكس بريميوم لمدة شهر، وتفرج فالأفلام، والسلسلات، والمحتوى الترفيهي اللي كيعجبك.",
+  },
+  {
+    slug: "canva-student", name: "Canva Student", price: 23, durationMonths: 36, activation: "Via invitation", badge: "3 Years", category: "Design",
+    descriptionEn: "Canva Student access via invitation for three years, ideal for creating designs, presentations, documents, social media posts and visual content.",
+    descriptionFr: "Accès à Canva Student par invitation pendant trois ans, idéal pour créer des designs, des présentations, des documents, des publications pour les réseaux sociaux et du contenu visuel.",
+    descriptionAr: "احصل على كانفا للطلبة لمدة ثلاث سنوات عن طريق دعوة. مناسب لإنشاء التصاميم، والعروض التقديمية، والوثائق، ومنشورات وسائل التواصل الاجتماعي، والمحتوى المرئي.",
+    descriptionMa: "استافد من كانفا للطلبة لمدة ثلاث سنين عن طريق دعوة. مناسب للتصاميم، والعروض التقديمية، والوثائق، ومنشورات مواقع التواصل الاجتماعي، والمحتوى البصري.",
+  },
+  {
+    slug: "spotify", name: "Spotify", price: 50, durationMonths: 1, badge: "Music", category: "Entertainment",
+    descriptionEn: "Enjoy Spotify for one month and listen to your favorite music, artists and playlists whenever you want.",
+    descriptionFr: "Profitez de Spotify pendant un mois et écoutez vos musiques, artistes et listes de lecture préférés quand vous le souhaitez.",
+    descriptionAr: "استفد من سبوتيفاي لمدة شهر، واستمع إلى موسيقاك وفنانيك وقوائم التشغيل المفضلة لديك وقتما تشاء.",
+    descriptionMa: "استافد من سبوتيفاي لمدة شهر، وسمع الموسيقى، والفنانين، وقوائم التشغيل اللي كيعجبوك فاش ما بغيتي.",
+  },
 ];
-
+// Import source only. Storefront reads exclusively from PostgreSQL; admin edits stay authoritative.
+export const seedProducts: Product[] = offers.map((offer, index) => ({
+  ...offer, id: `offer-${offer.slug}`, description: offer.descriptionEn, fullDescription: offer.descriptionEn,
+  featured: index < 4, released: "2026-10-22", symbol: seedCategories.find(c => c.name === offer.category)!.symbol,
+  color: "mint", features: [], format: "Digital service", availability: "ASK_AVAILABILITY",
+}));

@@ -9,5 +9,5 @@ export function htmlLanguage(locale: Locale) { return locale === "ma" ? "ary" : 
 export type ProductTranslations = Partial<Record<`name${"En" | "Fr" | "Ar" | "Ma"}` | `description${"En" | "Fr" | "Ar" | "Ma"}`, string | null>>;
 export function localizeProduct<T extends { name: string; description: string } & ProductTranslations>(product: T, locale: Locale): T {
  const suffix = { en: "En", fr: "Fr", ar: "Ar", ma: "Ma" }[locale] as "En" | "Fr" | "Ar" | "Ma";
- return { ...product, nameEn: product.nameEn?.trim() || product.name, descriptionEn: product.descriptionEn?.trim() || product.description, name: product[`name${suffix}`]?.trim() || product.nameEn?.trim() || product.name, description: product[`description${suffix}`]?.trim() || product.descriptionEn?.trim() || product.description };
+ return { ...product, ...("fullDescription" in product && product.fullDescription === (product.descriptionEn || product.description) ? { fullDescription: product[`description${suffix}`]?.trim() || product.descriptionEn?.trim() || product.description } : {}), nameEn: product.nameEn?.trim() || product.name, descriptionEn: product.descriptionEn?.trim() || product.description, name: product[`name${suffix}`]?.trim() || product.nameEn?.trim() || product.name, description: product[`description${suffix}`]?.trim() || product.descriptionEn?.trim() || product.description };
 }
