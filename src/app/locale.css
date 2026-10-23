@@ -27,3 +27,6 @@
 .customer-ui .offer-details dd { margin: 0; text-align: end; color: var(--text-primary); overflow-wrap: anywhere; }
 .customer-ui .card-body > p { text-align: start; }
 @media(max-width:760px) { .customer-ui .offer-details { font-size: 10px; } .customer-ui .offer-details > div { flex-wrap: wrap; gap: 2px 8px; } }
+
+/* Keep category counts opposite the icon in both writing directions. */
+.customer-ui .category-card small { left: auto; right: auto; inset-inline-end: 20px; max-width: calc(100% - 88px); text-align: end; }

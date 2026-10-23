@@ -59,3 +59,8 @@ test("static storefront translation references are present in the shared catalog
   }visit(tree);
  }assert.deepEqual([...missing],[]);
 });
+
+test("current and legacy category descriptions are translated in every storefront language", () => {
+ const labels = ["Education", "Language learning.", "Movies, series and music.", "Make room for your most meaningful work.", "Bring a sharper visual language to your ideas.", "A better starting point for your next build.", "Less busywork. More forward motion."];
+ for (const label of labels) for (const locale of ["fr", "ar", "ma"] as const) assert.notEqual(translate(locale, label), label, `${locale}: ${label}`);
+});

@@ -1503,5 +1503,25 @@
     "fr": "Choisissez un produit et sélectionnez Commander sur WhatsApp. Le message contient son nom, son prix en MAD et sa durée ou son pack API, le cas échéant. Nous confirmons personnellement la disponibilité et la livraison. Aucun paiement sur ce site.",
     "ar": "اختر منتجاً واضغط على الطلب عبر واتساب. تتضمن الرسالة اسمه وسعره بعملة MAD ومدته أو باقته عند الاقتضاء. نؤكد التوفر والتسليم معك شخصياً. لا يتم الدفع على هذا الموقع.",
     "ma": "اختار المنتوج وكليكي على الطلب فواتساب. الرسالة فيها السمية والثمن بـ MAD والمدة أو الباقة إلا كانت. كنأكدو معاك التوفر والتسليم. ما كاين حتى أداء فهاد الموقع."
+  },
+  "Make room for your most meaningful work.": {
+    "fr": "Faites place à votre travail le plus important.",
+    "ar": "وفّر مساحة لأعمالك الأكثر أهمية.",
+    "ma": "خلي الوقت للخدمة اللي كتهمك أكثر."
+  },
+  "Bring a sharper visual language to your ideas.": {
+    "fr": "Donnez plus de force visuelle à vos idées.",
+    "ar": "امنح أفكارك تعبيراً بصرياً أكثر وضوحاً.",
+    "ma": "عطي لأفكارك شكل بصري أوضح وأحسن."
+  },
+  "A better starting point for your next build.": {
+    "fr": "Un meilleur point de départ pour votre prochain projet.",
+    "ar": "نقطة انطلاق أفضل لمشروعك القادم.",
+    "ma": "بداية أحسن للمشروع الجاي ديالك."
+  },
+  "Less busywork. More forward motion.": {
+    "fr": "Moins de tâches répétitives. Plus de progrès.",
+    "ar": "مهام متكررة أقل. وتقدم أكبر.",
+    "ma": "نقص من المهام المتكررة وزيد لقدّام."
   }
 }
