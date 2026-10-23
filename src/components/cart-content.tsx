@@ -12,7 +12,7 @@ import { useCart } from "./cart-provider";
 import type { Product } from "@/types/catalog";
 import { formatPrice } from "@/config/store";
 import { ProductOfferDetails, ProductVisual } from "./ui";
-import { whatsappOrderUrl } from "@/lib/whatsapp";
+import { PaymentOrderButton } from "./payment-order-button";
 
 export function CartContent({ catalog: sourceCatalog, checkout = false }: { catalog: Product[]; checkout?: boolean }) {
   const { locale, t } = useLocale();
@@ -29,7 +29,7 @@ export function CartContent({ catalog: sourceCatalog, checkout = false }: { cata
     <p role="status" className="small">{t(cart.notice)}</p>
     {!!missing.length && <div className="preview-notice missing-items"><strong><T text="Some products are no longer available."/></strong><p><T text="Remove them before continuing. Unavailable items are excluded from the estimate."/></p><ul>{missing.map(id => <li key={id}><span><T text="Unavailable product"/></span><button className="text-button" onClick={() => cart.remove(id)}><T text="Remove unavailable item"/></button></li>)}</ul></div>}
     <div className="cart-layout"><div>{checkout ? <section className="panel">
-      <span className="eyebrow"><T text="PERSONAL SERVICE"/></span><h2><T text="Complete your order on WhatsApp."/></h2><p><T text="Send us your selection. We will confirm availability, payment arrangements and delivery personally before you purchase."/></p><div className="preview-notice"><strong><T text="No online payment"/></strong><p><T text="The button opens WhatsApp with your products and prices ready to send. It does not place or pay for an order automatically."/></p></div>{!missing.length && products.length > 0 && <a className="button primary" href={whatsappOrderUrl(products, locale)} target="_blank" rel="noopener noreferrer"><T text="Commander sur WhatsApp"/> <Icon name="arrow"/></a>}
+      <span className="eyebrow"><T text="PERSONAL SERVICE"/></span><h2><T text="Complete your order on WhatsApp."/></h2><p><T text="Send us your selection. We will confirm availability, payment arrangements and delivery personally before you purchase."/></p><div className="preview-notice"><strong><T text="No online payment"/></strong><p><T text="The button opens WhatsApp with your products and prices ready to send. It does not place or pay for an order automatically."/></p></div>{!missing.length && products.length > 0 && <PaymentOrderButton products={products}/>}
     </section> : <>
       <div className="section-heading"><h2><T text="Your selection"/> <span className="muted">({products.length})</span></h2><button className="text-button" onClick={cart.clear}><T text="Clear cart"/></button></div>
       <div className="cart-items">{products.map(product => <article className="cart-item" key={product.id}><Link href={`/products/${product.slug}`} aria-label={t("View {name}", {name: product.name})}><ProductVisual product={product}/></Link><div className="cart-item-info"><span className="eyebrow">{t(product.category)}</span><h3><Link href={`/products/${product.slug}`}><bdi dir="auto">{product.name}</bdi></Link></h3><ProductOfferDetails product={product}/><button className="text-button" aria-label={t("Remove {name}", {name: product.name})} onClick={() => cart.remove(product.id)}><T text="Remove"/></button></div><strong>{formatPrice(product.price)}</strong></article>)}</div>

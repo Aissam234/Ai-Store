@@ -19,13 +19,13 @@ export async function adminProducts(page: number) {
   await requireAdmin();
   const db = getDb();
   const [rows, count] = await Promise.all([
-    db.product.findMany({ omit: { imageData: true }, include: { category: true }, orderBy: [{ createdAt: "desc" }, { id: "asc" }], take: PAGE_SIZE, skip: (page - 1) * PAGE_SIZE }), db.product.count(),
+    db.product.findMany({ omit: { imageData: true, imageDarkData: true, imageLightData: true }, include: { category: true }, orderBy: [{ createdAt: "desc" }, { id: "asc" }], take: PAGE_SIZE, skip: (page - 1) * PAGE_SIZE }), db.product.count(),
   ]);
   return { rows, count };
 }
 export async function adminProduct(id: string) {
   await requireAdmin();
-  return getDb().product.findUnique({ where: { id }, omit: { imageData: true } });
+  return getDb().product.findUnique({ where: { id }, omit: { imageData: true, imageDarkData: true, imageLightData: true } });
 }
 export async function adminCategories() {
   await requireAdmin();

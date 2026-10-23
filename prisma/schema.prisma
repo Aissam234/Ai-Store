@@ -81,6 +81,10 @@ model Product {
   fullDescription String      @db.Text
   oldPriceMinor   Int?
   imageData       Bytes?
+  imageDarkData   Bytes?
+  imageLightData  Bytes?
+  hasDarkImage    Boolean @default(false)
+  hasLightImage   Boolean @default(false)
   hasImage        Boolean     @default(false)
   durationMonths  Int?
   apiCreditUsd    Int?

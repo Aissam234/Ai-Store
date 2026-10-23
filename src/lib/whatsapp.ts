@@ -2,8 +2,8 @@ import { offerDetails, type OfferDetails } from "./offer-details";
 import { store } from "@/config/store";
 import { localizeProduct, type Locale, type ProductTranslations } from "@/i18n/config";
 import { translate } from "@/i18n/messages";
-export function whatsappOrderUrl(products: ({ name: string; price: number; description?: string } & ProductTranslations & OfferDetails)[], locale: Locale = "en") {
+export function whatsappOrderUrl(products: ({ name: string; price: number; description?: string } & ProductTranslations & OfferDetails)[], locale: Locale = "en", paymentMethod?: string) {
  const t = (text: string) => translate(locale, text);
  const lines = products.map(product => t("Product") + " : " + localizeProduct({ ...product, description: product.description || "" }, locale).name + "\n" + t("Price") + " : " + product.price.toFixed(2) + " " + store.currency + offerDetails(product, locale).map(detail => "\n" + detail.label + " : " + detail.value).join(""));
- return `https://wa.me/${store.whatsappNumber}?text=${encodeURIComponent(t("Hello, I would like to order:") + "\n\n" + lines.join("\n\n"))}`;
+ return `https://wa.me/${store.whatsappNumber}?text=${encodeURIComponent(t("Hello, I would like to order:") + "\n\n" + lines.join("\n\n") + (paymentMethod ? "\n\n" + t("Payment method") + " : " + t(paymentMethod) : ""))}`;
 }

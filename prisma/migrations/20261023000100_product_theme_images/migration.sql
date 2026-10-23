@@ -1,0 +1,1 @@
+ALTER TABLE "Product" ADD COLUMN "imageDarkData" BYTEA, ADD COLUMN "imageLightData" BYTEA, ADD COLUMN "hasDarkImage" BOOLEAN NOT NULL DEFAULT false, ADD COLUMN "hasLightImage" BOOLEAN NOT NULL DEFAULT false;

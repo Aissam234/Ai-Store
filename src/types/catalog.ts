@@ -4,7 +4,7 @@ export type Product = ProductTranslations & {
   apiCreditUsd?: number | null;
   activation?: string | null;
   oldPrice?: number;
-  imageUrl?: string;
+  imageUrl?: string; imageDarkUrl?: string; imageLightUrl?: string;
   id: string; slug: string; name: string; category: string; description: string;
   fullDescription: string; price: number; badge: string; featured: boolean;
   released: string; symbol: string; color: string; features: string[]; format: string;

@@ -74,3 +74,15 @@ Shared UI translations live in `src/i18n/messages.json`; locale resolution and p
 Migration `20261022000200_offer_details` adds optional duration (months), API package value (USD), and activation fields. These are editable in Admin Products and included in localized product cards and WhatsApp messages.
 
 `prisma/seed-data.ts` contains the eight approved offers and their four descriptions. Normal `npm run db:seed` preserves existing edits. To explicitly replace the local active catalog with these offers, run `node --import tsx prisma/update-catalog.ts` after migrations. This local-only command updates matching slugs, preserves uploaded images, and disables other products without deleting records or orders. Do not run it routinely after editing products.
+
+### Manual payment methods
+
+Edit `src/config/payments.ts` to change CIH Bank, Al Barid Bank, Cash Plus and Binance names, public instructions, payment details, availability and display order. Empty detail values intentionally show a request-details placeholder and cannot be copied. Only enter information intended for customers: this configuration is public, so never add passwords, API keys, private keys or recovery phrases.
+
+Place custom logos in `public/payments/` and set each method's `image` to `/payments/filename.webp` (or PNG/SVG). Missing images fall back to neutral initials. Add translations for new instruction/label text in `src/i18n/messages.json`.
+
+Product and checkout order buttons open the manual payment selector. The selected method is added to the existing WhatsApp message. No payment is collected or automatically verified.
+
+### Product images by theme
+
+Admin → Products → Add/Edit now includes a default image plus optional Night mode and Light mode images. Each upload accepts JPEG, PNG or WebP up to 3 MB and is validated and stored in PostgreSQL. Missing theme images use the default image; existing products require no edits. Run `npm run db:migrate` before starting a deployed version containing migration `20261023000100_product_theme_images`.

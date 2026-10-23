@@ -1523,5 +1523,135 @@
     "fr": "Moins de tâches répétitives. Plus de progrès.",
     "ar": "مهام متكررة أقل. وتقدم أكبر.",
     "ma": "نقص من المهام المتكررة وزيد لقدّام."
+  },
+  "Manual payment": {
+    "fr": "Paiement manuel",
+    "ar": "دفع يدوي",
+    "ma": "الأداء اليدوي"
+  },
+  "Choose a payment method": {
+    "fr": "Choisissez un moyen de paiement",
+    "ar": "اختر طريقة الدفع",
+    "ma": "اختار طريقة الأداء"
+  },
+  "Payment method": {
+    "fr": "Moyen de paiement",
+    "ar": "طريقة الدفع",
+    "ma": "طريقة الأداء"
+  },
+  "No payment is collected here. Confirm the details with us on WhatsApp before paying.": {
+    "fr": "Aucun paiement ici. Confirmez les détails avec nous sur WhatsApp avant de payer.",
+    "ar": "لا يتم تحصيل أي دفع هنا. أكد التفاصيل معنا عبر واتساب قبل الدفع.",
+    "ma": "ما كاين حتى أداء هنا. أكد معانا التفاصيل فواتساب قبل ما تخلص."
+  },
+  "Manual bank transfer": {
+    "fr": "Virement bancaire manuel",
+    "ar": "تحويل بنكي يدوي",
+    "ma": "تحويل بنكي يدوي"
+  },
+  "Manual money transfer": {
+    "fr": "Transfert d’argent manuel",
+    "ar": "تحويل مالي يدوي",
+    "ma": "تحويل الفلوس يدوياً"
+  },
+  "Manual crypto payment": {
+    "fr": "Paiement crypto manuel",
+    "ar": "دفع يدوي بالعملات الرقمية",
+    "ma": "أداء يدوي بالعملات الرقمية"
+  },
+  "Confirm the beneficiary and transfer details with us on WhatsApp before sending payment.": {
+    "fr": "Confirmez le bénéficiaire et les détails du virement avec nous sur WhatsApp avant tout paiement.",
+    "ar": "أكد اسم المستفيد وتفاصيل التحويل معنا عبر واتساب قبل إرسال الدفع.",
+    "ma": "أكد معانا المستفيد وتفاصيل التحويل فواتساب قبل ما تصيفط الفلوس."
+  },
+  "Contact us on WhatsApp to confirm the recipient and transfer instructions before visiting an agency.": {
+    "fr": "Contactez-nous sur WhatsApp pour confirmer le destinataire et les instructions avant de vous rendre en agence.",
+    "ar": "تواصل معنا عبر واتساب لتأكيد المستلم وتعليمات التحويل قبل زيارة الوكالة.",
+    "ma": "تواصل معانا فواتساب باش تأكد المستفيد وطريقة التحويل قبل ما تمشي للوكالة."
+  },
+  "Confirm the asset, network, amount and destination with us on WhatsApp before any transfer. No automatic processing.": {
+    "fr": "Confirmez l’actif, le réseau, le montant et la destination avec nous sur WhatsApp avant tout transfert. Aucun traitement automatique.",
+    "ar": "أكد العملة والشبكة والمبلغ والوجهة معنا عبر واتساب قبل أي تحويل. لا توجد معالجة تلقائية.",
+    "ma": "أكد معانا العملة والشبكة والمبلغ والوجهة فواتساب قبل أي تحويل. ما كايناش معالجة أوتوماتيكية."
+  },
+  "Account holder": {
+    "fr": "Titulaire du compte",
+    "ar": "صاحب الحساب",
+    "ma": "مول الحساب"
+  },
+  "Bank account / RIB": {
+    "fr": "Compte bancaire / RIB",
+    "ar": "الحساب البنكي / RIB",
+    "ma": "الحساب البنكي / RIB"
+  },
+  "Recipient": {
+    "fr": "Bénéficiaire",
+    "ar": "المستفيد",
+    "ma": "المستفيد"
+  },
+  "Transfer information": {
+    "fr": "Informations de transfert",
+    "ar": "معلومات التحويل",
+    "ma": "معلومات التحويل"
+  },
+  "Payment destination": {
+    "fr": "Destination du paiement",
+    "ar": "وجهة الدفع",
+    "ma": "وجهة الأداء"
+  },
+  "Asset / network": {
+    "fr": "Actif / réseau",
+    "ar": "العملة / الشبكة",
+    "ma": "العملة / الشبكة"
+  },
+  "Not configured — request details on WhatsApp.": {
+    "fr": "Non configuré — demandez les détails sur WhatsApp.",
+    "ar": "لم يتم الإعداد بعد — اطلب التفاصيل عبر واتساب.",
+    "ma": "مازال ما تضافتش — طلب التفاصيل فواتساب."
+  },
+  "Copy": {
+    "fr": "Copier",
+    "ar": "نسخ",
+    "ma": "نسخ"
+  },
+  "Copied": {
+    "fr": "Copié",
+    "ar": "تم النسخ",
+    "ma": "تنسخ"
+  },
+  "Select the value and copy it manually.": {
+    "fr": "Sélectionnez la valeur et copiez-la manuellement.",
+    "ar": "حدد القيمة وانسخها يدوياً.",
+    "ma": "حدد المعلومة ونسخها يدوياً."
+  },
+  "Select a payment method to continue": {
+    "fr": "Choisissez un moyen de paiement pour continuer",
+    "ar": "اختر طريقة دفع للمتابعة",
+    "ma": "اختار طريقة الأداء باش تكمل"
+  },
+  "Payment methods are temporarily unavailable. Please contact support.": {
+    "fr": "Les moyens de paiement sont temporairement indisponibles. Contactez le support.",
+    "ar": "طرق الدفع غير متاحة مؤقتاً. يرجى التواصل مع الدعم.",
+    "ma": "طرق الأداء ما متوفراش دابا. تواصل مع الدعم."
+  },
+  "Close": {
+    "fr": "Fermer",
+    "ar": "إغلاق",
+    "ma": "سد"
+  },
+  "Other payment method": {
+    "fr": "Autre moyen de paiement",
+    "ar": "طريقة دفع أخرى",
+    "ma": "طريقة أداء أخرى"
+  },
+  "Arrange an alternative on WhatsApp": {
+    "fr": "Convenez d’une alternative sur WhatsApp",
+    "ar": "اتفق على بديل عبر واتساب",
+    "ma": "تفاهم معانا على طريقة أخرى فواتساب"
+  },
+  "Tell us your preferred payment method on WhatsApp. We will confirm whether it is available and agree on the details before you pay.": {
+    "fr": "Indiquez votre moyen de paiement préféré sur WhatsApp. Nous confirmerons sa disponibilité et conviendrons des détails avant tout paiement.",
+    "ar": "أخبرنا بطريقة الدفع التي تفضلها عبر واتساب. سنؤكد إمكانية استخدامها ونتفق على التفاصيل قبل الدفع.",
+    "ma": "قول لينا فواتساب الطريقة اللي بغيتي تخلص بها. غادي نأكدو واش ممكنة ونتفاهمو على التفاصيل قبل ما تخلص."
   }
 }

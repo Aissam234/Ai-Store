@@ -7,6 +7,7 @@ import { getDb } from "@/server/db";
 import { categorySchema, productSchema, idSchema, type ActionState } from "@/lib/validation";
 import { normalizeProductImage } from "@/server/product-image";
 import { z } from "zod";
+import { readThemeImages } from "@/server/theme-images";
 
 function refreshCatalog() {
   for (const path of ["/", "/products", "/categories", "/cart", "/checkout", "/admin", "/admin/products", "/admin/categories"]) revalidatePath(path);
@@ -35,10 +36,11 @@ export async function saveProduct(id: string | null, _previous: ActionState, for
     if (file instanceof File && file.size) {
       try { imageData = await normalizeProductImage(file); } catch { return { error: "Choose a valid JPEG, PNG or WebP image up to 3 MB (maximum 25 megapixels)." }; }
     } else if (form.get("removeImage") === "on") imageData = null;
-    const data = { ...content, ...(imageData !== undefined ? { imageData, hasImage: imageData !== null } : {}), oldPriceMinor: oldPrice, priceMinor: price, releasedAt: new Date(`${released}T00:00:00.000Z`), category: { connect: { id: categoryId } } };
+    const themeImages = await readThemeImages(form);
+    const data = { ...content, ...themeImages, ...(imageData !== undefined ? { imageData, hasImage: imageData !== null } : {}), oldPriceMinor: oldPrice, priceMinor: price, releasedAt: new Date(`${released}T00:00:00.000Z`), category: { connect: { id: categoryId } } };
     if (id) await getDb().product.update({ where: { id }, data });
     else await getDb().product.create({ data });
-  } catch (error) { return mutationError(error); }
+  } catch (error) { if (error instanceof Error && error.message === "Invalid theme image") return { error: "Choose valid JPEG, PNG or WebP theme images up to 3 MB each (maximum 25 megapixels)." }; return mutationError(error); }
   refreshCatalog();
   redirect("/admin/products");
 }

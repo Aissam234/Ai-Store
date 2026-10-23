@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { ThemeImageUpload } from "./theme-image-upload";
 import { useActionState, useEffect, useState } from "react";
 import { saveProduct, saveCategory, deleteRecord, toggleProduct } from "@/actions/admin";
 import type { ActionState } from "@/lib/validation";
@@ -8,7 +9,7 @@ import type { ProductTranslations } from "@/i18n/config";
 import { locales, localeLabels, htmlLanguage, direction } from "@/i18n/config";
 export type ProductFormValue = ProductTranslations & {
   durationMonths?: number | null; apiCreditUsd?: number | null; activation?: string | null;
-  oldPrice?: string; imageUrl?: string;
+  oldPrice?: string; imageUrl?: string; imageDarkUrl?: string; imageLightUrl?: string;
   id: string; name: string; slug: string; categoryId: string; description: string;
   fullDescription: string; price: string; badge: string; featured: boolean; active: boolean;
   released: string; symbol: string; color: string; features: string; format: string;
@@ -21,10 +22,12 @@ export function ProductForm({ product, categories }: { product?: ProductFormValu
   const [preview, setPreview] = useState(product?.imageUrl || "");
   useEffect(() => () => { if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); }, [preview]);
   return <form action={action} className="form product-editor-form">
-    <div className="editor-section-heading"><span>01 / MEDIA</span><h2>Product picture</h2><p>Upload or replace the picture shown in your storefront. Changes go live when you save.</p></div>
-    <label>Product image <span className="muted">(optional · JPEG, PNG, WebP · up to 3 MB)</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp" onChange={event => { const file = event.target.files?.[0]; if (file && file.size > 3 * 1024 * 1024) { event.target.setCustomValidity("Choose an image up to 3 MB."); event.target.reportValidity(); return; } event.target.setCustomValidity(""); if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); setPreview(file ? URL.createObjectURL(file) : product?.imageUrl || ""); }}/></label>
+    <div className="editor-section-heading"><span>01 / MEDIA</span><h2>Product pictures</h2><p>Upload or replace the picture shown in your storefront. Changes go live when you save.</p></div>
+    <label>Default / fallback image <span className="muted">(optional · JPEG, PNG, WebP · up to 3 MB)</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp" onChange={event => { const file = event.target.files?.[0]; if (file && file.size > 3 * 1024 * 1024) { event.target.setCustomValidity("Choose an image up to 3 MB."); event.target.reportValidity(); return; } event.target.setCustomValidity(""); if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); setPreview(file ? URL.createObjectURL(file) : product?.imageUrl || ""); }}/></label>
     {preview ? <div className="upload-preview"><Image unoptimized width={360} height={240} src={preview} alt="Selected product image"/></div> : <div className="upload-empty"><span>No picture selected</span><p>Your product will use its fallback artwork until you upload a picture.</p></div>}
     {product?.imageUrl && <label className="checkbox-row"><input type="checkbox" name="removeImage"/> Remove current image (a new upload takes priority)</label>}
+    <p className="small">Optional theme images switch automatically with the store theme. If a theme image is missing, the default image above is used.</p>
+    <div className="form-row"><ThemeImageUpload theme="Dark" src={product?.imageDarkUrl}/><ThemeImageUpload theme="Light" src={product?.imageLightUrl}/></div>
     <div className="editor-section-heading"><span>02 / PRODUCT</span><h2>Name, pricing & visibility</h2><p>Set the details customers see on your product card.</p></div>
     <div className="form-row"><label>Product name<input name="name" defaultValue={product?.name} required minLength={2} maxLength={120}/></label><label>URL slug<input name="slug" defaultValue={product?.slug} placeholder="Generated from name" pattern="[a-z0-9]+(-[a-z0-9]+)*" maxLength={100}/></label></div>
     <div className="form-row"><label>Category<select name="categoryId" defaultValue={product?.categoryId || categories[0]?.id} required>{categories.map(category => <option key={category.id} value={category.id}>{category.name}</option>)}</select></label><label>Price in MAD<input name="price" inputMode="decimal" defaultValue={product?.price} required placeholder="490.00" pattern="(0|[1-9][0-9]{0,5})(\.[0-9]{1,2})?"/></label></div>
