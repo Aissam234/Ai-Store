@@ -86,3 +86,9 @@ Product and checkout order buttons open the manual payment selector. The selecte
 ### Product images by theme
 
 Admin → Products → Add/Edit now includes a default image plus optional Night mode and Light mode images. Each upload accepts JPEG, PNG or WebP up to 3 MB and is validated and stored in PostgreSQL. Missing theme images use the default image; existing products require no edits. Run `npm run db:migrate` before starting a deployed version containing migration `20261023000100_product_theme_images`.
+
+### Duolingo replacement listing
+
+Migration `20261024000100_duplicate_duolingo` creates `duolingo-super-new` from the existing `duolingo-super` product, with 49 MAD / 12 months and no images. It preserves the original listing and copies its translations. It runs only once and does not recreate a replacement later deleted by the admin. If no original exists, it creates nothing.
+
+`npm start` now runs pending Prisma migrations through `prestart` before serving requests. Thus a Render deployment using `npm start` applies the replacement migration automatically; merely pushing to GitHub without deploying does not update the database. Keep Prisma CLI installed in the runtime environment. The server will not start if migrations fail.
