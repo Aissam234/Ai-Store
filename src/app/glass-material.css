@@ -22,7 +22,7 @@ html[data-store-theme="light"] .customer-ui {
   --material-shadow: 0 18px 34px -20px #54233438, 0 3px 8px #50253508;
   --material-light: rgb(181 24 54 / 7%);
 }
-.customer-ui :is(.glass-surface,.product-card,.site-header,.search-field,.sort-field select,.filters button,.panel,.category-card,.process,.benefit-list>div,.hero-notes>span,.showcase-chip,.final-cta,.empty-state,.admin-nav,.table-scroll,.language-switcher,.floating-contact,.button.secondary,dialog,[role="dialog"]) {
+.customer-ui :is(.glass-surface,.product-card,.site-header,.search-field,.sort-field select,.filters button,.panel,.category-card,.process,.benefit-list>div,.hero-notes>span,.final-cta,.empty-state,.admin-nav,.table-scroll,.language-switcher,.floating-contact,.button.secondary,dialog,[role="dialog"]) {
   background: linear-gradient(125deg,var(--material-reflection),transparent 38%,var(--material-light)),var(--material-tint);
   border: 1px solid var(--material-edge);
   box-shadow: inset 0 1px 0 var(--material-highlight),inset 0 -1px 0 #00000008,var(--material-shadow);
@@ -143,3 +143,4 @@ html[data-store-theme="light"] .customer-ui .ambient-environment {
 @media(prefers-reduced-motion:reduce) {
   .customer-ui [data-surface-motion] { animation: none; translate: none; }
 }
+

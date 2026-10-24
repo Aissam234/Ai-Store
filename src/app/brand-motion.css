@@ -1,0 +1,31 @@
+/* The hero uses an alpha cutout so the store environment remains visible. */
+.customer-ui .brand-showcase .depth-edge { display: none; }
+.brand-sculpture { position: relative; aspect-ratio: 1; isolation: isolate; transform-style: preserve-3d; }
+.brand-cutout { position: relative; display: block; width: 100%; height: 100%; object-fit: contain; transform: translateZ(24px); filter: drop-shadow(0 14px 14px #0005); }
+.brand-halo { position: absolute; inset: 17%; border-radius: 50%; background: radial-gradient(ellipse, #d5132630, transparent 68%); pointer-events: none; }
+.brand-orbit { position: absolute; inset: 8%; border: 1px solid #ed294035; border-radius: 50%; transform: rotateX(64deg) rotateZ(-24deg); pointer-events: none; }
+.brand-orbit > span { position: absolute; inset: -1px; border-radius: inherit; background: conic-gradient(from 10deg, transparent 0 80%, #ef2940aa 95%, transparent); mask: radial-gradient(closest-side, transparent calc(100% - 2px), #000 calc(100% - 1px)); }
+[data-theme="light"] .brand-cutout { filter: drop-shadow(0 12px 12px #36071330); }
+@media (prefers-reduced-motion: no-preference) {
+  .customer-ui .brand-showcase .depth-float { animation: brand-hover 8s cubic-bezier(.45,0,.55,1) infinite; animation-play-state: paused; }
+  .brand-orbit > span { animation: brand-orbit-turn 14s linear infinite; animation-play-state: paused; }
+  .brand-halo { animation: brand-breathe 8s ease-in-out infinite; animation-play-state: paused; }
+  .customer-ui .brand-showcase .depth-stage[data-visible="true"] .depth-float,
+  .brand-showcase .depth-stage[data-visible="true"] .brand-orbit > span,
+  .brand-showcase .depth-stage[data-visible="true"] .brand-halo { animation-play-state: running; }
+}
+@keyframes brand-hover {
+  0%, 100% { transform: translateY(4px) rotateX(1deg) rotateY(-5deg) rotateZ(-1deg); }
+  50% { transform: translateY(-12px) rotateX(-2deg) rotateY(5deg) rotateZ(1deg); }
+}
+@keyframes brand-orbit-turn { to { transform: rotate(360deg); } }
+@keyframes brand-breathe { 0%, 100% { opacity: .45; transform: scale(.92); } 50% { opacity: .85; transform: scale(1.08); } }
+@media (max-width: 760px) {
+  .brand-cutout { filter: drop-shadow(0 8px 8px #0003); }
+  .customer-ui .brand-showcase .depth-float { animation-name: brand-hover-mobile; animation-duration: 9s; }
+  .brand-orbit { inset: 12%; }
+}
+@keyframes brand-hover-mobile { 0%, 100% { transform: translateY(3px) rotateZ(-.6deg); } 50% { transform: translateY(-7px) rotateZ(.6deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .brand-showcase .brand-orbit > span, .brand-showcase .brand-halo { animation: none; }
+}
