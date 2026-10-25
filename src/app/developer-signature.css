@@ -1,0 +1,46 @@
+.developer-signature { position: relative; text-align: center; padding: 28px 20px calc(38px + env(safe-area-inset-bottom)); font-size: clamp(12px, 1.1vw, 14px); font-weight: 500; line-height: 1.9; letter-spacing: .055em; }
+.signature-accessible { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.signature-visual { display: inline-block; max-width: 100%; }
+.signature-word { display: inline-block; white-space: pre; }
+.signature-letter { opacity: 1; }
+.signature-color-0 { color: #df2040; text-shadow: 0 0 5px #df204026; }
+.signature-color-1 { color: #fff; text-shadow: 0 1px 2px #0009; }
+.signature-color-2 { color: #111; -webkit-text-stroke: .35px #ffd5dc; text-shadow: 0 0 2px #ffd5dc80; }
+html[data-store-theme="light"] .signature-color-1 { -webkit-text-stroke: .35px #483238; text-shadow: 0 1px 2px #27191b70; }
+html[data-store-theme="light"] .signature-color-2 { -webkit-text-stroke: 0; text-shadow: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .signature-letter { animation: var(--letter-animation) 8s linear infinite; }
+}
+@media (max-width: 760px) {
+  .developer-signature { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .customer-ui .footer-bottom { padding-bottom: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { .signature-letter { animation: none !important; opacity: 1; } }
+@keyframes signature-letter-0 { 0%, 5% { opacity: 0; } 5.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-1 { 0%, 7% { opacity: 0; } 7.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-2 { 0%, 9% { opacity: 0; } 9.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-3 { 0%, 11% { opacity: 0; } 11.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-4 { 0%, 13% { opacity: 0; } 13.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-5 { 0%, 15% { opacity: 0; } 15.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-6 { 0%, 17% { opacity: 0; } 17.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-7 { 0%, 19% { opacity: 0; } 19.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-8 { 0%, 21% { opacity: 0; } 21.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-9 { 0%, 23% { opacity: 0; } 23.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-10 { 0%, 25% { opacity: 0; } 25.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-11 { 0%, 27% { opacity: 0; } 27.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-12 { 0%, 29% { opacity: 0; } 29.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-13 { 0%, 31% { opacity: 0; } 31.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-14 { 0%, 33% { opacity: 0; } 33.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-15 { 0%, 35% { opacity: 0; } 35.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-16 { 0%, 37% { opacity: 0; } 37.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-17 { 0%, 39% { opacity: 0; } 39.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-18 { 0%, 41% { opacity: 0; } 41.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-19 { 0%, 43% { opacity: 0; } 43.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-20 { 0%, 45% { opacity: 0; } 45.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-21 { 0%, 47% { opacity: 0; } 47.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-22 { 0%, 49% { opacity: 0; } 49.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-23 { 0%, 51% { opacity: 0; } 51.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-24 { 0%, 53% { opacity: 0; } 53.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-25 { 0%, 55% { opacity: 0; } 55.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-26 { 0%, 57% { opacity: 0; } 57.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
+@keyframes signature-letter-27 { 0%, 59% { opacity: 0; } 59.1%, 78% { opacity: 1; } 90%, 100% { opacity: 0; } }
