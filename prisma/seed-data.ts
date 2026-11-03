@@ -35,11 +35,11 @@ const offers = [
     descriptionMa: "استافد من كاب كات برو لمدة شهر وخلي المونتاج ديالك أحسن وأكثر احترافية، سواء للمحتوى، أو الفيديوهات القصيرة، أو مواقع التواصل الاجتماعي.",
   },
   {
-    slug: "duolingo-super", name: "Duolingo Super", price: 49, durationMonths: 12, badge: "1 Year", category: "Education",
-    descriptionEn: "Enjoy Duolingo Super for a full year and make your language-learning experience more comfortable, enjoyable and consistent.",
-    descriptionFr: "Profitez de Duolingo Super pendant une année complète et rendez votre apprentissage des langues plus confortable, agréable et régulier.",
-    descriptionAr: "استفد من دولينغو سوبر لمدة سنة كاملة، واجعل تجربة تعلم اللغات أكثر راحة ومتعة واستمرارية.",
-    descriptionMa: "استافد من دولينغو سوبر لمدة عام كامل، وخلي تعلم اللغات أسهل، وأريح، وممتع أكثر.",
+    slug: "duolingo-super-annual", name: "Duolingo Super", price: 29, durationMonths: 12, badge: "1 Year", category: "Education",
+    descriptionEn: "Enjoy Super Duolingo for one full year with an ad-free learning experience, unlimited hearts, personalized practice, and extra exercises to improve your language skills.",
+    descriptionFr: "Profitez de Super Duolingo pendant une année complète, sans publicité, avec des vies illimitées, des exercices personnalisés et des activités supplémentaires pour améliorer vos compétences linguistiques.",
+    descriptionAr: "استفد من دولينغو سوبر لمدة سنة كاملة، وتعلم اللغات دون إعلانات ومع قلوب غير محدودة. استمتع بتمارين إضافية ومراجعة مخصصة للأخطاء، وأنشطة تساعدك على تطوير مهارات الاستماع والنطق والمفردات.",
+    descriptionMa: "تعلم اللغات مع دولينغو سوبر لمدة عام كامل، بلا إعلانات وبلا حدود ديال القلوب. استافد من تمارين إضافية ومراجعة مخصصة باش تحسن مستواك، وتدرب على الاستماع والنطق والمفردات بطريقة ممتعة وسهلة.",
   },
   {
     slug: "netflix-premium", name: "Netflix Premium", price: 29, durationMonths: 1, badge: "Entertainment", category: "Entertainment",
@@ -62,10 +62,17 @@ const offers = [
     descriptionAr: "استفد من سبوتيفاي لمدة شهر، واستمع إلى موسيقاك وفنانيك وقوائم التشغيل المفضلة لديك وقتما تشاء.",
     descriptionMa: "استافد من سبوتيفاي لمدة شهر، وسمع الموسيقى، والفنانين، وقوائم التشغيل اللي كيعجبوك فاش ما بغيتي.",
   },
+  {
+    slug: "youtube-premium-music", name: "YouTube Premium + Music", price: 29, durationMonths: 1, badge: "Premium", category: "Entertainment",
+    descriptionEn: "Enjoy YouTube Premium for one month with ad-free videos, offline downloads, background playback, and YouTube Music Premium included.",
+    descriptionFr: "Profitez de YouTube Premium pendant un mois avec des vidéos sans publicité, des téléchargements hors ligne, la lecture en arrière-plan et YouTube Music Premium inclus.",
+    descriptionAr: "استمتع بيوتيوب بريميوم لمدة شهر كامل، وشاهد الفيديوهات بدون إعلانات، وحمّل المحتوى للمشاهدة دون اتصال بالإنترنت، واستفد من التشغيل في الخلفية. يشمل الاشتراك أيضًا يوتيوب ميوزيك بريميوم.",
+    descriptionMa: "استافد من يوتيوب بريميوم لمدة شهر كامل. تفرج فالفيديوهات بلا إعلانات، وحمّل الفيديوهات باش تشوفهم بلا إنترنت، وخلي الفيديوهات والموسيقى خدامين فالخلفية حتى إلا طفيتي الشاشة. الاشتراك كيشمل حتى يوتيوب ميوزيك بريميوم باش تسمع الموسيقى ديالك براحتك.",
+  },
 ];
 // Import source only. Storefront reads exclusively from PostgreSQL; admin edits stay authoritative.
 export const seedProducts: Product[] = offers.map((offer, index) => ({
   ...offer, id: `offer-${offer.slug}`, description: offer.descriptionEn, fullDescription: offer.descriptionEn,
   featured: index < 4, released: "2026-10-22", symbol: seedCategories.find(c => c.name === offer.category)!.symbol,
-  color: "mint", features: [], format: "Digital service", availability: "ASK_AVAILABILITY",
+  color: "mint", features: [], format: "Digital service", availability: ["duolingo-super-annual", "youtube-premium-music"].includes(offer.slug) ? "AVAILABLE" : "ASK_AVAILABILITY",
 }));

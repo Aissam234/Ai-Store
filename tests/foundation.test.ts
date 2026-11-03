@@ -55,10 +55,10 @@ test("order calculation uses only supplied database prices and makes independent
   assert.throws(() => calculateOrder(["p1", "p2"], rows.map(row => ({ ...row, priceMinor: 2_000_000_000 }))));
 });
 
-test("the preserved seed contains eight valid products in four categories", () => {
-  assert.equal(seedProducts.length, 8); assert.equal(seedCategories.length, 4);
-  assert.equal(new Set(seedProducts.map(product => product.id)).size, 8);
-  assert.equal(new Set(seedProducts.map(product => product.slug)).size, 8);
+test("the preserved seed contains nine valid products in four categories", () => {
+  assert.equal(seedProducts.length, 9); assert.equal(seedCategories.length, 4);
+  assert.equal(new Set(seedProducts.map(product => product.id)).size, 9);
+  assert.equal(new Set(seedProducts.map(product => product.slug)).size, 9);
   for (const product of seedProducts) {
     assert.ok(seedCategories.some(category => category.name === product.category));
     assert.equal(productSchema.safeParse({ ...product, price: product.price.toFixed(2), categoryId: "category-1", active: true, features: product.features.join("\n") }).success, true);

@@ -6,11 +6,11 @@ import { offerDetails } from "../src/lib/offer-details";
 import { whatsappOrderUrl } from "../src/lib/whatsapp";
 import { productSchema } from "../src/lib/validation";
 
-test("catalog contains exactly the eight approved offers with exact prices and terms", () => {
+test("catalog contains exactly the approved seed offers with exact prices and terms", () => {
   assert.deepEqual(seedProducts.map(p => [p.name,p.price,p.durationMonths ?? null,p.apiCreditUsd ?? null,p.badge]), [
     ["ChatGPT Plus",119,1,null,"Popular"], ["Claude API $100",140,null,100,"Developer"], ["Claude API $500",490,null,500,"Best Value"],
-    ["CapCut Pro",49,1,null,"Creator"], ["Duolingo Super",49,12,null,"1 Year"], ["Netflix Premium",29,1,null,"Entertainment"],
-    ["Canva Student",23,36,null,"3 Years"], ["Spotify",50,1,null,"Music"],
+    ["CapCut Pro",49,1,null,"Creator"], ["Duolingo Super",29,12,null,"1 Year"], ["Netflix Premium",29,1,null,"Entertainment"],
+    ["Canva Student",23,36,null,"3 Years"], ["Spotify",50,1,null,"Music"], ["YouTube Premium + Music",29,1,null,"Premium"],
   ]);
   assert.equal(seedProducts[6].activation,"Via invitation");
   assert.ok(seedProducts.every(p => p.features.length === 0 && p.oldPrice === undefined));
