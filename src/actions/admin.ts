@@ -38,8 +38,8 @@ export async function saveProduct(id: string | null, _previous: ActionState, for
     } else if (form.get("removeImage") === "on") imageData = null;
     const themeImages = await readThemeImages(form);
     const data = { ...content, ...themeImages, ...(imageData !== undefined ? { imageData, hasImage: imageData !== null } : {}), oldPriceMinor: oldPrice, priceMinor: price, releasedAt: new Date(`${released}T00:00:00.000Z`), category: { connect: { id: categoryId } } };
-    if (id) await getDb().product.update({ where: { id }, data });
-    else await getDb().product.create({ data });
+    if (id) await getDb().product.update({ where: { id }, data, select: { id: true } });
+    else await getDb().product.create({ data, select: { id: true } });
   } catch (error) { if (error instanceof Error && error.message === "Invalid theme image") return { error: "Choose valid JPEG, PNG or WebP theme images up to 3 MB each (maximum 25 megapixels)." }; return mutationError(error); }
   refreshCatalog();
   redirect("/admin/products");

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { imageInputHint, imageSelectionError, prepareProductImages } from "./prepare-product-images";
 import { saveProductWithFeedback } from "@/lib/product-save-feedback";
 import { ThemeImageUpload } from "./theme-image-upload";
 import { startTransition, useActionState, useEffect, useState } from "react";
@@ -19,12 +20,16 @@ export type ProductFormValue = ProductTranslations & {
 export type CategoryFormValue = { id: string; name: string; slug: string; description: string; symbol: string };
 function Feedback({ state }: { state: ActionState }) { return state.error ? <p className="form-error" role="alert">{state.error}</p> : null; }
 export function ProductForm({ product, categories }: { product?: ProductFormValue; categories: { id: string; name: string }[] }) {
-  const [state, action, pending] = useActionState((previous: ActionState, form: FormData) => saveProductWithFeedback(saveProduct.bind(null, product?.id || null), previous, form), {});
+  const [state, action, pending] = useActionState((previous: ActionState, form: FormData) => saveProductWithFeedback(async (prior, data) => {
+    const error = await prepareProductImages(data);
+    if (error) return { error };
+    return saveProduct(product?.id || null, prior, data);
+  }, previous, form), {});
   const [preview, setPreview] = useState(product?.imageUrl || "");
   useEffect(() => () => { if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); }, [preview]);
   return <form action={action} className="form product-editor-form" onSubmit={event => { event.preventDefault(); if (pending) return; const form = new FormData(event.currentTarget); startTransition(() => action(form)); }}>
     <div className="editor-section-heading"><span>01 / MEDIA</span><h2>Product pictures</h2><p>Upload or replace the picture shown in your storefront. Changes go live when you save.</p></div>
-    <label>Default / fallback image <span className="muted">(optional · JPEG, PNG, WebP · up to 3 MB)</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp" onChange={event => { const file = event.target.files?.[0]; if (file && file.size > 3 * 1024 * 1024) { event.target.setCustomValidity("Choose an image up to 3 MB."); event.target.reportValidity(); return; } event.target.setCustomValidity(""); if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); setPreview(file ? URL.createObjectURL(file) : product?.imageUrl || ""); }}/></label>
+    <label>Default / fallback image <span className="muted">(optional · {imageInputHint})</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp" onChange={event => { const file = event.target.files?.[0]; event.target.setCustomValidity(imageSelectionError(file)); if (!event.target.reportValidity()) return; if (preview.startsWith("blob:")) URL.revokeObjectURL(preview); setPreview(file ? URL.createObjectURL(file) : product?.imageUrl || ""); }}/></label>
     {preview ? <div className="upload-preview"><Image unoptimized width={360} height={240} src={preview} alt="Selected product image"/></div> : <div className="upload-empty"><span>No picture selected</span><p>Your product will use its fallback artwork until you upload a picture.</p></div>}
     {product?.imageUrl && <label className="checkbox-row"><input type="checkbox" name="removeImage"/> Remove current image (a new upload takes priority)</label>}
     <p className="small">Optional theme images switch automatically with the store theme. If a theme image is missing, the default image above is used.</p>

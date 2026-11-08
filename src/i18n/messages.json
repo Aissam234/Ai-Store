@@ -1658,5 +1658,580 @@
     "fr": "Indiquez votre moyen de paiement préféré sur WhatsApp. Nous confirmerons sa disponibilité et conviendrons des détails avant tout paiement.",
     "ar": "أخبرنا بطريقة الدفع التي تفضلها عبر واتساب. سنؤكد إمكانية استخدامها ونتفق على التفاصيل قبل الدفع.",
     "ma": "قول لينا فواتساب الطريقة اللي بغيتي تخلص بها. غادي نأكدو واش ممكنة ونتفاهمو على التفاصيل قبل ما تخلص."
+  },
+  "Software Services": {
+    "fr": "Services logiciels",
+    "ar": "الخدمات البرمجية",
+    "ma": "خدمات البرمجة"
+  },
+  "Your Ideas. Our Code. Real Solutions.": {
+    "fr": "Vos idées. Notre code. Des solutions concrètes.",
+    "ar": "أفكارك. برمجتنا. حلول واقعية.",
+    "ma": "أفكارك. الكود ديالنا. حلول واقعية."
+  },
+  "From websites to custom software, turn your ideas into useful digital experiences.": {
+    "fr": "Des sites web aux logiciels sur mesure, concrétisez vos idées.",
+    "ar": "من المواقع إلى البرمجيات المخصصة، حوّل أفكارك إلى تجارب رقمية مفيدة.",
+    "ma": "من المواقع للبرامج الخاصة، حوّل فكرتك لتجربة رقمية مفيدة."
+  },
+  "Discuss Your Project": {
+    "fr": "Discuter de votre projet",
+    "ar": "ناقش مشروعك",
+    "ma": "هضر معانا على مشروعك"
+  },
+  "Explore Services": {
+    "fr": "Explorer les services",
+    "ar": "استكشف الخدمات",
+    "ma": "اكتاشف الخدمات"
+  },
+  "Frontend Development": {
+    "fr": "Développement frontend",
+    "ar": "تطوير الواجهات",
+    "ma": "تطوير الواجهات"
+  },
+  "Responsive websites, landing pages, business websites, dashboards, integrations and accessible interface improvements.": {
+    "fr": "Sites adaptatifs, pages de présentation, sites professionnels, tableaux de bord, intégrations et interfaces accessibles.",
+    "ar": "مواقع متجاوبة وصفحات هبوط ومواقع أعمال ولوحات تحكم وتكاملات وتحسينات لإتاحة الواجهات.",
+    "ma": "مواقع متجاوبة وصفحات تعريفية ومواقع للشركات ولوحات تحكم وربط الخدمات وتحسين سهولة الاستعمال."
+  },
+  "Backend Development": {
+    "fr": "Développement backend",
+    "ar": "تطوير الخوادم",
+    "ma": "تطوير الباك إند"
+  },
+  "REST APIs, server applications, databases, authentication, architecture, integrations, performance and maintenance.": {
+    "fr": "API REST, applications serveur, bases de données, authentification, architecture, intégrations, performance et maintenance.",
+    "ar": "واجهات REST وتطبيقات خادم وقواعد بيانات ومصادقة وبنية برمجية وتكاملات وتحسين الأداء والصيانة.",
+    "ma": "واجهات REST وتطبيقات السيرفر وقواعد البيانات وتسجيل الدخول والبنية وربط الخدمات وتحسين الأداء والصيانة."
+  },
+  "Full-Stack Development": {
+    "fr": "Développement full-stack",
+    "ar": "تطوير المواقع المتكاملة",
+    "ma": "تطوير المواقع المتكاملة"
+  },
+  "Complete websites and web applications with integrated interfaces, databases, admin dashboards, authentication and deployment assistance.": {
+    "fr": "Sites et applications complets avec interfaces intégrées, bases de données, administration, authentification et aide au déploiement.",
+    "ar": "مواقع وتطبيقات متكاملة مع واجهات وقواعد بيانات ولوحات إدارة ومصادقة ومساعدة في النشر.",
+    "ma": "مواقع وتطبيقات كاملة بالواجهات وقواعد البيانات ولوحات الإدارة وتسجيل الدخول والمساعدة فالنشر."
+  },
+  "Custom Software": {
+    "fr": "Logiciels sur mesure",
+    "ar": "برمجيات مخصصة",
+    "ma": "برامج على القياس"
+  },
+  "Custom tools, automation, API integrations, business dashboards, internal systems, workflow improvements and software modernization.": {
+    "fr": "Outils sur mesure, automatisation, intégrations API, tableaux de bord, systèmes internes, optimisation des processus et modernisation.",
+    "ar": "أدوات مخصصة وأتمتة وتكاملات برمجية ولوحات أعمال وأنظمة داخلية وتحسين سير العمل وتحديث البرمجيات.",
+    "ma": "أدوات خاصة وأتمتة وربط الخدمات ولوحات للشركات وأنظمة داخلية وتحسين الخدمة وتحديث البرامج."
+  },
+  "Student Project Support": {
+    "fr": "Accompagnement étudiant",
+    "ar": "دعم مشاريع الطلبة",
+    "ma": "مساعدة مشاريع الطلبة"
+  },
+  "Ideas, requirements, technology choices, architecture, programming mentorship, debugging, code review, databases, documentation, testing and presentation preparation.": {
+    "fr": "Idées, besoins, choix techniques, architecture, mentorat, débogage, revue de code, bases de données, documentation, tests et préparation de présentation.",
+    "ar": "أفكار ومتطلبات واختيار تقنيات وبنية برمجية وإرشاد وتصحيح أخطاء ومراجعة كود وقواعد بيانات وتوثيق واختبارات وتحضير العرض.",
+    "ma": "أفكار ومتطلبات واختيار التقنيات والبنية والمواكبة وتصحيح الأخطاء ومراجعة الكود وقواعد البيانات والتوثيق والاختبارات وتحضير العرض."
+  },
+  "Code Review": {
+    "fr": "Revue de code",
+    "ar": "مراجعة الكود",
+    "ma": "مراجعة الكود"
+  },
+  "Code quality and architecture reviews, bug investigation, performance, refactoring guidance, security-oriented reviews and technical consulting.": {
+    "fr": "Revue de qualité et d’architecture, analyse de bugs, performance, refactorisation, revue orientée sécurité et conseil technique.",
+    "ar": "مراجعات الجودة والبنية وتحليل الأخطاء والأداء وإرشاد إعادة الهيكلة ومراجعات أمنية واستشارات تقنية.",
+    "ma": "مراجعة الجودة والبنية والبحث فالأخطاء والأداء وتحسين تنظيم الكود ومراجعات أمنية واستشارة تقنية."
+  },
+  "Request this service": {
+    "fr": "Demander ce service",
+    "ar": "اطلب هذه الخدمة",
+    "ma": "طلب هاد الخدمة"
+  },
+  "Stuck on Your Software Project?": {
+    "fr": "Bloqué sur votre projet logiciel ?",
+    "ar": "تواجه صعوبة في مشروعك البرمجي؟",
+    "ma": "واش وقف ليك المشروع ديالك؟"
+  },
+  "Practical guidance to understand and improve academic, internship and graduation projects. You remain the author of your work.": {
+    "fr": "Un accompagnement pour comprendre et améliorer vos projets universitaires, de stage et de fin d’études. Vous restez l’auteur de votre travail.",
+    "ar": "إرشاد عملي لفهم وتحسين مشاريع الدراسة والتدريب والتخرج. تبقى أنت صاحب العمل.",
+    "ma": "مواكبة باش تفهم وتحسن مشاريع القراية والستاج والتخرج. الخدمة كتبقى ديالك."
+  },
+  "Tell us about your project": {
+    "fr": "Présentez votre projet",
+    "ar": "عرّفنا بمشروعك",
+    "ma": "عرّفنا بمشروعك"
+  },
+  "Explain your challenges": {
+    "fr": "Expliquez vos difficultés",
+    "ar": "اشرح التحديات",
+    "ma": "شرح لينا الصعوبات"
+  },
+  "Receive a tailored support plan": {
+    "fr": "Recevez un plan adapté",
+    "ar": "احصل على خطة دعم مناسبة",
+    "ma": "خد خطة مساعدة مناسبة"
+  },
+  "Work through improvements together": {
+    "fr": "Avançons ensemble",
+    "ar": "نعمل على التحسينات معًا",
+    "ma": "نخدمو على التحسينات مجموعين"
+  },
+  "Get Student Support": {
+    "fr": "Obtenir un accompagnement",
+    "ar": "اطلب دعمًا دراسيًا",
+    "ma": "طلب المساعدة فالمشروع"
+  },
+  "How we work": {
+    "fr": "Notre méthode",
+    "ar": "كيف نعمل",
+    "ma": "كيفاش كنخدمو"
+  },
+  "Share your idea and requirements": {
+    "fr": "Partagez votre idée et vos besoins",
+    "ar": "شارك فكرتك ومتطلباتك",
+    "ma": "شارك فكرتك والمتطلبات"
+  },
+  "Discuss scope, technologies and deliverables": {
+    "fr": "Discutons du périmètre, des technologies et des livrables",
+    "ar": "نناقش النطاق والتقنيات والمخرجات",
+    "ma": "نهضرو على النطاق والتقنيات والنتيجة"
+  },
+  "Agree on a proposal before development begins": {
+    "fr": "Validons la proposition avant le développement",
+    "ar": "نتفق على المقترح قبل بدء التطوير",
+    "ma": "نتافقو على العرض قبل ما نبداو"
+  },
+  "Review, delivery and support within the agreed scope": {
+    "fr": "Revue, livraison et suivi selon le périmètre convenu",
+    "ar": "مراجعة وتسليم ودعم ضمن النطاق المتفق عليه",
+    "ma": "مراجعة وتسليم ومساعدة على حساب الاتفاق"
+  },
+  "Full name": {
+    "fr": "Nom complet",
+    "ar": "الاسم الكامل",
+    "ma": "الاسم الكامل"
+  },
+  "WhatsApp number": {
+    "fr": "Numéro WhatsApp",
+    "ar": "رقم واتساب",
+    "ma": "رقم واتساب"
+  },
+  "Service type": {
+    "fr": "Type de service",
+    "ar": "نوع الخدمة",
+    "ma": "نوع الخدمة"
+  },
+  "Project description": {
+    "fr": "Description du projet",
+    "ar": "وصف المشروع",
+    "ma": "وصف المشروع"
+  },
+  "Project status": {
+    "fr": "État du projet",
+    "ar": "حالة المشروع",
+    "ma": "حالة المشروع"
+  },
+  "Just an idea": {
+    "fr": "Une idée",
+    "ar": "مجرد فكرة",
+    "ma": "غير فكرة"
+  },
+  "Planning stage": {
+    "fr": "En planification",
+    "ar": "مرحلة التخطيط",
+    "ma": "فالتخطيط"
+  },
+  "Already started": {
+    "fr": "Déjà commencé",
+    "ar": "بدأ بالفعل",
+    "ma": "بدا المشروع"
+  },
+  "Existing project needing improvements": {
+    "fr": "Projet à améliorer",
+    "ar": "مشروع يحتاج إلى تحسينات",
+    "ma": "مشروع محتاج تحسينات"
+  },
+  "Optional budget range": {
+    "fr": "Budget indicatif facultatif",
+    "ar": "ميزانية تقديرية اختيارية",
+    "ma": "ميزانية تقريبية اختيارية"
+  },
+  "Discuss together": {
+    "fr": "À discuter",
+    "ar": "نناقشها معًا",
+    "ma": "نتافقو عليها"
+  },
+  "Optional preferred deadline": {
+    "fr": "Échéance souhaitée facultative",
+    "ar": "موعد مفضل اختياري",
+    "ma": "موعد مفضل اختياري"
+  },
+  "Prepare WhatsApp inquiry": {
+    "fr": "Préparer la demande WhatsApp",
+    "ar": "جهّز طلب واتساب",
+    "ma": "وجد طلب واتساب"
+  },
+  "Preparing…": {
+    "fr": "Préparation…",
+    "ar": "جارٍ التحضير…",
+    "ma": "كنوجدو الطلب…"
+  },
+  "Your message is ready. Review it, then send it in WhatsApp.": {
+    "fr": "Votre message est prêt. Vérifiez-le puis envoyez-le dans WhatsApp.",
+    "ar": "رسالتك جاهزة. راجعها ثم أرسلها عبر واتساب.",
+    "ma": "الرسالة واجدة. راجعها وصيفطها فواتساب."
+  },
+  "Open WhatsApp": {
+    "fr": "Ouvrir WhatsApp",
+    "ar": "افتح واتساب",
+    "ma": "حل واتساب"
+  },
+  "Edit request": {
+    "fr": "Modifier la demande",
+    "ar": "عدّل الطلب",
+    "ma": "بدل الطلب"
+  },
+  "Your details are only shared when you send the message on WhatsApp. Do not include passwords or private credentials.": {
+    "fr": "Vos informations sont partagées lors de l’envoi sur WhatsApp. N’incluez aucun mot de passe ni identifiant privé.",
+    "ar": "تُشارك معلوماتك عند إرسال الرسالة عبر واتساب. لا تدرج كلمات مرور أو بيانات دخول خاصة.",
+    "ma": "المعلومات كتشارك ملي كتصيفط فواتساب. ما تدخلش كلمات السر ولا معلومات الدخول."
+  },
+  "Check this field.": {
+    "fr": "Vérifiez ce champ.",
+    "ar": "تحقق من هذا الحقل.",
+    "ma": "راجع هاد الخانة."
+  },
+  "Other": {
+    "fr": "Autre",
+    "ar": "أخرى",
+    "ma": "أخرى"
+  },
+  "Your Idea.": {
+    "fr": "Votre idée.",
+    "ar": "فكرتك.",
+    "ma": "الفكرة ديالك."
+  },
+  "Our Engineering.": {
+    "fr": "Notre ingénierie.",
+    "ar": "هندستنا.",
+    "ma": "الهندسة ديالنا."
+  },
+  "From modern websites to custom software and technical mentorship, we help turn ambitious ideas into reliable digital experiences.": {
+    "fr": "Des sites modernes aux logiciels sur mesure et au mentorat technique, nous transformons vos idées en expériences numériques fiables.",
+    "ar": "من المواقع الحديثة إلى البرمجيات المخصصة والإرشاد التقني، نساعدك على تحويل أفكارك الطموحة إلى تجارب رقمية موثوقة.",
+    "ma": "من المواقع الحديثة للبرامج على القياس والمواكبة التقنية، كنعاونوك تحول أفكارك لتجارب رقمية موثوقة."
+  },
+  "Engineering around your needs.": {
+    "fr": "Une ingénierie adaptée à vos besoins.",
+    "ar": "هندسة تناسب احتياجاتك.",
+    "ma": "هندسة على حساب احتياجاتك."
+  },
+  "One clear brief. The right solution.": {
+    "fr": "Un besoin clair. Une solution adaptée.",
+    "ar": "متطلبات واضحة. حلول مناسبة.",
+    "ma": "طلب واضح. الحل المناسب."
+  },
+  "Custom Website Development": {
+    "fr": "Création de sites sur mesure",
+    "ar": "تطوير مواقع مخصصة",
+    "ma": "تطوير المواقع على القياس"
+  },
+  "A considered home for your business online. From a focused landing page to a complete storefront, every interface is designed around your audience and goals.": {
+    "fr": "Une présence en ligne pensée pour votre activité. De la page de présentation à la boutique complète, chaque interface répond à vos objectifs.",
+    "ar": "حضور رقمي مدروس لأعمالك. من صفحة تعريفية إلى متجر متكامل، تُصمم كل واجهة وفق جمهورك وأهدافك.",
+    "ma": "حضور فالإنترنت مناسب لخدمتك. من صفحة تعريفية لمتجر كامل، كل واجهة كنصمموها على حساب جمهورك وأهدافك."
+  },
+  "Business sites, company websites & portfolios": {
+    "fr": "Sites professionnels, sites d’entreprise et portfolios",
+    "ar": "مواقع أعمال وشركات ومعارض أعمال",
+    "ma": "مواقع الشركات ومعارض الأعمال"
+  },
+  "Landing pages & e-commerce storefronts": {
+    "fr": "Pages de présentation et boutiques en ligne",
+    "ar": "صفحات هبوط وواجهات متاجر إلكترونية",
+    "ma": "صفحات تعريفية ومتاجر إلكترونية"
+  },
+  "Responsive frontend, backend integration & redesigns": {
+    "fr": "Interfaces adaptatives, intégration backend et refontes",
+    "ar": "واجهات متجاوبة وربط بالخادم وتحسين التصميم",
+    "ma": "واجهات متجاوبة وربط بالباك إند وتحسين التصميم"
+  },
+  "Build My Website": {
+    "fr": "Créer mon site",
+    "ar": "أنشئ موقعي",
+    "ma": "نبني الموقع ديالي"
+  },
+  "Custom Web Applications": {
+    "fr": "Applications web sur mesure",
+    "ar": "تطبيقات ويب مخصصة",
+    "ma": "تطبيقات ويب على القياس"
+  },
+  "Software shaped around how you work. We plan your workflows, data and user roles before connecting them in one usable application.": {
+    "fr": "Un logiciel adapté à votre fonctionnement. Nous planifions les processus, les données et les rôles avant de les réunir dans une application.",
+    "ar": "برمجيات تناسب طريقة عملك. نخطط لسير العمل والبيانات وأدوار المستخدمين قبل جمعها في تطبيق عملي.",
+    "ma": "برنامج مناسب لطريقة خدمتك. كنخططو للمراحل والبيانات وأدوار المستخدمين قبل ما نجمعوهم فتطبيق عملي."
+  },
+  "Customer dashboards & admin panels": {
+    "fr": "Tableaux de bord clients et administration",
+    "ar": "لوحات العملاء والإدارة",
+    "ma": "لوحات الزبناء والإدارة"
+  },
+  "Internal tools, management systems & platforms": {
+    "fr": "Outils internes, systèmes de gestion et plateformes",
+    "ar": "أدوات داخلية وأنظمة إدارة ومنصات",
+    "ma": "أدوات داخلية وأنظمة التسيير ومنصات"
+  },
+  "Databases, authentication & full-stack integration": {
+    "fr": "Bases de données, authentification et intégration full-stack",
+    "ar": "قواعد بيانات ومصادقة وتكامل الواجهات والخوادم",
+    "ma": "قواعد البيانات وتسجيل الدخول وربط الواجهة بالسيرفر"
+  },
+  "Discuss My Application": {
+    "fr": "Discuter de mon application",
+    "ar": "ناقش تطبيقي",
+    "ma": "نهضرو على التطبيق ديالي"
+  },
+  "APIs, Integrations & Automation": {
+    "fr": "API, intégrations et automatisation",
+    "ar": "واجهات برمجية وتكاملات وأتمتة",
+    "ma": "واجهات برمجية وربط وأتمتة"
+  },
+  "Make your tools work together. We review the available APIs and constraints, then design connections that reduce repetitive work.": {
+    "fr": "Faites communiquer vos outils. Nous étudions les API et leurs contraintes pour réduire les tâches répétitives.",
+    "ar": "اجعل أدواتك تعمل معًا. نراجع الواجهات البرمجية والقيود المتاحة ثم نصمم روابط تقلل العمل المتكرر.",
+    "ma": "خلي الأدوات ديالك يخدمو مجموعين. كنراجعو الواجهات والقيود وكنصممو الربط اللي ينقص الخدمة المتكررة."
+  },
+  "REST APIs, backend services & webhooks": {
+    "fr": "API REST, services backend et webhooks",
+    "ar": "واجهات REST وخدمات خادم وخطافات ويب",
+    "ma": "واجهات REST وخدمات السيرفر وويب هوكس"
+  },
+  "Data workflows & task automation": {
+    "fr": "Flux de données et automatisation des tâches",
+    "ar": "تدفقات بيانات وأتمتة مهام",
+    "ma": "تدفق البيانات وأتمتة المهام"
+  },
+  "Integration troubleshooting & architecture": {
+    "fr": "Diagnostic des intégrations et architecture",
+    "ar": "تشخيص التكاملات وتحسين البنية",
+    "ma": "حل مشاكل الربط وتحسين البنية"
+  },
+  "Automate My Workflow": {
+    "fr": "Automatiser mon activité",
+    "ar": "أتمت سير عملي",
+    "ma": "نأتمت الخدمة ديالي"
+  },
+  "Student Project Mentorship": {
+    "fr": "Mentorat de projets étudiants",
+    "ar": "إرشاد مشاريع الطلبة",
+    "ma": "مواكبة مشاريع الطلبة"
+  },
+  "Understand the decisions behind your code. Collaborative sessions help you plan, debug and explain your academic project while keeping ownership of your work.": {
+    "fr": "Comprenez les décisions derrière votre code. Des séances collaboratives pour planifier, déboguer et expliquer votre projet, dont vous restez l’auteur.",
+    "ar": "افهم القرارات وراء كودك. جلسات تعاونية لتخطيط مشروعك الدراسي وتصحيحه وشرحه مع احتفاظك بملكية عملك.",
+    "ma": "فهم القرارات اللي ورا الكود. جلسات تعاونية باش تخطط وتصوب وتشرح مشروع القراية ديالك، والخدمة كتبقى ديالك."
+  },
+  "Requirements, technology choices & project milestones": {
+    "fr": "Besoins, choix techniques et étapes du projet",
+    "ar": "متطلبات واختيار تقنيات ومراحل المشروع",
+    "ma": "المتطلبات واختيار التقنيات ومراحل المشروع"
+  },
+  "Guided coding, concepts & debugging": {
+    "fr": "Programmation guidée, concepts et débogage",
+    "ar": "برمجة موجهة وشرح مفاهيم وتصحيح أخطاء",
+    "ma": "برمجة بالمواكبة وشرح المفاهيم وتصحيح الأخطاء"
+  },
+  "Database guidance, reviews & presentation preparation": {
+    "fr": "Conseils en bases de données, revues et préparation orale",
+    "ar": "إرشاد قواعد البيانات ومراجعة وتحضير العروض",
+    "ma": "مواكبة قواعد البيانات والمراجعة وتحضير العرض"
+  },
+  "Get Project Guidance": {
+    "fr": "Être accompagné",
+    "ar": "احصل على إرشاد",
+    "ma": "خد المواكبة لمشروعك"
+  },
+  "Code Review, Debugging & Optimization": {
+    "fr": "Revue de code, débogage et optimisation",
+    "ar": "مراجعة الكود وتصحيح الأخطاء والتحسين",
+    "ma": "مراجعة الكود وتصحيح الأخطاء والتحسين"
+  },
+  "Bring clarity to an existing codebase. We investigate problems, explain trade-offs and prioritize practical improvements for developers and teams.": {
+    "fr": "Clarifiez votre code existant. Nous analysons les problèmes, expliquons les compromis et priorisons les améliorations pour les développeurs et équipes.",
+    "ar": "وضوح أكبر في مشروع قائم. نحلل المشاكل ونشرح الخيارات ونحدد التحسينات العملية للمطورين والفرق.",
+    "ma": "وضح المشروع الموجود. كنحللو المشاكل وكنشرحو الاختيارات وكنرتبو التحسينات للمطورين والفرق."
+  },
+  "Code quality, refactoring & maintainability": {
+    "fr": "Qualité, refactorisation et maintenabilité",
+    "ar": "جودة الكود وإعادة الهيكلة وقابلية الصيانة",
+    "ma": "جودة الكود وتنظيمه وسهولة الصيانة"
+  },
+  "Frontend bugs & backend troubleshooting": {
+    "fr": "Bugs frontend et diagnostic backend",
+    "ar": "أخطاء الواجهات وتشخيص الخوادم",
+    "ma": "أخطاء الواجهات وتشخيص الباك إند"
+  },
+  "Performance audits & architecture recommendations": {
+    "fr": "Audits de performance et recommandations d’architecture",
+    "ar": "تدقيق الأداء وتوصيات البنية",
+    "ma": "مراجعة الأداء ونصائح البنية"
+  },
+  "Review My Project": {
+    "fr": "Examiner mon projet",
+    "ar": "راجع مشروعي",
+    "ma": "راجع المشروع ديالي"
+  },
+  "Discovery": {
+    "fr": "Découverte",
+    "ar": "الاستكشاف",
+    "ma": "نتعرفو على المشروع"
+  },
+  "Planning": {
+    "fr": "Planification",
+    "ar": "التخطيط",
+    "ma": "التخطيط"
+  },
+  "Review & Delivery": {
+    "fr": "Revue et livraison",
+    "ar": "المراجعة والتسليم",
+    "ma": "المراجعة والتسليم"
+  },
+  "Understand your idea, objectives and requirements.": {
+    "fr": "Comprendre votre idée, vos objectifs et vos besoins.",
+    "ar": "نفهم فكرتك وأهدافك ومتطلباتك.",
+    "ma": "نفهمو فكرتك وأهدافك والمتطلبات."
+  },
+  "Define scope, architecture, priorities and approach.": {
+    "fr": "Définir le périmètre, l’architecture, les priorités et l’approche.",
+    "ar": "نحدد النطاق والبنية والأولويات والنهج.",
+    "ma": "نحددو النطاق والبنية والأولويات والطريقة."
+  },
+  "Build through iterative reviews and clear communication.": {
+    "fr": "Avancer avec des revues régulières et une communication claire.",
+    "ar": "نبني عبر مراجعات متتابعة وتواصل واضح.",
+    "ma": "نبنيو بمراجعات متتابعة وتواصل واضح."
+  },
+  "Test, refine and prepare the agreed deliverables.": {
+    "fr": "Tester, affiner et préparer les livrables convenus.",
+    "ar": "نختبر ونحسن ونجهز المخرجات المتفق عليها.",
+    "ma": "نختابرو ونحسنو ونوجدو النتيجة المتافق عليها."
+  },
+  "For mentorship, these steps become a shared learning plan, guided practice and a review of your progress.": {
+    "fr": "Pour le mentorat, ces étapes deviennent un plan d’apprentissage, une pratique guidée et un bilan des progrès.",
+    "ar": "في الإرشاد الدراسي، تتحول هذه الخطوات إلى خطة تعلم وتطبيق موجه ومراجعة التقدم.",
+    "ma": "فالمواكبة الدراسية، هاد المراحل كتولي خطة تعلم وتطبيق بالمواكبة ومراجعة التقدم."
+  },
+  "Request a Quote": {
+    "fr": "Demander un devis",
+    "ar": "اطلب عرض سعر",
+    "ma": "طلب عرض ثمن"
+  },
+  "Project title": {
+    "fr": "Titre du projet",
+    "ar": "عنوان المشروع",
+    "ma": "عنوان المشروع"
+  },
+  "Desired features or help (optional)": {
+    "fr": "Fonctionnalités ou aide souhaitées (facultatif)",
+    "ar": "الميزات أو المساعدة المطلوبة (اختياري)",
+    "ma": "الخصائص ولا المساعدة المطلوبة (اختياري)"
+  },
+  "What would you like to understand or improve?": {
+    "fr": "Que souhaitez-vous comprendre ou améliorer ?",
+    "ar": "ما الذي ترغب في فهمه أو تحسينه؟",
+    "ma": "شنو بغيتي تفهم ولا تحسن؟"
+  },
+  "Preferred timeframe (optional)": {
+    "fr": "Délai souhaité (facultatif)",
+    "ar": "المدة المفضلة (اختياري)",
+    "ma": "المدة المفضلة (اختياري)"
+  },
+  "Contact details (optional)": {
+    "fr": "Coordonnées (facultatif)",
+    "ar": "بيانات التواصل (اختياري)",
+    "ma": "معلومات التواصل (اختياري)"
+  },
+  "Discuss My Project": {
+    "fr": "Discuter de mon projet",
+    "ar": "ناقش مشروعي",
+    "ma": "نهضر على المشروع ديالي"
+  },
+  "Please enter a project title (2–100 characters).": {
+    "fr": "Saisissez un titre de 2 à 100 caractères.",
+    "ar": "أدخل عنوانًا من حرفين إلى 100 حرف.",
+    "ma": "دخل عنوان فيه من جوج حتى 100 حرف."
+  },
+  "Describe your project in 20–2000 characters.": {
+    "fr": "Décrivez votre projet en 20 à 2000 caractères.",
+    "ar": "صف مشروعك في 20 إلى 2000 حرف.",
+    "ma": "وصف المشروع فـ20 حتى 2000 حرف."
+  },
+  "Keep this field within the indicated limit.": {
+    "fr": "Respectez la limite indiquée.",
+    "ar": "التزم بالحد المحدد لهذا الحقل.",
+    "ma": "احترم الحد المحدد لهاد الخانة."
+  },
+  "A few things before we begin.": {
+    "fr": "Quelques précisions avant de commencer.",
+    "ar": "توضيحات قبل أن نبدأ.",
+    "ma": "توضيحات قبل ما نبداو."
+  },
+  "How is the price determined?": {
+    "fr": "Comment le prix est-il fixé ?",
+    "ar": "كيف يُحدد السعر؟",
+    "ma": "كيفاش كيتحدد الثمن؟"
+  },
+  "We discuss requirements and complexity, then agree on a tailored quote and scope before starting.": {
+    "fr": "Nous discutons des besoins et de la complexité, puis convenons du devis et du périmètre avant de commencer.",
+    "ar": "نناقش المتطلبات والتعقيد ثم نتفق على عرض سعر ونطاق مخصصين قبل البدء.",
+    "ma": "كنهضرو على المتطلبات والصعوبة ونتافقو على الثمن والنطاق قبل ما نبداو."
+  },
+  "Can you improve an existing project?": {
+    "fr": "Pouvez-vous améliorer un projet existant ?",
+    "ar": "هل يمكن تحسين مشروع قائم؟",
+    "ma": "واش ممكن تحسنو مشروع موجود؟"
+  },
+  "Yes. Describe the current setup and the problem. We assess the code and agree on the changes that are useful.": {
+    "fr": "Oui. Décrivez votre configuration et le problème. Nous évaluons le code et convenons des changements utiles.",
+    "ar": "نعم. صف الوضع الحالي والمشكلة. نقيّم الكود ونتفق على التغييرات المفيدة.",
+    "ma": "نعم. وصف الوضع الحالي والمشكل. كنراجعو الكود ونتافقو على التغييرات المفيدة."
+  },
+  "Will you complete my assessed work for me?": {
+    "fr": "Faites-vous mon travail évalué à ma place ?",
+    "ar": "هل تنجزون عملي الدراسي المقيم نيابة عني؟",
+    "ma": "واش غادي تديرو بلاصتي الخدمة اللي عليها التنقيط؟"
+  },
+  "Mentorship supports your understanding and independent work through explanations, guided practice and feedback. Follow your institution’s collaboration rules.": {
+    "fr": "Le mentorat soutient votre compréhension et votre travail autonome par des explications, des exercices guidés et des retours. Respectez les règles de votre établissement.",
+    "ar": "يدعم الإرشاد فهمك وعملك المستقل بالشرح والتطبيق الموجه والملاحظات. التزم بقواعد التعاون في مؤسستك.",
+    "ma": "المواكبة كتعاونك تفهم وتخدم براسك بالشرح والتطبيق والنصائح. تبع قواعد التعاون ديال المؤسسة ديالك."
+  },
+  "What happens after I prepare an inquiry?": {
+    "fr": "Que se passe-t-il après la préparation ?",
+    "ar": "ماذا يحدث بعد تجهيز الطلب؟",
+    "ma": "شنو كيوقع ملي كنوجد الطلب؟"
+  },
+  "Review the message and open WhatsApp to send it. Preparing the form does not submit an order or confirm a booking.": {
+    "fr": "Vérifiez le message et ouvrez WhatsApp pour l’envoyer. Préparer le formulaire ne confirme ni commande ni réservation.",
+    "ar": "راجع الرسالة وافتح واتساب لإرسالها. تجهيز النموذج لا يرسل طلب شراء ولا يؤكد حجزًا.",
+    "ma": "راجع الرسالة وحل واتساب باش تصيفطها. تجهيز الطلب ما كيأكد لا شراء لا حجز."
+  },
+  "Have something in mind?": {
+    "fr": "Une idée en tête ?",
+    "ar": "لديك فكرة؟",
+    "ma": "عندك شي فكرة؟"
+  },
+  "Start with a conversation.": {
+    "fr": "Commençons par une conversation.",
+    "ar": "لنبدأ بمحادثة.",
+    "ma": "نبداو بهضرة."
+  },
+  "From your first website to your next custom tool.": {
+    "fr": "De votre premier site à votre prochain outil sur mesure.",
+    "ar": "من موقعك الأول إلى أداتك المخصصة التالية.",
+    "ma": "من أول موقع ديالك للأداة الخاصة الجاية."
   }
 }

@@ -144,3 +144,54 @@ html[data-store-theme="light"] .customer-ui .ambient-environment {
   .customer-ui [data-surface-motion] { animation: none; translate: none; }
 }
 
+
+/* Reading surfaces for the homepage copy and the main FAQ. */
+.customer-ui :is(.container.faq-preview, .container.narrow.page-space) > .faq-list details {
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.customer-ui :is(.container.faq-preview, .container.narrow.page-space) > .faq-list details + details {
+  margin-block-start: 8px;
+}
+.customer-ui :is(.container.faq-preview, .container.narrow.page-space) > .faq-list summary {
+  padding: 1rem clamp(14px, 2vw, 22px);
+  color: var(--text-primary);
+}
+.customer-ui :is(.container.faq-preview, .container.narrow.page-space) > .faq-list summary span {
+  flex: none;
+  display: inline-flex;
+  color: var(--red-soft);
+}
+.customer-ui :is(.container.faq-preview, .container.narrow.page-space) > .faq-list details p {
+  padding: 0 clamp(14px, 2vw, 22px) 1rem;
+  color: color-mix(in srgb, var(--text-primary) 72%, var(--text-secondary));
+}
+
+.customer-ui #why-us .manifesto > div:first-child {
+  position: relative;
+  isolation: isolate;
+  align-self: start;
+}
+.customer-ui #why-us .manifesto > div:first-child::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -10px -8px;
+  border-radius: 12px;
+  background: linear-gradient(155deg, color-mix(in srgb, var(--surface) 88%, transparent),
+    color-mix(in srgb, var(--surface) 77%, transparent));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+.customer-ui #why-us .manifesto > div:first-child :is(h2, .eyebrow) {
+  color: var(--text-primary);
+}
+.customer-ui #why-us .manifesto > div:first-child p {
+  color: color-mix(in srgb, var(--text-primary) 72%, var(--text-secondary));
+}
+.customer-ui #why-us .manifesto .text-link { color: var(--red-soft); }
+.customer-ui #why-us .manifesto .text-link:is(:hover, :focus-visible) { text-decoration: underline; }

@@ -1,0 +1,1 @@
+CREATE TABLE "ServiceImage" ("serviceId" VARCHAR(20) NOT NULL, "imageData" BYTEA, "imageDarkData" BYTEA, "imageLightData" BYTEA, "updatedAt" TIMESTAMP(3) NOT NULL, CONSTRAINT "ServiceImage_pkey" PRIMARY KEY ("serviceId"));

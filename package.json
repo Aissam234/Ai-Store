@@ -13,7 +13,8 @@
     "db:seed": "prisma db seed",
     "test": "tsx --test tests/*.test.ts",
     "postinstall": "prisma generate",
-    "prestart": "npm run db:migrate"
+    "prestart": "npm run db:migrate",
+    "db:service-images": "tsx prisma/import-service-images.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.1",

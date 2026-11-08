@@ -143,3 +143,11 @@ model OrderItem {
   @@index([orderId])
   @@index([productId])
 }
+
+model ServiceImage {
+ serviceId String @id @db.VarChar(20)
+ imageData Bytes?
+ imageDarkData Bytes?
+ imageLightData Bytes?
+ updatedAt DateTime @updatedAt
+}
