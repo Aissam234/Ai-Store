@@ -20,7 +20,7 @@ export function CatalogSync() {
       controller = new AbortController();
       const timeout = setTimeout(() => controller?.abort(), 8000);
       try {
-        const response = await fetch("/api/catalog/version", { cache: "no-store", signal: controller.signal });
+        const response = await fetch(path === "/software-services" ? "/api/services/version" : "/api/catalog/version", { cache: "no-store", signal: controller.signal });
         if (!response.ok) throw new Error("Unavailable");
         const data: unknown = await response.json();
         if (!data || typeof data !== "object" || !("version" in data) || typeof data.version !== "string") throw new Error("Invalid revision");

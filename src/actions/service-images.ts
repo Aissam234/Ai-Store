@@ -15,7 +15,7 @@ export async function saveServiceImages(id:string,_previous:{message:string;ok:b
    else if(form.get('remove-'+key)==='on') data[key]=null;
   }
  } catch { return {message:'Choose a valid JPEG, PNG or WebP image up to 3 MB (maximum 25 megapixels).',ok:false}; }
- try { await getDb().serviceImage.upsert({where:{serviceId:id},create:{serviceId:id,...data},update:data}); }
+ try { await getDb().serviceImage.upsert({where:{serviceId:id},create:{serviceId:id,...data},update:data,select:{serviceId:true}}); }
  catch {return {message:'Could not save images. Please try again.',ok:false};}
  revalidatePath('/software-services');revalidatePath('/admin/services');
  return {message:'Images saved.',ok:true};
