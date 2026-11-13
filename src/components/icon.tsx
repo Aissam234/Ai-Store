@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 const paths = {
+  account: "M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM4 21v-2a8 6 0 0 1 16 0v2",
   arrow: "M6 18 18 6M6 6h12v12", right: "M4 12h16m-6-6 6 6-6 6", left: "M20 12H4m6-6-6 6 6 6",
   check: "m5 12 4 4L19 6", menu: "M4 6h16M4 12h16M4 18h16", close: "m6 6 12 12M6 18 18 6",
   plus: "M12 5v14M5 12h14", diamond: "m12 3 9 9-9 9-9-9Z",

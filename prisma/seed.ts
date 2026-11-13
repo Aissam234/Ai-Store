@@ -16,7 +16,7 @@ async function main() {
   try {
     if (admin) {
       const existing = await db.user.findUnique({ where: { email: admin.email } });
-      if (existing && (existing.role !== "ADMIN" || !await verifyPassword(admin.password, existing.passwordHash))) {
+      if (existing && (existing.role !== "ADMIN" || !existing.passwordHash || !await verifyPassword(admin.password, existing.passwordHash))) {
         throw new Error("Refusing to overwrite an existing account or promote a customer. Configure a unique initial admin email.");
       }
       if (!existing) await db.user.create({ data: { email: admin.email, name: admin.name, passwordHash: await hashPassword(admin.password), role: "ADMIN" } });

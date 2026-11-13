@@ -1,4 +1,5 @@
 "use server";
+import { authDestination } from "@/lib/auth-destination";
 import { redirect } from "next/navigation";
 import { getDb } from "@/server/db";
 import { createSession, destroySession } from "@/server/auth";
@@ -16,7 +17,7 @@ export async function login(_previous: ActionState, form: FormData): Promise<Act
     if (!user || !valid) return { error: "Email or password is incorrect." };
     await createSession(user.id);
   } catch { return { error: "Sign-in is unavailable right now. Please try again later." }; }
-  redirect("/account");
+  redirect(authDestination(form.get("next")));
 }
 export async function register(_previous: ActionState, form: FormData): Promise<ActionState> {
   const parsed = registerSchema.safeParse(Object.fromEntries(form));
@@ -27,7 +28,7 @@ export async function register(_previous: ActionState, form: FormData): Promise<
     const user = await getDb().user.create({ data: { name: parsed.data.name, email: parsed.data.email, passwordHash, role: "CUSTOMER" } });
     await createSession(user.id);
   } catch { return { error: "Unable to create this account. Try signing in if you already registered, or try again later." }; }
-  redirect("/account");
+  redirect(authDestination(form.get("next")));
 }
 export async function logout() {
   await destroySession();

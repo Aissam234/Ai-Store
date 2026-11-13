@@ -1,4 +1,24 @@
 {
+  "Link your Google account": {
+    "fr": "Associer votre compte Google",
+    "ar": "اربط حسابك على Google",
+    "ma": "ربط حسابك ديال Google"
+  },
+  "Or continue with Google": {
+    "fr": "Ou continuer avec Google",
+    "ar": "أو تابع باستخدام Google",
+    "ma": "ولا كمّل بحساب Google"
+  },
+  "Google sign-in could not finish. Please try again.": {
+    "fr": "La connexion avec Google a échoué. Veuillez réessayer.",
+    "ar": "تعذّر تسجيل الدخول باستخدام Google. حاول مجددًا.",
+    "ma": "ما كملش الدخول بحساب Google. عاود جرّب."
+  },
+  "Sign in with your password, then link Google from your account.": {
+    "fr": "Connectez-vous avec votre mot de passe puis associez Google depuis votre compte.",
+    "ar": "سجّل الدخول بكلمة المرور، ثم اربط Google من صفحة حسابك.",
+    "ma": "دخل بكلمة السر، ومن بعد ربط Google من صفحة الحساب ديالك."
+  },
   "Language": {
     "fr": "Langue",
     "ar": "اللغة",
@@ -2233,5 +2253,35 @@
     "fr": "De votre premier site à votre prochain outil sur mesure.",
     "ar": "من موقعك الأول إلى أداتك المخصصة التالية.",
     "ma": "من أول موقع ديالك للأداة الخاصة الجاية."
+  },
+  "Welcome back": {
+    "fr": "Bienvenue",
+    "ar": "مرحبًا بعودتك",
+    "ma": "مرحبا برجوعك"
+  },
+  "Create your account": {
+    "fr": "Créez votre compte",
+    "ar": "أنشئ حسابك",
+    "ma": "صايب حسابك"
+  },
+  "Your account for orders, saved drafts and personal support.": {
+    "fr": "Votre espace pour vos commandes, brouillons et assistance personnalisée.",
+    "ar": "حسابك للطلبات والمسودات المحفوظة والدعم الشخصي.",
+    "ma": "حسابك للطلبات والمسودات المحفوظة والمساعدة الشخصية."
+  },
+  "Or continue with email": {
+    "fr": "Ou continuer avec votre e-mail",
+    "ar": "أو تابع بالبريد الإلكتروني",
+    "ma": "ولا كمّل بالإيميل"
+  },
+  "Show": {
+    "fr": "Afficher",
+    "ar": "إظهار",
+    "ma": "بيّن"
+  },
+  "Hide": {
+    "fr": "Masquer",
+    "ar": "إخفاء",
+    "ma": "خبّي"
   }
 }
