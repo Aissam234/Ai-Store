@@ -6,7 +6,7 @@
 .auth-card {
   padding: clamp(22px, 5vw, 44px);
   border-radius: 28px;
-  --float-distance: -4px;
+  --float-distance: clamp(-14px, -1.8vw, -9px);
 }
 .auth-brand { display: flex; width: fit-content; margin: 0 auto 24px; }
 .auth-heading { text-align: center; }
@@ -36,7 +36,7 @@
 .auth-card form > label { margin-bottom: 18px; }
 .auth-card form > .small,.auth-card form > .form-error { margin-block: 16px; }
 @media (prefers-reduced-motion: no-preference) {
-  .auth-card { animation: glass-suspend 8s ease-in-out infinite; }
+  .auth-card { animation: glass-suspend 6.8s ease-in-out -1.5s infinite; }
   .auth-card:focus-within,.auth-card:active { animation-play-state: paused; }
   .auth-extra { transition: grid-template-rows 300ms ease, opacity 220ms ease; }
   .auth-heading h1,.auth-submit-label { animation: auth-arrive 260ms ease-out; }

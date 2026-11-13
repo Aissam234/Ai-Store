@@ -1,0 +1,32 @@
+.customer-ui .account-profile {
+  border-radius: 22px;
+  padding: clamp(20px, 3vw, 36px);
+  background: linear-gradient(120deg, var(--material-reflection), transparent 55%, var(--material-light)), var(--glass-strong);
+}
+.profile-identity, .profile-actions { display: flex; align-items: center; gap: 16px; }
+.profile-identity { min-inline-size: 0; flex: 1 1 16rem; }
+.profile-details { min-width: 0; overflow-wrap: anywhere; }
+.profile-details p { margin-block: 5px 10px; }
+.profile-avatar {
+  display: grid; place-items: center; flex: none;
+  width: 52px; height: 52px; border-radius: 16px;
+  color: var(--red-soft); background: var(--material-light);
+  border: 1px solid var(--material-edge); box-shadow: inset 0 1px var(--material-highlight);
+}
+.profile-avatar svg { width: 26px; height: 26px; }
+.profile-actions { flex-wrap: wrap; gap: 10px; }
+.profile-signout {
+  display: inline-flex; justify-content: center; align-items: center; gap: 10px;
+  min-height: 46px; padding: 10px 18px; border-radius: 12px;
+  background: var(--surface-gradient),var(--glass); color: var(--foreground);
+  border: 1px solid var(--material-edge); box-shadow: inset 0 1px var(--material-highlight);
+  font-size: .875rem; font-weight: 600;
+}
+.profile-signout svg { width: 19px; height: 19px; color: var(--red-soft); }
+[dir=rtl] .profile-signout svg { transform: scaleX(-1); }
+.profile-signout:hover,.profile-signout:focus-visible { border-color: var(--red-soft); }
+@media(max-width:600px) {
+  .profile-actions { inline-size: 100%; padding-block-start: 16px; border-block-start: 1px solid var(--material-edge); }
+  .profile-actions > * { flex: 1 1 auto; }
+  .profile-signout { inline-size: 100%; }
+}
