@@ -2283,5 +2283,65 @@
     "fr": "Masquer",
     "ar": "إخفاء",
     "ma": "خبّي"
+  },
+  "Save Checkout": {
+    "fr": "Enregistrer le panier",
+    "ar": "حفظ مسودة الطلب",
+    "ma": "حفظ الطلب كمسودة"
+  },
+  "Draft saved. View in My Account.": {
+    "fr": "Brouillon enregistré. Voir dans mon compte.",
+    "ar": "حُفظت المسودة. اعرضها في حسابي.",
+    "ma": "تحفظات المسودة. شوفها فحسابي."
+  },
+  "Resume checkout": {
+    "fr": "Reprendre le panier",
+    "ar": "استئناف الطلب",
+    "ma": "كمّل الطلب"
+  },
+  "Delete draft": {
+    "fr": "Supprimer le brouillon",
+    "ar": "حذف المسودة",
+    "ma": "مسح المسودة"
+  },
+  "Delete this checkout draft?": {
+    "fr": "Supprimer ce brouillon de commande ?",
+    "ar": "هل تريد حذف مسودة الطلب؟",
+    "ma": "واش تمسح هاد المسودة؟"
+  },
+  "This draft is no longer available.": {
+    "fr": "Ce brouillon n’est plus disponible.",
+    "ar": "لم تعد هذه المسودة متاحة.",
+    "ma": "هاد المسودة ما بقاتش متاحة."
+  },
+  "No products from this draft are available.": {
+    "fr": "Aucun produit de ce brouillon n’est disponible.",
+    "ar": "لا تتوفر أي منتجات من هذه المسودة.",
+    "ma": "حتى منتج من هاد المسودة ما بقى متاح."
+  },
+  "Unavailable products were left out of your restored cart.": {
+    "fr": "Les produits indisponibles ont été exclus du panier restauré.",
+    "ar": "استُبعدت المنتجات غير المتاحة من السلة المستعادة.",
+    "ma": "المنتجات اللي ما بقاوش متاحين ما تزادوش للسلة."
+  },
+  "Could not update this draft. Please try again.": {
+    "fr": "Impossible de modifier ce brouillon. Réessayez.",
+    "ar": "تعذّر تعديل المسودة. حاول مجددًا.",
+    "ma": "ما قدرناش نبدلو المسودة. عاود جرّب."
+  },
+  "Please review your cart and try again.": {
+    "fr": "Vérifiez votre panier et réessayez.",
+    "ar": "راجع سلتك وحاول مجددًا.",
+    "ma": "راجع السلة وعاود جرّب."
+  },
+  "Please wait a minute before trying again.": {
+    "fr": "Patientez une minute avant de réessayer.",
+    "ar": "انتظر دقيقة قبل المحاولة مجددًا.",
+    "ma": "تسنى دقيقة وعاود جرّب."
+  },
+  "Could not save this draft. A product may have changed or become unavailable. Refresh your cart and try again. No payment was taken.": {
+    "fr": "Enregistrement impossible. Un produit a pu changer. Actualisez le panier et réessayez. Aucun paiement effectué.",
+    "ar": "تعذّر الحفظ. ربما تغيّر أحد المنتجات أو لم يعد متاحًا. حدّث السلة وحاول مجددًا. لم يُخصم أي مبلغ.",
+    "ma": "ما تحفظاتش المسودة. يمكن شي منتج تبدّل ولا ما بقاش متاح. حدّث السلة وعاود جرّب. ما تخلّص والو."
   }
 }

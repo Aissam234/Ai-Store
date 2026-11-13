@@ -12,6 +12,7 @@ import { useCart } from "./cart-provider";
 import type { Product } from "@/types/catalog";
 import { formatPrice } from "@/config/store";
 import { ProductOfferDetails, ProductVisual } from "./ui";
+import { SaveDraft } from "./draft-controls";
 import { PaymentOrderButton } from "./payment-order-button";
 
 export function CartContent({ catalog: sourceCatalog, checkout = false }: { catalog: Product[]; checkout?: boolean }) {
@@ -41,6 +42,7 @@ export function CartContent({ catalog: sourceCatalog, checkout = false }: { cata
       <div className="summary-line"><span><T text="Delivery"/></span><span><T text="Arranged on WhatsApp"/></span></div>
       <div className="summary-total"><span><T text="Estimated total"/></span><strong>{formatPrice(total)}</strong></div>
       <p className="small"><T text="Prices come from our catalog. Availability and final purchase details are confirmed on WhatsApp."/></p>
+      {checkout && !missing.length && <SaveDraft key={JSON.stringify(cart.ids)} ids={cart.ids}/>}
       {!checkout ? <Link href="/checkout" className="button primary"><T text="Review your order"/> <Icon name="arrow"/></Link> : <Link href="/cart" className="text-link"><Icon name="left"/> <T text="Edit your cart"/></Link>}
       <p className="summary-footnote"><T text="No payment is collected on this website."/></p>
     </aside></div>
