@@ -3,6 +3,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { authDestination } from "@/lib/auth-destination";
 import Link from "next/link";
 import { Brand } from "./brand";
+import { IntroTitle } from "./intro-title";
 import { T } from "./locale-provider";
 import { AuthForm } from "./auth-form";
 import { GoogleButton } from "./google-button";
@@ -16,7 +17,7 @@ export function AuthScreen({ clientId }: { clientId?: string }) {
   return <section className="auth-card" data-mode={mode} aria-labelledby="auth-heading">
     <Link href="/" className={"brand " + "auth-brand"}><Brand/></Link>
     <header className={"auth-heading"}>
-      <h1 id="auth-heading" key={mode}><T text={registering ? "Create your account" : "Welcome back"}/></h1>
+      <h1 id="auth-heading" key={mode}><IntroTitle title={registering ? "Create your account" : "Welcome back"}/></h1>
       <p><T text="Your account for orders, saved drafts and personal support."/></p>
     </header>
     <nav className={"auth-tabs"}>

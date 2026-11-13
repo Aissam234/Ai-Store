@@ -43,7 +43,7 @@ async function SoftwareServicesContent() {
  return <div className="container page-space services-page">
   <section className="studio-hero">
    <div className="studio-hero-copy"><span className="eyebrow"><T text="Software Services"/></span>
-    <h1><T text="Your Idea."/><br/><span><T text="Our Engineering."/></span></h1>
+    <h1><span className="intro-shine"><T text="Your Idea."/></span><br/><span className="intro-shine intro-shine-accent"><T text="Our Engineering."/></span></h1>
     <p><T text="From modern websites to custom software and technical mentorship, we help turn ambitious ideas into reliable digital experiences."/></p>
     <div className="button-row"><a href="#project-inquiry" className="button primary"><T text="Discuss Your Project"/></a><a href="#services" className="studio-link"><T text="Explore Services"/><span aria-hidden="true">↓</span></a></div>
    </div>

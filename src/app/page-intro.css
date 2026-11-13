@@ -1,0 +1,68 @@
+/* Center the intro copy within its existing column; keep the service actions in place. */
+.customer-ui .page-intro,
+.customer-ui .page-intro > :is(h1, p),
+.customer-ui .studio-hero-copy > p {
+  margin-inline: auto;
+}
+.customer-ui .page-intro,
+.customer-ui .studio-hero-copy > :is(.eyebrow, h1, p),
+.customer-ui .auth-heading {
+  text-align: center;
+}
+.customer-ui .studio-hero-copy > .eyebrow { display: block; }
+
+.intro-shine {
+  --heading-metal: #f2eef0;
+  --heading-red: #df7082;
+  --heading-glint: var(--red);
+  display: inline-block;
+  max-inline-size: 100%;
+  vertical-align: top;
+  color: var(--heading-metal);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  /* Give glyphs room inside the painted text box without moving the heading. */
+  padding: .12em .04em;
+  margin: -.12em 0;
+}
+:where(html[data-store-theme="light"]) .intro-shine {
+  --heading-metal: #231e21;
+  --heading-red: #812938;
+  --heading-glint: var(--red);
+}
+[dir="rtl"] .intro-shine {
+  line-height: 1.35;
+  letter-spacing: normal;
+}
+
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  @media screen and (forced-colors: none) and (prefers-reduced-motion: no-preference) {
+    .intro-shine {
+      background-color: var(--heading-metal);
+      background-image: linear-gradient(106deg,
+        var(--heading-metal) 41%, var(--heading-red) 48%,
+        var(--heading-glint) 50%, var(--heading-red) 52%, var(--heading-metal) 59%);
+      background-size: 250% 100%;
+      background-position: 100% center;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: intro-reflection 4s ease-in-out infinite;
+    }
+  }
+}
+/* The reflection travels for 3.5 seconds, then rests for half a second. */
+@keyframes intro-reflection {
+  from { background-position: 100% center; }
+  87.5%, to { background-position: 0% center; }
+}
+
+.customer-ui .intro-shine-accent {
+  --heading-metal: var(--red);
+  --heading-red: #ffa9b5;
+  --heading-glint: #fff;
+}
+html[data-store-theme="light"] .customer-ui .intro-shine-accent {
+  --heading-red: #6e2033;
+  --heading-glint: #151215;
+}
