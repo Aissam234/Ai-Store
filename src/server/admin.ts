@@ -47,3 +47,18 @@ export async function adminOrder(id: string) {
   await requireAdmin();
   return getDb().order.findUnique({ where: { id }, include: { items: true, user: { select: { name: true, email: true } } } });
 }
+
+export async function adminUsers(page: number) {
+  await requireAdmin();
+  const db = getDb();
+  const [rows, count] = await Promise.all([
+    db.user.findMany({
+      select: { id: true, name: true, email: true, role: true, createdAt: true },
+      orderBy: [{ createdAt: "desc" }, { id: "asc" }],
+      take: PAGE_SIZE,
+      skip: (page - 1) * PAGE_SIZE,
+    }),
+    db.user.count(),
+  ]);
+  return { rows, count };
+}
