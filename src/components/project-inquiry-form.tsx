@@ -62,9 +62,8 @@ export function ProjectInquiryForm() {
   return { name, id: "inquiry-" + name, "aria-invalid": !!errors[name], "aria-describedby": errors[name] ? "error-" + name : undefined };
  }
 
- return <section id="project-inquiry">
+ return <section id="project-inquiry" aria-labelledby="studio-inquiry-title">
   {services.map(item => <span key={item.id} id={"inquiry-" + item.id} className="studio-inquiry-anchor" aria-hidden="true"/>)}
-  <h2>{t("Discuss My Project")}</h2>
   <form className="form" noValidate onSubmit={submit} onChange={() => setPrepared(null)}>
    <div hidden><label>Website<input name="website" tabIndex={-1} autoComplete="off"/></label></div>
    <div className="services-fields">
