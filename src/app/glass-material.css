@@ -170,32 +170,60 @@ html[data-store-theme="light"] .customer-ui .ambient-environment {
   color: color-mix(in srgb, var(--text-primary) 72%, var(--text-secondary));
 }
 
-.customer-ui #why-us .manifesto > div:first-child {
-  position: relative;
-  isolation: isolate;
+.customer-ui #why-us .why-story {
   align-self: start;
-}
-.customer-ui #why-us .manifesto > div:first-child::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -10px -8px;
-  border-radius: 12px;
-  background: linear-gradient(155deg, color-mix(in srgb, var(--surface) 88%, transparent),
-    color-mix(in srgb, var(--surface) 77%, transparent));
+  min-inline-size: 0;
+  padding: clamp(20px, 3vw, 38px);
+  border: 1px solid var(--material-edge);
+  border-radius: 18px;
+  background: linear-gradient(140deg, var(--material-reflection), transparent 45%, var(--material-light)),
+    color-mix(in srgb, var(--surface) 89%, transparent);
+  box-shadow: inset 0 1px var(--material-highlight), var(--material-shadow);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  pointer-events: none;
 }
-.customer-ui #why-us .manifesto > div:first-child :is(h2, .eyebrow) {
+.customer-ui #why-us .why-story .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   color: var(--text-primary);
 }
-.customer-ui #why-us .manifesto > div:first-child p {
-  color: color-mix(in srgb, var(--text-primary) 72%, var(--text-secondary));
+.customer-ui #why-us .why-story .eyebrow::before {
+  content: "";
+  inline-size: 22px;
+  block-size: 2px;
+  background: var(--red);
 }
-.customer-ui #why-us .manifesto .text-link { color: var(--red-soft); }
-.customer-ui #why-us .manifesto .text-link:is(:hover, :focus-visible) { text-decoration: underline; }
-
+.customer-ui #why-us .why-story h2 {
+  color: var(--text-primary);
+  font-size: clamp(1.75rem, 3vw, 2.65rem);
+  margin-block: 16px;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+}
+.customer-ui #why-us .why-emphasis { color: var(--red-soft); }
+.customer-ui #why-us .why-story p {
+  max-inline-size: 48ch;
+  color: color-mix(in srgb, var(--text-primary) 82%, var(--text-secondary));
+}
+.customer-ui #why-us .why-story .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-block-start: 20px;
+  padding-inline: 16px;
+  border: 1px solid color-mix(in srgb, var(--red-soft) 45%, var(--material-edge));
+  border-radius: 10px;
+  background: var(--material-light);
+  color: var(--text-primary);
+}
+.customer-ui #why-us .why-story .text-link svg { color: var(--red-soft); }
+.customer-ui #why-us .why-story .text-link:is(:hover,:focus-visible) {
+  border-color: var(--red-soft);
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
 /* Phone artwork; tablets and desktops keep the original landscape environment.
    The short coarse-pointer viewport also covers phones rotated to landscape. */
 @media (max-width:600px), (orientation:landscape) and (max-height:500px) and (max-width:960px) and (pointer:coarse) {
@@ -205,4 +233,27 @@ html[data-store-theme="light"] .customer-ui .ambient-environment {
   html[data-store-theme="light"] .customer-ui .ambient-environment {
     background-image:url('/backgrounds/store-light-phone.jpg');
   }
+}
+
+/* A translucent reading surface keeps bright artwork from cutting through footer text. */
+.customer-ui .site-footer {
+  --footer-veil: 16 13 16;
+  --footer-ink: #e3dfe1;
+  background: linear-gradient(to bottom, rgb(var(--footer-veil) / 84%), rgb(var(--footer-veil) / 94%));
+}
+html[data-store-theme="light"] .customer-ui .site-footer {
+  --footer-veil: 255 251 250;
+  --footer-ink: #40383b;
+}
+.customer-ui .site-footer .footer-grid :is(p,.eyebrow),
+.customer-ui .site-footer .footer-grid > div > a:not(.brand),
+.customer-ui .site-footer .footer-bottom {
+  color: var(--footer-ink);
+}
+.customer-ui .site-footer .footer-bottom { font-size: .75rem; }
+.customer-ui .site-footer .footer-grid > div > a:not(.brand):is(:hover,:focus-visible) {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--red-soft);
+  text-underline-offset: .25em;
 }
